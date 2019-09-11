@@ -3,17 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://kiru.io/projects/30min/</loc>
+    <lastmod>2019-06-11T19:13:49+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kiru.io/projects/dailydo/</loc>
+    <lastmod>2019-06-11T19:13:49+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kiru.io/</loc>
+    <lastmod>2019-06-11T19:13:49+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kiru.io/projects/</loc>
+    <lastmod>2019-06-11T19:13:49+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://kiru.io/about/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://kiru.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kiru.io/</loc>
     <priority>0</priority>
   </url>
   

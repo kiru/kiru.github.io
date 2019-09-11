@@ -12,25 +12,21 @@
     
     
     <item>
-      <title>FiveLinks</title>
-      <link>https://kiru.io/projects/fivelinks/</link>
+      <title>30Min.io</title>
+      <link>https://kiru.io/projects/30min/</link>
       <pubDate>Tue, 11 Jun 2019 19:13:49 +0200</pubDate>
       
-      <guid>https://kiru.io/projects/fivelinks/</guid>
-      <description>Objective I am trying to learn French. Reading articles in French involves translating unknown words using Google Translate.
-It would be cool if there exists a service which does the translation in a personalized manner. While reading the text only get the translations of new words.
-My idea is to create a page, where the user can provide a text to read. The system will use the user&amp;rsquo;s vocublary list to find the new words in the text and translate them and add them to the vocabulary.</description>
+      <guid>https://kiru.io/projects/30min/</guid>
+      <description> Objective </description>
     </item>
     
     <item>
-      <title>FluentRead</title>
-      <link>https://kiru.io/projects/fluentread/</link>
+      <title>DailyDo.chat</title>
+      <link>https://kiru.io/projects/dailydo/</link>
       <pubDate>Tue, 11 Jun 2019 19:13:49 +0200</pubDate>
       
-      <guid>https://kiru.io/projects/fluentread/</guid>
-      <description>Objective I am trying to learn French. Reading articles in French involves translating unknown words using Google Translate.
-It would be cool if there exists a service which does the translation in a personalized manner. While reading the text only get the translations of new words.
-My idea is to create a page, where the user can provide a text to read. The system will use the user&amp;rsquo;s vocublary list to find the new words in the text and translate them and add them to the vocabulary.</description>
+      <guid>https://kiru.io/projects/dailydo/</guid>
+      <description> Objective </description>
     </item>
     
   </channel>
