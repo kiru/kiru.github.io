@@ -21,22 +21,67 @@
     </item>
     
     <item>
-      <title>DailyDo.chat</title>
-      <link>https://kiru.io/projects/dailydo/</link>
+      <title>Why I created 30min.io</title>
+      <link>https://kiru.io/articles/my-first-post/</link>
       <pubDate>Tue, 11 Jun 2019 19:13:49 +0200</pubDate>
       
-      <guid>https://kiru.io/projects/dailydo/</guid>
-      <description> Objective </description>
+      <guid>https://kiru.io/articles/my-first-post/</guid>
+      <description>Few notes about this articles: - Why did I create it this project? - Discussion with a friend - 60days challenge, did we manage it? - mention bootstrapping 30min.io in 30min sessions, at least 30minutes.io - hourglass! =&amp;gt; I need a picture of that !!! - logo design &amp;hellip; how it started - how is it going till now
+- Do you think I should allow an option where I 0</description>
     </item>
     
     <item>
       <title>TIL 05.03.2017</title>
       <link>https://kiru.io/til/2017-03-05-sms-length/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 May 2017 00:00:00 +0000</pubDate>
       
       <guid>https://kiru.io/til/2017-03-05-sms-length/</guid>
-      <description>SMS Length What is the max length of an SMS?
- max SMS length is 1120 bit 7 bit per character used for default alphabet means max length is 160 characters ( 1120 / 7 ) 8 bit is used for data-messages ( e.g. images or sound messages ) 16 bit per character for the rest of the characters using Unicode encoding, meaning max 70 characters. 1 Note: German Umlaute ( ö, ü, ä ) use 16bit per characters Note: If one character needs to be encoded with 16bit, then the whole message is encoded with 16bit.</description>
+      <description> max SMS length is 1120 bit 7 bit per character used for the default alphabet, which means the maximum length is 160 characters ( 1120 / 7 ) 8 bit is used for data-messages ( e.g. images or sound messages ) 16 bit for the rest of the characters using Unicode encoding, meaning max 70 characters (Websms) Note: German Umlaut ( ö, ü, ä ) uses 16bit per characters Note: If one character needs to be encoded with 16bit then the whole message is encoded with 16bit  </description>
+    </item>
+    
+    <item>
+      <title>TIL 27.03.2017</title>
+      <link>https://kiru.io/til/2017-03-27-case/</link>
+      <pubDate>Mon, 27 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://kiru.io/til/2017-03-27-case/</guid>
+      <description> this-is-called-kebab-case this_is_called_snake_case  </description>
+    </item>
+    
+    <item>
+      <title>TIL 14.03.2017</title>
+      <link>https://kiru.io/til/2017-03-14-du/</link>
+      <pubDate>Tue, 14 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://kiru.io/til/2017-03-14-du/</guid>
+      <description>df
+ stands for Disk Free calculates file size based on the file system meta information if block size is 8kb and file size is only 1kb then file size for du is 8kb is faster but not accurate  
+du
+ Disk Usage counts size used on the file system per file recursively (df and du giving different results) does not count open files does not rely on block size: 1kb file size with 8kb block size is still 1kb for du is slow, but more reliable  See this post from Mike Golvach for thorough explanation: Why DU And DF Display Different Values On Linux And Unix</description>
+    </item>
+    
+    <item>
+      <title>TIL 13.03.2017</title>
+      <link>https://kiru.io/til/2017-03-13-java-and-oracle/</link>
+      <pubDate>Mon, 13 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://kiru.io/til/2017-03-13-java-and-oracle/</guid>
+      <description>Java class with enum switch statement is translated to switch statement with ordinal:
+public enum MyEnum { YES, NO; public static void main(String[] args) { MyEnum e = NO; switch (e) { // uses e.ordinal() case YES: System.out.println(&amp;quot;Yes&amp;quot;); break; case NO: System.out.println(&amp;quot;No&amp;quot;); break; } } }  You can use extract() in oracle in order to get the date parts
+select extract(year from created_timestamp), extract(month from created_timestamp), extract(day from created_timestamp) from student;  Source: EXTRACT</description>
+    </item>
+    
+    <item>
+      <title>TIL 07.03.2017</title>
+      <link>https://kiru.io/til/2017-03-07-binding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kiru.io/til/2017-03-07-binding/</guid>
+      <description>binding 127.0.0.1 means listen to loopback interface Process bound to 127.0.0.1 can only be accessed by other programs from the same machine
+ binding to 0.0.0.0 means listen to all interfaces ( e.g. all network interfaces connected to the machine )
+ on Mac 27.0.0.1 /32 is bound to loopback
+ on Windows 127.0.0.0 /8 is bound to loopback
+  Source: 0.0.0.0 vs 127.0.0.1</description>
     </item>
     
   </channel>
