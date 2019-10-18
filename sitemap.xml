@@ -31,19 +31,14 @@
   </url>
   
   <url>
-    <loc>https://kiru.io/til/2017-03-05-sms-length/</loc>
-    <lastmod>2017-05-03T00:00:00+00:00</lastmod>
+    <loc>https://kiru.io/til/2017-03-27-case/</loc>
+    <lastmod>2017-03-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://kiru.io/til/</loc>
-    <lastmod>2017-05-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kiru.io/til/2017-03-27-case/</loc>
     <lastmod>2017-03-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -57,6 +52,16 @@
   </url>
   
   <url>
+    <loc>https://kiru.io/til/2017-03-07-binding/</loc>
+    <lastmod>2017-03-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kiru.io/til/2017-03-05-sms-length/</loc>
+    <lastmod>2017-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kiru.io/about/</loc>
     <priority>0</priority>
   </url>
@@ -64,10 +69,6 @@
   <url>
     <loc>https://kiru.io/categories/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kiru.io/til/2017-03-07-binding/</loc>
   </url>
   
   <url>
