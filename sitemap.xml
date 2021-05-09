@@ -3,13 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kiru.io/articles/</loc>
-    <lastmod>2019-11-27T19:13:49+02:00</lastmod>
+    <loc>https://kiru.io/</loc>
+    <lastmod>2020-06-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kiru.io/</loc>
+    <loc>https://kiru.io/til/2020-06-28-multiselect/</loc>
+    <lastmod>2020-06-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kiru.io/tags/</loc>
+    <lastmod>2020-06-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kiru.io/til/</loc>
+    <lastmod>2020-06-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kiru.io/tags/html/</loc>
+    <lastmod>2020-06-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kiru.io/articles/</loc>
     <lastmod>2019-11-27T19:13:49+02:00</lastmod>
     <priority>0</priority>
   </url>
@@ -17,6 +40,28 @@
   <url>
     <loc>https://kiru.io/articles/lauzhack/</loc>
     <lastmod>2019-11-27T19:13:49+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kiru.io/til/2019-11-05-simulate-network-control/</loc>
+    <lastmod>2019-11-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kiru.io/tags/networkinglinuxcommand/</loc>
+    <lastmod>2019-11-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kiru.io/til/2019-10-22-fswatch/</loc>
+    <lastmod>2019-10-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kiru.io/tags/linuxbash/</loc>
+    <lastmod>2019-10-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -41,14 +86,19 @@
   </url>
   
   <url>
-    <loc>https://kiru.io/til/2018-10-22-bash/</loc>
-    <lastmod>2018-10-22T00:00:00+00:00</lastmod>
+    <loc>https://kiru.io/til/2019-05-17-pipe-linux/</loc>
+    <lastmod>2019-05-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kiru.io/til/</loc>
-    <lastmod>2018-10-22T00:00:00+00:00</lastmod>
+    <loc>https://kiru.io/tags/linux/</loc>
+    <lastmod>2019-05-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kiru.io/til/2018-10-22-bash/</loc>
+    <lastmod>2018-10-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -98,11 +148,6 @@
   
   <url>
     <loc>https://kiru.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kiru.io/tags/</loc>
     <priority>0</priority>
   </url>
   

@@ -6,10 +6,22 @@
     <description>Recent content on Kiru.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Nov 2019 19:13:49 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kiru.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TIL 28.06.2020</title>
+      <link>https://kiru.io/til/2020-06-28-multiselect/</link>
+      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kiru.io/til/2020-06-28-multiselect/</guid>
+      <description>Having the following input:
+&amp;lt;label for=&amp;quot;cars&amp;quot;&amp;gt;Make your choice:&amp;lt;/label&amp;gt; &amp;lt;select name=&amp;quot;choice&amp;quot; id=&amp;quot;choice&amp;quot; multiple&amp;gt; &amp;lt;option value=&amp;quot;Yes&amp;quot;&amp;gt;Volvo&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;quot;No&amp;quot;&amp;gt;Saab&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;quot;Maybe&amp;quot;&amp;gt;Saab&amp;lt;/option&amp;gt; &amp;lt;/select&amp;gt;  If nothing is selected, the name of the property is not sent to the server (e.g. if you expect the full set to be sent to the server)
+A hack to fix this is to add a hidden property with the same name.
+&amp;lt;input type=&amp;quot;hidden&amp;quot; name=&amp;quot;myitems&amp;quot; value=&amp;quot;&amp;quot; /&amp;gt;  </description>
+    </item>
     
     <item>
       <title>LauzHack 2019</title>
@@ -20,6 +32,33 @@
       <description>We participated at the LauzHack 2019 hosted at EPFL from 16.11.2019 to 17.11.209. We had 24 hours time to implement an idea from scratch and pitch it to a jury. Our idea won the Logitec challenge and the Staff&amp;rsquo;s Selection price! Here is what we did and where we struggled.
 Idea The challeng posed by Logitec was to implement something to improve the live of broadcasters and streamers.
 Our idea was to use the microphone to track what the streamer is telling the audience, analyze the sentiment and use the Hue lights to show if the sentiment is negative or positive.</description>
+    </item>
+    
+    <item>
+      <title>TIL 05.11.2019</title>
+      <link>https://kiru.io/til/2019-11-05-simulate-network-control/</link>
+      <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kiru.io/til/2019-11-05-simulate-network-control/</guid>
+      <description>There is a tc command on Ubunut to manipulate traffic control settings, for example to introduce artificial packet dropping.
+Add a packet delay of 100ms ± 10ms with the current delay depending 25% on the last delay:
+ tc qdisc change dev eth0 root netem delay 100ms 10ms 25%
+ You can even configure more convoluted settings:
+ sudo tc qdisc change dev lo root netem delay 50ms 200ms loss 10% 25% reorder 25% 50%</description>
+    </item>
+    
+    <item>
+      <title>TIL 22.10.2019</title>
+      <link>https://kiru.io/til/2019-10-22-fswatch/</link>
+      <pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kiru.io/til/2019-10-22-fswatch/</guid>
+      <description>fswatch tracks file system events. Execute a command on file change (taken from 1 as reference to search in the future):
+fswatch -0 file.py | xargs -0 -I {} command  Explanation:
+ -O split record by NUL character
+ xargs -O matches fswatch splitting
+ -I run given command on each file changes
+   How to Use fswatch [return]   </description>
     </item>
     
     <item>
@@ -53,6 +92,20 @@ maps-with-atom-keys: %{foo: &amp;ldquo;bar&amp;rdquo;, hello: &amp;ldquo;world&a
       <guid>https://kiru.io/articles/my-first-post/</guid>
       <description>Few notes about this articles: - Why did I create it this project? - Discussion with a friend - 60days challenge, did we manage it? - mention bootstrapping 30min.io in 30min sessions, at least 30minutes.io - hourglass! =&amp;gt; I need a picture of that !!! - logo design &amp;hellip; how it started - how is it going till now
 - Do you think I should allow an option where I 0</description>
+    </item>
+    
+    <item>
+      <title>TIL 17.05.2019</title>
+      <link>https://kiru.io/til/2019-05-17-pipe-linux/</link>
+      <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kiru.io/til/2019-05-17-pipe-linux/</guid>
+      <description>This is a neat trick from this SO answer:
+This :
+ ./aaa.sh 2&amp;gt;&amp;amp;1 | tee -a log
+ Can be shortened (bash v4.0+) to:
+ ./aaa.sh |&amp;amp; tee -a log
+ </description>
     </item>
     
     <item>

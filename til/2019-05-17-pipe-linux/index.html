@@ -4,7 +4,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 
-<title>TIL 13.03.2017 - Kiru.io</title>
+<title>TIL 17.05.2019 - Kiru.io</title>
 
 
 <meta name="description" content=""/>
@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:creator" content="@kiru_io"/>
 
-<meta property="og:title" content="TIL 13.03.2017"/>
+<meta property="og:title" content="TIL 17.05.2019"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://30min.io/images/og-logo.png"/>
 <meta property="og:image" content="https://kiru.io/"/>
@@ -190,43 +190,24 @@
 <div class="mt-3 markdown-content text-lg">
     <div class="kiru-container">
         <div class="pb-0 font-medium pb-5">
-            <h1 class=" font-bold text-kiru-main text-2xl pb-1">Java Enum and extract in SQL</h1>
-            <div class="text-gray-500 text-sm">TIL 13.03.2017</div>
+            <h1 class=" font-bold text-kiru-main text-2xl pb-1">Shortcut for linux pipe</h1>
+            <div class="text-gray-500 text-sm">TIL 17.05.2019</div>
         </div>
 
         <div class="markdown">
-            <p><p>Java class with enum switch statement is translated to switch statement with ordinal:</p>
+            <p><p>This is a neat trick from this <a href="https://stackoverflow.com/a/6991563/5553845">SO answer</a>:</p>
 
-<pre><code class="language-java">public enum  MyEnum {
-    YES,
-    NO;
+<p>This :</p>
 
-    public static void main(String[] args) {
-        MyEnum e = NO;
-        switch (e) { // uses e.ordinal()
-            case YES:
-                System.out.println(&quot;Yes&quot;);
-                break;
-            case NO:
-                System.out.println(&quot;No&quot;);
-                break;
-        }
-    }
-}
-</code></pre>
+<blockquote>
+<p>./aaa.sh 2&gt;&amp;1 | tee -a log</p>
+</blockquote>
 
-<p>You can use extract() in oracle in order to get the date parts</p>
+<p>Can be shortened (bash v4.0+) to:</p>
 
-<pre><code class="language-sql">select
-    extract(year from created_timestamp),
-    extract(month from created_timestamp),
-    extract(day from created_timestamp)
-from student;
-</code></pre>
-
-<p><span class="text-sm">
-Source: <a href="https://docs.oracle.com/cd/B19306_01/server.102/b14200/functions050.htm">EXTRACT</a>
-</span></p>
+<blockquote>
+<p>./aaa.sh |&amp; tee -a log</p>
+</blockquote>
 </p>
         </div>
     </div>
@@ -238,8 +219,8 @@ Source: <a href="https://docs.oracle.com/cd/B19306_01/server.102/b14200/function
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2017-03-29-uri/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Is URI case sensitive?</span>
+            <a href="https://kiru.io/til/2017-03-30-bash-shortcuts/" class="hover:underline">
+                <span class="text-blue-700 font-bold">BASH Shortcuts I was not not aware of</span>
             </a>
         </div>
     </div>
@@ -254,8 +235,8 @@ Source: <a href="https://docs.oracle.com/cd/B19306_01/server.102/b14200/function
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2020-06-28-multiselect/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Empty multiselect is not set</span>
+            <a href="https://kiru.io/til/2019-11-05-simulate-network-control/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Simulate network control</span>
             </a>
         </div>
     </div>

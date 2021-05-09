@@ -4,7 +4,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 
-<title>TIL 13.03.2017 - Kiru.io</title>
+<title>TIL 05.11.2019 - Kiru.io</title>
 
 
 <meta name="description" content=""/>
@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:creator" content="@kiru_io"/>
 
-<meta property="og:title" content="TIL 13.03.2017"/>
+<meta property="og:title" content="TIL 05.11.2019"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://30min.io/images/og-logo.png"/>
 <meta property="og:image" content="https://kiru.io/"/>
@@ -190,43 +190,33 @@
 <div class="mt-3 markdown-content text-lg">
     <div class="kiru-container">
         <div class="pb-0 font-medium pb-5">
-            <h1 class=" font-bold text-kiru-main text-2xl pb-1">Java Enum and extract in SQL</h1>
-            <div class="text-gray-500 text-sm">TIL 13.03.2017</div>
+            <h1 class=" font-bold text-kiru-main text-2xl pb-1">Simulate network control</h1>
+            <div class="text-gray-500 text-sm">TIL 05.11.2019</div>
         </div>
 
         <div class="markdown">
-            <p><p>Java class with enum switch statement is translated to switch statement with ordinal:</p>
+            <p><p>There is a <code>tc</code> command on Ubunut to manipulate traffic control settings, for example to introduce artificial packet
+dropping.</p>
 
-<pre><code class="language-java">public enum  MyEnum {
-    YES,
-    NO;
+<p>Add a packet delay of 100ms ± 10ms with the current delay depending 25% on the last delay:</p>
 
-    public static void main(String[] args) {
-        MyEnum e = NO;
-        switch (e) { // uses e.ordinal()
-            case YES:
-                System.out.println(&quot;Yes&quot;);
-                break;
-            case NO:
-                System.out.println(&quot;No&quot;);
-                break;
-        }
-    }
-}
-</code></pre>
+<blockquote>
+<p>tc qdisc change dev eth0 root netem delay 100ms 10ms 25%</p>
+</blockquote>
 
-<p>You can use extract() in oracle in order to get the date parts</p>
+<p>You can even configure more convoluted settings:</p>
 
-<pre><code class="language-sql">select
-    extract(year from created_timestamp),
-    extract(month from created_timestamp),
-    extract(day from created_timestamp)
-from student;
-</code></pre>
+<blockquote>
+<p>sudo tc qdisc change dev lo root netem delay 50ms 200ms loss 10% 25% reorder 25% 50%</p>
+</blockquote>
 
-<p><span class="text-sm">
-Source: <a href="https://docs.oracle.com/cd/B19306_01/server.102/b14200/functions050.htm">EXTRACT</a>
-</span></p>
+<ul>
+<li>Packet delay of 50ms ± 200msd</li>
+<li>Packet loss of 10% to 25%</li>
+<li>Reorder packages between 25%-50% of the time</li>
+</ul>
+
+<p>This <a href="https://wiki.linuxfoundation.org/networking/netem">page</a> gives more thorough examples.</p>
 </p>
         </div>
     </div>
@@ -238,24 +228,24 @@ Source: <a href="https://docs.oracle.com/cd/B19306_01/server.102/b14200/function
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2017-03-29-uri/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Is URI case sensitive?</span>
+            <a href="https://kiru.io/til/2017-03-13-java-and-oracle/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Java Enum and extract in SQL</span>
             </a>
         </div>
     </div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/" class="hover:underline">
-                <span class="text-blue-700 font-bold"></span>
+            <a href="https://kiru.io/til/2017-03-14-du/" class="hover:underline">
+                <span class="text-blue-700 font-bold">What is the difference between `du` and `df` command?</span>
             </a>
         </div>
     </div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2020-06-28-multiselect/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Empty multiselect is not set</span>
+            <a href="https://kiru.io/til/2018-10-22-bash/" class="hover:underline">
+                <span class="text-blue-700 font-bold">.bash_profile vs .bashrc</span>
             </a>
         </div>
     </div>

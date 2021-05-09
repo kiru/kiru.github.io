@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>networking,linux,command on Kiru.io</title>
+    <link>https://kiru.io/tags/networkinglinuxcommand/</link>
+    <description>Recent content in networking,linux,command on Kiru.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kiru.io/tags/networkinglinuxcommand/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>TIL 05.11.2019</title>
+      <link>https://kiru.io/til/2019-11-05-simulate-network-control/</link>
+      <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kiru.io/til/2019-11-05-simulate-network-control/</guid>
+      <description>There is a tc command on Ubunut to manipulate traffic control settings, for example to introduce artificial packet dropping.
+Add a packet delay of 100ms ± 10ms with the current delay depending 25% on the last delay:
+ tc qdisc change dev eth0 root netem delay 100ms 10ms 25%
+ You can even configure more convoluted settings:
+ sudo tc qdisc change dev lo root netem delay 50ms 200ms loss 10% 25% reorder 25% 50%</description>
+    </item>
+    
+  </channel>
+</rss>

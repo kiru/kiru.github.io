@@ -6,9 +6,46 @@
     <description>Recent content in Tags on Kiru.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 28 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kiru.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>html</title>
+      <link>https://kiru.io/tags/html/</link>
+      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kiru.io/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>networking,linux,command</title>
+      <link>https://kiru.io/tags/networkinglinuxcommand/</link>
+      <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kiru.io/tags/networkinglinuxcommand/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux,bash</title>
+      <link>https://kiru.io/tags/linuxbash/</link>
+      <pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kiru.io/tags/linuxbash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://kiru.io/tags/linux/</link>
+      <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kiru.io/tags/linux/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
