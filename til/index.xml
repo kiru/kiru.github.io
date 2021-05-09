@@ -6,10 +6,53 @@
     <description>Recent content in Tils on Kiru.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Mar 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kiru.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TIL 22.10.2018</title>
+      <link>https://kiru.io/til/2018-10-22-bash/</link>
+      <pubDate>Mon, 22 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kiru.io/til/2018-10-22-bash/</guid>
+      <description>Mac OS X does always runs .bash_prfile intead of .bashrc 1. Simple test:
+ Added: &amp;ldquo;echo &amp;ldquo;.bash_profile&amp;rdquo; to .bash_profile
+ Added: &amp;ldquo;echo &amp;ldquo;.bashrc&amp;rdquo; to .bashrc
+  Starting iTerm gives the following output:
+.bash_profile .bashrc   Bash profile [return]   </description>
+    </item>
+    
+    <item>
+      <title>TIL 30.03.2017</title>
+      <link>https://kiru.io/til/2017-03-30-bash-shortcuts/</link>
+      <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://kiru.io/til/2017-03-30-bash-shortcuts/</guid>
+      <description>New Shortcuts:
+ CTRL+A Move cursor to start of the current line ( mnemnoic: Anfang) CTRL+K Delete from cursor to end of line ( mnemnoic: reverse of CTRL+U ) CTRL+Y Apparently bash has a cut-register ( like vim ): paste from cut-register  Bash ! commands:
+After running the following command:
+$ ls -lah data total 0 drwxr-xr-x 4 kiru staff 136B Mar 18 21:12 . drwxr-xr-x 43 kiru staff 1.</description>
+    </item>
+    
+    <item>
+      <title>TIL 29.03.2017</title>
+      <link>https://kiru.io/til/2017-03-29-uri/</link>
+      <pubDate>Wed, 29 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://kiru.io/til/2017-03-29-uri/</guid>
+      <description> Depends on the web server IIS is not case sensitive Apache is case sensitive 1   Are URIs case-insensitive? [return]   </description>
+    </item>
+    
+    <item>
+      <title>TIL 28.03.2017</title>
+      <link>https://kiru.io/til/2017-03-28-sqllite/</link>
+      <pubDate>Tue, 28 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://kiru.io/til/2017-03-28-sqllite/</guid>
+      <description>SQLite has only four column types: INTEGER, REAL, TEXT, BLOB SQLite columns are dynamically typed Date and Time is stored either as TEXT (ISO8601 strings), REAL (number of days) or INTEGER (unix timestamp)1 Each column has a preferred type1 &amp;gt; A column with NUMERIC affinity may contain values using all five storage classes. When text data is inserted into a NUMERIC column, &amp;gt; the storage class of the text is converted to INTEGER or REAL (in order of preference) if such conversion is lossless and reversible.</description>
+    </item>
     
     <item>
       <title>TIL 27.03.2017</title>

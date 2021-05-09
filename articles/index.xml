@@ -6,10 +6,35 @@
     <description>Recent content in Articles on Kiru.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Jun 2019 19:13:49 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 27 Nov 2019 19:13:49 +0200</lastBuildDate>
     
 	<atom:link href="https://kiru.io/articles/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LauzHack 2019</title>
+      <link>https://kiru.io/articles/lauzhack/</link>
+      <pubDate>Wed, 27 Nov 2019 19:13:49 +0200</pubDate>
+      
+      <guid>https://kiru.io/articles/lauzhack/</guid>
+      <description>We participated at the LauzHack 2019 hosted at EPFL from 16.11.2019 to 17.11.209. We had 24 hours time to implement an idea from scratch and pitch it to a jury. Our idea won the Logitec challenge and the Staff&amp;rsquo;s Selection price! Here is what we did and where we struggled.
+Idea The challeng posed by Logitec was to implement something to improve the live of broadcasters and streamers.
+Our idea was to use the microphone to track what the streamer is telling the audience, analyze the sentiment and use the Hue lights to show if the sentiment is negative or positive.</description>
+    </item>
+    
+    <item>
+      <title>Why I created 30min.io</title>
+      <link>https://kiru.io/articles/elixirnew/</link>
+      <pubDate>Tue, 11 Jun 2019 19:13:49 +0200</pubDate>
+      
+      <guid>https://kiru.io/articles/elixirnew/</guid>
+      <description>String concat with &amp;lt;&amp;gt;: &amp;ldquo;Kiru&amp;rdquo; &amp;lt;&amp;gt; &amp;ldquo;.io&amp;rdquo;
+ concat list with ++: [1, 2] ++ [3, 4] results in [1, 2, 3, 4] hd [1, 2] == 1 tl [1, 2] == 2
+  {3, &amp;ldquo;ja&amp;rdquo;} is a tuple
+keyword lists, special list of two-element tuples [foo: &amp;ldquo;bar&amp;rdquo;, hello: &amp;ldquo;world&amp;rdquo;]
+maps: %{:foo =&amp;gt; &amp;ldquo;bar&amp;rdquo;, &amp;ldquo;hello&amp;rdquo; =&amp;gt; :world}
+maps-with-atom-keys: %{foo: &amp;ldquo;bar&amp;rdquo;, hello: &amp;ldquo;world&amp;rdquo;} == %{:foo =&amp;gt; &amp;ldquo;bar&amp;rdquo;, :hello =&amp;gt; &amp;ldquo;world&amp;rdquo;}</description>
+    </item>
     
     <item>
       <title>Why I created 30min.io</title>

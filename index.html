@@ -7,8 +7,8 @@
 <title>Kiru.io</title>
 
 
-<meta name="description" content="" />
-<meta name="author" content="" />
+<meta name="description" content=""/>
+<meta name="author" content=""/>
 
 
 <meta name="twitter:card" content="summary"/>
@@ -20,80 +20,123 @@
 <meta property="og:image" content="https://kiru.io/"/>
 
 
-
-<link rel="stylesheet" href="/css/kiru.css">
+<link rel="stylesheet" href="/css/kiru.min.css">
 <link rel="shortcut icon" href="/images/favicon.ico">
 
-<link data-vue-tag="true" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700%7CCardo">
-
 <style>
-    .markdown ul{
+    .markdown{
+        word-break: break-word;
+    }
+
+    .markdown ul {
         list-style: disc;
     }
 
-    .markdown li{
+    .markdown li {
         margin-left: 25px;
         padding-top: 2px;
     }
 
-    .markdown a{
+    .markdown a {
         color: #005b96;
     }
 
-    .markdown pre{
+    .footnotes li{
+        margin-left: 0;
+        font-size: 15px;
+    }
+
+    .footnotes{
+        border-top: 1px solid rgba(49, 130, 206, 0.19);
+        padding-top: 2px;
+        margin-top: 5px;
+    }
+
+    .footnotes hr {
+        display: none;
+    }
+
+    p > code,
+    li > code,
+    dd > code,
+    td > code {
+        background: rgba(183, 194, 194, 0.53);
+        word-wrap: break-word;
+        box-decoration-break: clone;
+        padding: .1rem .3rem .1rem;
+        border-radius: .2rem;
+    }
+
+    .markdown pre {
         font-size: 0.8rem;
         line-height: 1.3;
 
-        padding-bottom: 15px;
-        padding-top: 15px;
+        padding-bottom: 1px;
+        padding-top: 1px;
+        padding-left: 3px;
 
-        padding-left: 10px;
-        margin-left: 3px;
-        border-left: 3px solid rgba(0, 91, 150, 0.2);
+        margin-top: 8px;
+        margin-bottom: 8px;
 
+        margin-left: 10px;
+        border-left: 1px solid rgb(43, 108, 176);
+        color: rgb(42, 67, 101);
     }
-</style><body class="antialiased font-sans h-screen">
+
+    .kiru-container {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+</style><body class="antialiased h-screen mt-3 inter-font mx-4">
+
+<div class="fixed left-0 top-0 h-full bg-blue-500 hidden lg:block" style="width: 30px"></div>
+<div class="fixed left-0 top-0 h-full bg-blue-600 hidden md:block" style="width: 20px"></div>
+<div class="fixed left-0 top-0 h-full bg-blue-700" style="width: 10px"></div>
+
+<div class="fixed right-0 top-0 h-full bg-blue-500 hidden lg:block" style="width: 30px"></div>
+<div class="fixed right-0 top-0 h-full bg-blue-600 hidden md:block" style="width: 20px"></div>
+<div class="fixed right-0 top-0 h-full bg-blue-700" style="width: 10px"></div>
 
 
-<div class="bg-white flex">
-    <div class="my-16 mx-auto container w-full sm:w-1/2 xl:w-1/3"><div class="mx-auto w-2/3">
 
-    <a href="/">
-        <img src="/images/kiru.png" alt="" class="text-center">
-    </a>
-
-    <div class="flex flex-1 w-full justify-center uppercase my-10 text-2xl">
-        <div class="mx-2 hover:text-blue-800 hover:border-blue-300"><a href="/">Home</a></div>
-        <div class="mx-2 hover:text-blue-800 hover:border-blue-300"><a href="/til/">TIL</a></div>
-        <div class="mx-2 hover:text-blue-800 hover:border-blue-300"><a href="/projects/">Projects</a></div>
-
-        <div class="hidden">
-            <div class="mx-2 hover:text-blue-800 hover:border-blue-300 text-xl"><a href="/articles/">Articles</a></div>
+<div class="kiru-container">
+    <div class="border-t mx-auto pt-5 text-xl">
+        <div class="pb-3">
+            <div class="float-left">
+                <a href="/">
+                <img src="/images/kiru-image.jpg" alt="Kiru"
+                     class="rounded-full w-32 h-32 self-center mr-8 mt-4 ">
+                </a>
+            </div>
+            <div>
+                <p class="leading-normal">
+                    Hi, I am <span class="font-bold text-blue-800">Kiru</span> 👋 an indie hacker, a problem solver and
+                    vim-lover.
+                    I build projects to make the life of others and mine easier.
+                </p>
+                <p>
+                    This page is intended to collect all my projects and some thoughts.
+                </p>
+            </div>
         </div>
     </div>
-</div>
-<div class="border-t mx-auto px-6 py-5 text-xl" style="border-color: rgba(0,91,150,0.14);">
+</div><div class="bg-blue-100">
+    <div class="kiru-container  py-2 font-bold text-xl">
+        <div class="flex flex-1 my-4 text-blue-800" style="text-underline-offset: 5px">
+            <div class="hover:underline"><a href="/">Home</a></div>
+            <div class="mx-2 hover:underline"><a href="/til/">TIL</a></div>
 
-    <div class="">
-        <div class="float-left">
-            <img src="/images/kiru-image.jpg" alt=""
-                 class="rounded-full w-32 h-32 self-center mr-8 ml-8">
-        </div>
 
-        <div>
-            <p class="leading-normal">
-                Hi, I am Kiru 👋 an indie hacker, student, Java developer and vim-lover.
-                I build
-                projects to make the life of others and mine easier.
-            </p>
-            <p>
-                This page is intended to collect all my projects.
-            </p>
+            <div class="">
+                <a href="https://twitter.com/kiru_io/"
+                   target="_blank"
+                   class="text-blue-800 font-bold hover:text-blue-600 hover:underline">@kiru_io</a>
+            </div>
         </div>
     </div>
-
+</div><div class="kiru-container hidden">
     <div class="my-8">
-        <div class="">
+        <div class="hidden">
             <h1 class="uppercase text-base font-bold pb-1 text-kiru-main">Projects</h1>
             <div>
                 
@@ -115,7 +158,7 @@
             </div>
         </div>
 
-        <div class="mt-6">
+        <div class="mt-6 hidden">
             <h1 class="uppercase text-base font-bold pb-1 text-kiru-main">
                 Product updates
             </h1>
@@ -127,20 +170,152 @@
             </div>
         </div>
 
-        <div class="mt-6">
+        <div class="mt-6 hidden">
             <h1 class="uppercase text-base font-bold pb-2 text-kiru-main">
                 Contact
             </h1>
             <p class="">
                 You can reach out to me on Twitter <a href="https://twitter.com/kiru_io/"
                                                       class="text-blue-800 font-bold hover:text-blue-600 hover:underline">@kiru_io</a>
-                or simply drop me a mail: info at kiru.io.
+                or simply drop me a mail: info (at) kiru.io
             </p>
         </div>
     </div>
 </div>
 
+</div>
 
+<div class="kiru-container pt-5">
+    <h1 class=" font-bold text-kiru-main text-2xl">Recent <a href="/til/" class="hover:underline">TILs</a></h1>
+</div>
+
+<div class="mt-3 markdown-content text-lg">
+    
+    
+    <div class=" ">
+        
+            <div class="kiru-container py-4">
+                <div class="pb-0 font-medium pb-3">
+                    <div class="text-blue-700 font-bold">.bash_profile vs .bashrc</div>
+                    <div class="text-gray-500 text-sm">TIL 22.10.2018</div>
+                </div>
+                <div class="markdown">
+                    <p><p>Mac OS X does always runs .bash_prfile intead of .bashrc <sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>. Simple test:</p>
+
+<ul>
+<li><p>Added: &ldquo;echo &ldquo;.bash_profile&rdquo; to .bash_profile</p></li>
+
+<li><p>Added: &ldquo;echo &ldquo;.bashrc&rdquo; to .bashrc</p></li>
+</ul>
+
+<p>Starting iTerm gives the following output:</p>
+
+<pre><code>.bash_profile
+.bashrc
+</code></pre>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1"><a href="http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html">Bash profile</a>
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
+</p>
+                </div>
+            </div>
+        </div>
+        
+    
+        <div class="bg-blue-100">
+            
+            <div class="kiru-container py-4">
+                <div class="pb-0 font-medium pb-3">
+                    <div class="text-blue-700 font-bold">BASH Shortcuts I was not not aware of</div>
+                    <div class="text-gray-500 text-sm">TIL 30.03.2017</div>
+                </div>
+                <div class="markdown">
+                    <p><p>New Shortcuts:</p>
+
+<ul>
+<li><code>CTRL+A</code> Move cursor to start of the current line ( mnemnoic: <strong>A</strong>nfang)</li>
+<li><code>CTRL+K</code> Delete from cursor to end of line ( mnemnoic: reverse of <code>CTRL+U</code> )</li>
+<li><code>CTRL+Y</code> Apparently bash has a cut-register ( like vim ): paste from cut-register</li>
+</ul>
+
+<p>Bash <code>!</code> commands:</p>
+
+<p>After running the following command:</p>
+
+<pre><code>$ ls -lah data
+total 0
+drwxr-xr-x   4 kiru  staff   136B Mar 18 21:12 .
+drwxr-xr-x  43 kiru  staff   1.4K Jul 15 23:13 ..
+drwxr-xr-x  13 kiru  staff   442B May 27 16:10 archive
+drwxr-xr-x   2 kiru  staff    68B Mar 18 21:12 upload
+$
+$ !! # releat last command
+total 0
+drwxr-xr-x   4 kiru  staff   136B Mar 18 21:12 .
+drwxr-xr-x  43 kiru  staff   1.4K Jul 15 23:13 ..
+drwxr-xr-x  13 kiru  staff   442B May 27 16:10 archive
+drwxr-xr-x   2 kiru  staff    68B Mar 18 21:12 upload
+</code></pre>
+
+<p><code>!$</code> last word of previous command ( menmonic: $ in vi jumps to the end of line, so this will give me the &lsquo;end&rsquo; of command)</p>
+
+<pre><code>$ !$
+data
+-bash: data: command not found
+</code></pre>
+
+<p><code>!$:p</code> print last word of command:</p>
+
+<pre><code>$ !$:p
+data
+</code></pre>
+
+<p><code>!*</code> or <code>!*:p</code> second previous switch ( when is this useful?)</p>
+
+<pre><code>$ !*
+-lah data
+-bash: -lah: command not found
+</code></pre>
+</p>
+                </div>
+            </div>
+        </div>
+        
+    
+    <div class=" ">
+        
+            <div class="kiru-container py-4">
+                <div class="pb-0 font-medium pb-3">
+                    <div class="text-blue-700 font-bold">Is URI case sensitive?</div>
+                    <div class="text-gray-500 text-sm">TIL 29.03.2017</div>
+                </div>
+                <div class="markdown">
+                    <p><ul>
+<li>Depends on the web server</li>
+<li>IIS is not case sensitive</li>
+<li>Apache is case sensitive <sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></li>
+</ul>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1"><a href="https://stackoverflow.com/questions/15641694/are-uris-case-insensitive">Are URIs case-insensitive?</a>
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
+</p>
+                </div>
+            </div>
+        </div>
+        
     </div>
-</div></body>
+</div>
+<div class="pb-5"></div></body>
 </html>
