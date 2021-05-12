@@ -4,7 +4,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 
-<title>TIL 28.06.2020 - Kiru.io</title>
+<title>TIL 07.12.2019 - Kiru.io</title>
 
 
 <meta name="description" content=""/>
@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:creator" content="@kiru_io"/>
 
-<meta property="og:title" content="TIL 28.06.2020"/>
+<meta property="og:title" content="TIL 07.12.2019"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://30min.io/images/og-logo.png"/>
 <meta property="og:image" content="https://kiru.io/"/>
@@ -190,28 +190,27 @@
 <div class="mt-3 markdown-content text-lg">
     <div class="kiru-container">
         <div class="pb-0 font-medium pb-5">
-            <h1 class=" font-bold text-kiru-main text-2xl pb-1">Empty multiselect is not set</h1>
-            <div class="text-gray-500 text-sm">TIL 28.06.2020</div>
+            <h1 class=" font-bold text-kiru-main text-2xl pb-1">JavaScript Function string</h1>
+            <div class="text-gray-500 text-sm">TIL 07.12.2019</div>
         </div>
 
         <div class="markdown">
-            <p><p>Having the following input:</p>
+            <p><p>JavaScript functions have a <code>toString()</code> function which gives the source code a string.</p>
 
-<pre><code>&lt;label for=&quot;cars&quot;&gt;Make your choice:&lt;/label&gt;
-&lt;select name=&quot;choice&quot; id=&quot;choice&quot; multiple&gt;
-  &lt;option value=&quot;Yes&quot;&gt;Volvo&lt;/option&gt;
-  &lt;option value=&quot;No&quot;&gt;Saab&lt;/option&gt;
-  &lt;option value=&quot;Maybe&quot;&gt;Saab&lt;/option&gt;
-&lt;/select&gt;
+<pre><code class="language-javascript">let f = () =&gt; {
+    alert(&quot;kiru.io&quot;)
+}
+f.toString()
 </code></pre>
 
-<p>If nothing is selected, the name of the property is not sent to the server
-(e.g. if you expect the full set to be sent to the server)</p>
+<p>Will emit</p>
 
-<p>A hack to fix this is to add a hidden property with the same name.</p>
-
-<pre><code>&lt;input type=&quot;hidden&quot; name=&quot;myitems&quot; value=&quot;&quot; /&gt;
+<pre><code>&quot;() =&gt; {
+alert(\&quot;kiru.io\&quot;)
+}&quot;
 </code></pre>
+
+<p>Learned from this <a href="https://www.javascript.christmas/2019/7">resource</a>.</p>
 </p>
         </div>
     </div>
@@ -223,16 +222,8 @@
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2019-12-07-new-javascript-features/" class="hover:underline">
-                <span class="text-blue-700 font-bold">JavaScript Function string</span>
-            </a>
-        </div>
-    </div>
-    
-    <div class="kiru-container">
-        <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/" class="hover:underline">
-                <span class="text-blue-700 font-bold"></span>
+            <a href="https://kiru.io/til/2017-03-05-sms-length/" class="hover:underline">
+                <span class="text-blue-700 font-bold">What is the max length of an SMS?</span>
             </a>
         </div>
     </div>
@@ -241,6 +232,14 @@
         <div class="pb-0 font-medium">
             <a href="https://kiru.io/til/2017-03-14-du/" class="hover:underline">
                 <span class="text-blue-700 font-bold">What is the difference between `du` and `df` command?</span>
+            </a>
+        </div>
+    </div>
+    
+    <div class="kiru-container">
+        <div class="pb-0 font-medium">
+            <a href="https://kiru.io/til/2017-03-13-java-and-oracle/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Java Enum and extract in SQL</span>
             </a>
         </div>
     </div>

@@ -4,7 +4,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 
-<title>TIL 28.06.2020 - Kiru.io</title>
+<title>TIL 06.12.2019 - Kiru.io</title>
 
 
 <meta name="description" content=""/>
@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:creator" content="@kiru_io"/>
 
-<meta property="og:title" content="TIL 28.06.2020"/>
+<meta property="og:title" content="TIL 06.12.2019"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://30min.io/images/og-logo.png"/>
 <meta property="og:image" content="https://kiru.io/"/>
@@ -190,28 +190,40 @@
 <div class="mt-3 markdown-content text-lg">
     <div class="kiru-container">
         <div class="pb-0 font-medium pb-5">
-            <h1 class=" font-bold text-kiru-main text-2xl pb-1">Empty multiselect is not set</h1>
-            <div class="text-gray-500 text-sm">TIL 28.06.2020</div>
+            <h1 class=" font-bold text-kiru-main text-2xl pb-1">Java code comments</h1>
+            <div class="text-gray-500 text-sm">TIL 06.12.2019</div>
         </div>
 
         <div class="markdown">
-            <p><p>Having the following input:</p>
+            <p><p>Nea trick to hide code inside comments by closing enclosing code using unicode:</p>
 
-<pre><code>&lt;label for=&quot;cars&quot;&gt;Make your choice:&lt;/label&gt;
-&lt;select name=&quot;choice&quot; id=&quot;choice&quot; multiple&gt;
-  &lt;option value=&quot;Yes&quot;&gt;Volvo&lt;/option&gt;
-  &lt;option value=&quot;No&quot;&gt;Saab&lt;/option&gt;
-  &lt;option value=&quot;Maybe&quot;&gt;Saab&lt;/option&gt;
-&lt;/select&gt;
+<pre><code class="language-java">
+public class Dafuq {
+    /**
+     * This does not do what you think it does.
+     * &lt;p&gt;
+     * You think code is documentation? No! Documentation is code!
+      \u002a\u002f
+       static {
+           out.println(&quot;No&quot;);
+           exit(0);
+       }
+      \u002f\u002a
+     */
+    public static void main(String[] args) {
+        out.println(&quot;Yes&quot;);
+    }
+}
 </code></pre>
 
-<p>If nothing is selected, the name of the property is not sent to the server
-(e.g. if you expect the full set to be sent to the server)</p>
+<p>The above code prints &ldquo;NO&rdquo;, and taken from <a href="https://twitter.com/lukaseder/status/1202870006914191366">here</a>.</p>
 
-<p>A hack to fix this is to add a hidden property with the same name.</p>
+<p>The above does only work for child processes (stared by the same shell). The hack works for any processes:</p>
 
-<pre><code>&lt;input type=&quot;hidden&quot; name=&quot;myitems&quot; value=&quot;&quot; /&gt;
+<pre><code>$ tail --pid=$pid -f /dev/null
 </code></pre>
+
+<p>Learned from to <a href="https://unix.stackexchange.com/questions/427115/listen-for-exit-of-process-given-pid">StackOverflow answer</a>.</p>
 </p>
         </div>
     </div>
@@ -223,16 +235,16 @@
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2019-12-07-new-javascript-features/" class="hover:underline">
-                <span class="text-blue-700 font-bold">JavaScript Function string</span>
+            <a href="https://kiru.io/til/2017-03-29-uri/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Is URI case sensitive?</span>
             </a>
         </div>
     </div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/" class="hover:underline">
-                <span class="text-blue-700 font-bold"></span>
+            <a href="https://kiru.io/til/2019-12-04-pid/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Waiting for process</span>
             </a>
         </div>
     </div>

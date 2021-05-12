@@ -24,6 +24,39 @@ A hack to fix this is to add a hidden property with the same name.
     </item>
     
     <item>
+      <title>TIL 06.12.2019</title>
+      <link>https://kiru.io/til/2019-12-06-java-comment-code/</link>
+      <pubDate>Fri, 06 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kiru.io/til/2019-12-06-java-comment-code/</guid>
+      <description>Nea trick to hide code inside comments by closing enclosing code using unicode:
+public class Dafuq { /** * This does not do what you think it does. * &amp;lt;p&amp;gt; * You think code is documentation? No! Documentation is code! \u002a\u002f static { out.println(&amp;quot;No&amp;quot;); exit(0); } \u002f\u002a */ public static void main(String[] args) { out.println(&amp;quot;Yes&amp;quot;); } }  The above code prints &amp;ldquo;NO&amp;rdquo;, and taken from here.
+The above does only work for child processes (stared by the same shell).</description>
+    </item>
+    
+    <item>
+      <title>TIL 07.12.2019</title>
+      <link>https://kiru.io/til/2019-12-07-new-javascript-features/</link>
+      <pubDate>Thu, 05 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kiru.io/til/2019-12-07-new-javascript-features/</guid>
+      <description>JavaScript functions have a toString() function which gives the source code a string.
+let f = () =&amp;gt; { alert(&amp;quot;kiru.io&amp;quot;) } f.toString()  Will emit
+&amp;quot;() =&amp;gt; { alert(\&amp;quot;kiru.io\&amp;quot;) }&amp;quot;  Learned from this resource.</description>
+    </item>
+    
+    <item>
+      <title>TIL 04.12.2019</title>
+      <link>https://kiru.io/til/2019-12-04-pid/</link>
+      <pubDate>Wed, 04 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kiru.io/til/2019-12-04-pid/</guid>
+      <description>Until now, I did the following to wait for a process:
+$ wait $pid  The above does only work for child processes (stared by the same shell). The hack works for any processes:
+$ tail --pid=$pid -f /dev/null  Learned from to StackOverflow answer.</description>
+    </item>
+    
+    <item>
       <title>LauzHack 2019</title>
       <link>https://kiru.io/articles/lauzhack/</link>
       <pubDate>Wed, 27 Nov 2019 19:13:49 +0200</pubDate>

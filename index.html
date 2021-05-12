@@ -244,32 +244,39 @@
             
             <div class="kiru-container py-4">
                 <div class="pb-0 font-medium pb-3">
-                    <div class="text-blue-700 font-bold">Simulate network control</div>
-                    <div class="text-gray-500 text-sm">TIL 05.11.2019</div>
+                    <div class="text-blue-700 font-bold">Java code comments</div>
+                    <div class="text-gray-500 text-sm">TIL 06.12.2019</div>
                 </div>
                 <div class="markdown">
-                    <p><p>There is a <code>tc</code> command on Ubunut to manipulate traffic control settings, for example to introduce artificial packet
-dropping.</p>
+                    <p><p>Nea trick to hide code inside comments by closing enclosing code using unicode:</p>
 
-<p>Add a packet delay of 100ms ± 10ms with the current delay depending 25% on the last delay:</p>
+<pre><code class="language-java">
+public class Dafuq {
+    /**
+     * This does not do what you think it does.
+     * &lt;p&gt;
+     * You think code is documentation? No! Documentation is code!
+      \u002a\u002f
+       static {
+           out.println(&quot;No&quot;);
+           exit(0);
+       }
+      \u002f\u002a
+     */
+    public static void main(String[] args) {
+        out.println(&quot;Yes&quot;);
+    }
+}
+</code></pre>
 
-<blockquote>
-<p>tc qdisc change dev eth0 root netem delay 100ms 10ms 25%</p>
-</blockquote>
+<p>The above code prints &ldquo;NO&rdquo;, and taken from <a href="https://twitter.com/lukaseder/status/1202870006914191366">here</a>.</p>
 
-<p>You can even configure more convoluted settings:</p>
+<p>The above does only work for child processes (stared by the same shell). The hack works for any processes:</p>
 
-<blockquote>
-<p>sudo tc qdisc change dev lo root netem delay 50ms 200ms loss 10% 25% reorder 25% 50%</p>
-</blockquote>
+<pre><code>$ tail --pid=$pid -f /dev/null
+</code></pre>
 
-<ul>
-<li>Packet delay of 50ms ± 200msd</li>
-<li>Packet loss of 10% to 25%</li>
-<li>Reorder packages between 25%-50% of the time</li>
-</ul>
-
-<p>This <a href="https://wiki.linuxfoundation.org/networking/netem">page</a> gives more thorough examples.</p>
+<p>Learned from to <a href="https://unix.stackexchange.com/questions/427115/listen-for-exit-of-process-given-pid">StackOverflow answer</a>.</p>
 </p>
                 </div>
             </div>
@@ -280,34 +287,26 @@ dropping.</p>
         
             <div class="kiru-container py-4">
                 <div class="pb-0 font-medium pb-3">
-                    <div class="text-blue-700 font-bold">Execute python file on change fswatch</div>
-                    <div class="text-gray-500 text-sm">TIL 22.10.2019</div>
+                    <div class="text-blue-700 font-bold">JavaScript Function string</div>
+                    <div class="text-gray-500 text-sm">TIL 07.12.2019</div>
                 </div>
                 <div class="markdown">
-                    <p><p><code>fswatch</code> tracks file system events. Execute a command on file change
-(taken from <sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup> as reference to search in the future):</p>
+                    <p><p>JavaScript functions have a <code>toString()</code> function which gives the source code a string.</p>
 
-<pre><code>fswatch -0 file.py | xargs -0 -I {} command
+<pre><code class="language-javascript">let f = () =&gt; {
+    alert(&quot;kiru.io&quot;)
+}
+f.toString()
 </code></pre>
 
-<p>Explanation:</p>
+<p>Will emit</p>
 
-<ul>
-<li><p><code>-O</code> split record by <code>NUL</code> character</p></li>
+<pre><code>&quot;() =&gt; {
+alert(\&quot;kiru.io\&quot;)
+}&quot;
+</code></pre>
 
-<li><p><code>xargs -O</code> matches fswatch splitting</p></li>
-
-<li><p><code>-I</code> run given command on each file changes</p></li>
-</ul>
-<div class="footnotes">
-
-<hr />
-
-<ol>
-<li id="fn:1"><a href="https://github.com/emcrisostomo/fswatch/wiki/How-to-Use-fswatch">How to Use fswatch</a>
- <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
-</ol>
-</div>
+<p>Learned from this <a href="https://www.javascript.christmas/2019/7">resource</a>.</p>
 </p>
                 </div>
             </div>
