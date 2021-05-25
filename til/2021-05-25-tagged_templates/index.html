@@ -4,7 +4,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 
-<title>TIL 14.03.2017 - Kiru.io</title>
+<title>TIL 25.05.2021 - Kiru.io</title>
 
 
 <meta name="description" content=""/>
@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:creator" content="@kiru_io"/>
 
-<meta property="og:title" content="TIL 14.03.2017"/>
+<meta property="og:title" content="TIL 25.05.2021"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://30min.io/images/og-logo.png"/>
 <meta property="og:image" content="https://kiru.io/"/>
@@ -190,33 +190,33 @@
 <div class="mt-3 markdown-content text-lg">
     <div class="kiru-container">
         <div class="pb-0 font-medium pb-5">
-            <h1 class=" font-bold text-kiru-main text-2xl pb-1">What is the difference between `du` and `df` command?</h1>
-            <div class="text-gray-500 text-sm">TIL 14.03.2017</div>
+            <h1 class=" font-bold text-kiru-main text-2xl pb-1">Tagged Templates in JavaScript</h1>
+            <div class="text-gray-500 text-sm">TIL 25.05.2021</div>
         </div>
 
         <div class="markdown">
-            <p><p>df</p>
+            <p><p>JavaScript supports template strings since ES2015:</p>
 
-<ul>
-<li>stands for Disk Free</li>
-<li>calculates file size based on the file system meta information</li>
-<li>if block size is 8kb and file size is only 1kb then file size for <code>du</code> is 8kb</li>
-<li>is faster but not accurate</li>
-</ul>
+<pre><code class="language-javascript">const me = &quot;Kiru&quot;
+const missing  = 22/7 - Math.PI
+console.log(`Print var: ${me} and ${missing}`)
+console.log(`This also works: ${22/7} - ${Math.PI} = ${missing}`)
+</code></pre>
 
-<p></br></p>
+<p>You can pass the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#tagged_templates">tagged templates to functions</a>:</p>
 
-<p>du</p>
+<pre><code class="language-javascript">function printTemplates(strings, ...keys) {
+  console.log(&quot;Strings: &quot;, strings);
+  console.log(&quot;Keys&quot;, keys);
+}
+printTemplates`What is possible: ${me}`
+</code></pre>
 
-<ul>
-<li>Disk Usage</li>
-<li>counts size used on the file system per file recursively <a href="https://stackoverflow.com/a/30772630/8114958">(df and du giving different results)</a></li>
-<li>does not count open files</li>
-<li>does not rely on block size: 1kb file size with 8kb block size is still 1kb for <code>du</code></li>
-<li>is slow, but more reliable</li>
-</ul>
+<p>Will print:</p>
 
-<p>See this post from Mike Golvach for thorough explanation: <a href="http://linuxshellaccount.blogspot.ch/2008/12/why-du-and-df-display-different-values.html">Why DU And DF Display Different Values On Linux And Unix</a></p>
+<pre><code>Strings: [&quot;What is possible: &quot;, &quot;&quot;, raw: Array(2)]
+Keys [&quot;Kiru&quot;]
+</code></pre>
 </p>
         </div>
     </div>
@@ -228,24 +228,24 @@
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
+            <a href="https://kiru.io/til/2019-05-17-pipe-linux/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Shortcut for linux pipe</span>
+            </a>
+        </div>
+    </div>
+    
+    <div class="kiru-container">
+        <div class="pb-0 font-medium">
+            <a href="https://kiru.io/til/2021-05-25-tagged_templates/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Tagged Templates in JavaScript</span>
+            </a>
+        </div>
+    </div>
+    
+    <div class="kiru-container">
+        <div class="pb-0 font-medium">
             <a href="https://kiru.io/til/2017-03-07-binding/" class="hover:underline">
                 <span class="text-blue-700 font-bold">What is the difference between 127.0.0.1 and 0.0.0.0?</span>
-            </a>
-        </div>
-    </div>
-    
-    <div class="kiru-container">
-        <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/" class="hover:underline">
-                <span class="text-blue-700 font-bold"></span>
-            </a>
-        </div>
-    </div>
-    
-    <div class="kiru-container">
-        <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2019-12-06-java-comment-code/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Java code comments</span>
             </a>
         </div>
     </div>

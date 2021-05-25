@@ -213,6 +213,42 @@
         
             <div class="kiru-container py-4">
                 <div class="pb-0 font-medium pb-3">
+                    <div class="text-blue-700 font-bold">Tagged Templates in JavaScript</div>
+                    <div class="text-gray-500 text-sm">TIL 25.05.2021</div>
+                </div>
+                <div class="markdown">
+                    <p><p>JavaScript supports template strings since ES2015:</p>
+
+<pre><code class="language-javascript">const me = &quot;Kiru&quot;
+const missing  = 22/7 - Math.PI
+console.log(`Print var: ${me} and ${missing}`)
+console.log(`This also works: ${22/7} - ${Math.PI} = ${missing}`)
+</code></pre>
+
+<p>You can pass the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#tagged_templates">tagged templates to functions</a>:</p>
+
+<pre><code class="language-javascript">function printTemplates(strings, ...keys) {
+  console.log(&quot;Strings: &quot;, strings);
+  console.log(&quot;Keys&quot;, keys);
+}
+printTemplates`What is possible: ${me}`
+</code></pre>
+
+<p>Will print:</p>
+
+<pre><code>Strings: [&quot;What is possible: &quot;, &quot;&quot;, raw: Array(2)]
+Keys [&quot;Kiru&quot;]
+</code></pre>
+</p>
+                </div>
+            </div>
+        </div>
+        
+    
+        <div class="bg-blue-100">
+            
+            <div class="kiru-container py-4">
+                <div class="pb-0 font-medium pb-3">
                     <div class="text-blue-700 font-bold">Empty multiselect is not set</div>
                     <div class="text-gray-500 text-sm">TIL 28.06.2020</div>
                 </div>
@@ -240,8 +276,8 @@
         </div>
         
     
-        <div class="bg-blue-100">
-            
+    <div class=" ">
+        
             <div class="kiru-container py-4">
                 <div class="pb-0 font-medium pb-3">
                     <div class="text-blue-700 font-bold">Java code comments</div>
@@ -277,36 +313,6 @@ public class Dafuq {
 </code></pre>
 
 <p>Learned from to <a href="https://unix.stackexchange.com/questions/427115/listen-for-exit-of-process-given-pid">StackOverflow answer</a>.</p>
-</p>
-                </div>
-            </div>
-        </div>
-        
-    
-    <div class=" ">
-        
-            <div class="kiru-container py-4">
-                <div class="pb-0 font-medium pb-3">
-                    <div class="text-blue-700 font-bold">JavaScript Function string</div>
-                    <div class="text-gray-500 text-sm">TIL 07.12.2019</div>
-                </div>
-                <div class="markdown">
-                    <p><p>JavaScript functions have a <code>toString()</code> function which gives the source code a string.</p>
-
-<pre><code class="language-javascript">let f = () =&gt; {
-    alert(&quot;kiru.io&quot;)
-}
-f.toString()
-</code></pre>
-
-<p>Will emit</p>
-
-<pre><code>&quot;() =&gt; {
-alert(\&quot;kiru.io\&quot;)
-}&quot;
-</code></pre>
-
-<p>Learned from this <a href="https://www.javascript.christmas/2019/7">resource</a>.</p>
 </p>
                 </div>
             </div>
