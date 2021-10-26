@@ -222,10 +222,8 @@ select extract(year from created_timestamp), extract(month from created_timestam
       
       <guid>https://kiru.io/articles/coding-comments/</guid>
       <description>Random thoughts on programming
-I was recently reading Best Practices for writing code comments by Ellen Spertus. While there are some helpful tips, it misses the most important one for me:
-Add &amp;ldquo;why&amp;rdquo; comments when you write the code.
-Add all the other comments when you read the code.
- What is the main purpose of comments? They should help me understand the code easier. More than often, when I write the code, it is immediately clear what I was trying to solve.</description>
+I was recently reading Best Practices for writing code comments by Ellen Spertus. While there are some helpful tips, it misses the most important ones for me:
+ Add &amp;ldquo;why&amp;rdquo; comments when you write the code. Add all the other comments when you read the code.   What is the main purpose of comments? They should help me understand the code easier. More than often, when I write the code, it is immediately clear what I was trying to solve.</description>
     </item>
     
   </channel>
