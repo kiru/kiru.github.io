@@ -69,17 +69,6 @@ $ tail --pid=$pid -f /dev/null  Learned from to StackOverflow answer.</descripti
     </item>
     
     <item>
-      <title>LauzHack 2019</title>
-      <link>https://kiru.io/articles/lauzhack/</link>
-      <pubDate>Wed, 27 Nov 2019 19:13:49 +0200</pubDate>
-      
-      <guid>https://kiru.io/articles/lauzhack/</guid>
-      <description>We participated at the LauzHack 2019 hosted at EPFL from 16.11.2019 to 17.11.209. We had 24 hours time to implement an idea from scratch and pitch it to a jury. Our idea won the Logitec challenge and the Staff&amp;rsquo;s Selection price! Here is what we did and where we struggled.
-Idea The challeng posed by Logitec was to implement something to improve the live of broadcasters and streamers.
-Our idea was to use the microphone to track what the streamer is telling the audience, analyze the sentiment and use the Hue lights to show if the sentiment is negative or positive.</description>
-    </item>
-    
-    <item>
       <title>TIL 05.11.2019</title>
       <link>https://kiru.io/til/2019-11-05-simulate-network-control/</link>
       <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
@@ -113,30 +102,6 @@ fswatch -0 file.py | xargs -0 -I {} command  Explanation:
       
       <guid>https://kiru.io/projects/30min/</guid>
       <description> Objective </description>
-    </item>
-    
-    <item>
-      <title>Why I created 30min.io</title>
-      <link>https://kiru.io/articles/elixirnew/</link>
-      <pubDate>Tue, 11 Jun 2019 19:13:49 +0200</pubDate>
-      
-      <guid>https://kiru.io/articles/elixirnew/</guid>
-      <description>String concat with &amp;lt;&amp;gt;: &amp;ldquo;Kiru&amp;rdquo; &amp;lt;&amp;gt; &amp;ldquo;.io&amp;rdquo;
- concat list with ++: [1, 2] ++ [3, 4] results in [1, 2, 3, 4] hd [1, 2] == 1 tl [1, 2] == 2
-  {3, &amp;ldquo;ja&amp;rdquo;} is a tuple
-keyword lists, special list of two-element tuples [foo: &amp;ldquo;bar&amp;rdquo;, hello: &amp;ldquo;world&amp;rdquo;]
-maps: %{:foo =&amp;gt; &amp;ldquo;bar&amp;rdquo;, &amp;ldquo;hello&amp;rdquo; =&amp;gt; :world}
-maps-with-atom-keys: %{foo: &amp;ldquo;bar&amp;rdquo;, hello: &amp;ldquo;world&amp;rdquo;} == %{:foo =&amp;gt; &amp;ldquo;bar&amp;rdquo;, :hello =&amp;gt; &amp;ldquo;world&amp;rdquo;}</description>
-    </item>
-    
-    <item>
-      <title>Why I created 30min.io</title>
-      <link>https://kiru.io/articles/my-first-post/</link>
-      <pubDate>Tue, 11 Jun 2019 19:13:49 +0200</pubDate>
-      
-      <guid>https://kiru.io/articles/my-first-post/</guid>
-      <description>Few notes about this articles: - Why did I create it this project? - Discussion with a friend - 60days challenge, did we manage it? - mention bootstrapping 30min.io in 30min sessions, at least 30minutes.io - hourglass! =&amp;gt; I need a picture of that !!! - logo design &amp;hellip; how it started - how is it going till now
-- Do you think I should allow an option where I 0</description>
     </item>
     
     <item>
@@ -248,6 +213,19 @@ select extract(year from created_timestamp), extract(month from created_timestam
       
       <guid>https://kiru.io/til/2017-03-05-sms-length/</guid>
       <description> max SMS length is 1120 bit 7 bit per character used for the default alphabet, which means the maximum length is 160 characters ( 1120 / 7 ) 8 bit is used for data-messages ( e.g. images or sound messages ) 16 bit for the rest of the characters using Unicode encoding, meaning max 70 characters (Websms) Note: German Umlaut ( ö, ü, ä ) uses 16bit per characters Note: If one character needs to be encoded with 16bit then the whole message is encoded with 16bit  </description>
+    </item>
+    
+    <item>
+      <title>Unconventional Programming Tips: Comments</title>
+      <link>https://kiru.io/articles/coding-comments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kiru.io/articles/coding-comments/</guid>
+      <description>Random thoughts on programming
+I was recently reading Best Practices for writing code comments by Ellen Spertus. While there are some helpful tips, it misses the most important one for me:
+Add &amp;ldquo;why&amp;rdquo; comments when you write the code.
+Add all the other comments when you read the code.
+ What is the main purpose of comments? They should help me understand the code easier. More than often, when I write the code, it is immediately clear what I was trying to solve.</description>
     </item>
     
   </channel>

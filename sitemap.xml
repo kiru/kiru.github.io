@@ -70,17 +70,6 @@
   </url>
   
   <url>
-    <loc>https://kiru.io/articles/</loc>
-    <lastmod>2019-11-27T19:13:49+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kiru.io/articles/lauzhack/</loc>
-    <lastmod>2019-11-27T19:13:49+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://kiru.io/til/2019-11-05-simulate-network-control/</loc>
     <lastmod>2019-11-05T00:00:00+00:00</lastmod>
   </url>
@@ -111,16 +100,6 @@
     <loc>https://kiru.io/projects/</loc>
     <lastmod>2019-06-11T19:13:49+02:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kiru.io/articles/elixirnew/</loc>
-    <lastmod>2019-06-11T19:13:49+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kiru.io/articles/my-first-post/</loc>
-    <lastmod>2019-06-11T19:13:49+02:00</lastmod>
   </url>
   
   <url>
@@ -185,8 +164,17 @@
   </url>
   
   <url>
+    <loc>https://kiru.io/articles/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://kiru.io/categories/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kiru.io/articles/coding-comments/</loc>
   </url>
   
 </urlset>
