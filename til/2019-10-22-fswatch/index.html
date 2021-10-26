@@ -15,9 +15,15 @@
 <meta name="twitter:creator" content="@kiru_io"/>
 
 <meta property="og:title" content="TIL 22.10.2019"/>
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="https://30min.io/images/og-logo.png"/>
-<meta property="og:image" content="https://kiru.io/"/>
+<meta property="og:url" content="https://kiru.io/til/2019-10-22-fswatch/" />
+<meta property="og:image" content="https://kiru.io/images/kiru-image.jpg"/>
+<meta property="og:description" content="fswatch tracks file system events. Execute a command on file change (taken from 1 as reference to search in the future):
+fswatch -0 file.py | xargs -0 -I {} command  Explanation:
+ -O split record by NUL character
+ xargs -O matches fswatch splitting
+ -I run given command on each file changes
+   How to Use fswatch [return]   " />
+<meta property="og:type" content="article" />
 
 
 <link rel="stylesheet" href="/css/kiru.css">
@@ -234,24 +240,24 @@
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2019-12-04-pid/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Waiting for process</span>
+            <a href="https://kiru.io/til/2019-05-17-pipe-linux/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Shortcut for linux pipe</span>
             </a>
         </div>
     </div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2017-03-13-java-and-oracle/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Java Enum and extract in SQL</span>
+            <a href="https://kiru.io/til/2021-05-25-tagged_templates/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Tagged Templates in JavaScript</span>
             </a>
         </div>
     </div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2019-12-06-java-comment-code/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Java code comments</span>
+            <a href="https://kiru.io/til/2019-12-07-new-javascript-features/" class="hover:underline">
+                <span class="text-blue-700 font-bold">JavaScript Function string</span>
             </a>
         </div>
     </div>

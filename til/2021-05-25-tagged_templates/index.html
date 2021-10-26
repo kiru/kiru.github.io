@@ -15,9 +15,13 @@
 <meta name="twitter:creator" content="@kiru_io"/>
 
 <meta property="og:title" content="TIL 25.05.2021"/>
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="https://30min.io/images/og-logo.png"/>
-<meta property="og:image" content="https://kiru.io/"/>
+<meta property="og:url" content="https://kiru.io/til/2021-05-25-tagged_templates/" />
+<meta property="og:image" content="https://kiru.io/images/kiru-image.jpg"/>
+<meta property="og:description" content="JavaScript supports template strings since ES2015:
+const me = &quot;Kiru&quot; const missing = 22/7 - Math.PI console.log(`Print var: ${me} and ${missing}`) console.log(`This also works: ${22/7} - ${Math.PI} = ${missing}`)  You can pass the tagged templates to functions:
+function printTemplates(strings, ...keys) { console.log(&quot;Strings: &quot;, strings); console.log(&quot;Keys&quot;, keys); } printTemplates`What is possible: ${me}`  Will print:
+Strings: [&quot;What is possible: &quot;, &quot;&quot;, raw: Array(2)] Keys [&quot;Kiru&quot;]  " />
+<meta property="og:type" content="article" />
 
 
 <link rel="stylesheet" href="/css/kiru.css">
@@ -232,24 +236,24 @@ Keys [&quot;Kiru&quot;]
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
+            <a href="https://kiru.io/til/2019-12-06-java-comment-code/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Java code comments</span>
+            </a>
+        </div>
+    </div>
+    
+    <div class="kiru-container">
+        <div class="pb-0 font-medium">
+            <a href="https://kiru.io/til/2017-03-28-sqllite/" class="hover:underline">
+                <span class="text-blue-700 font-bold">SQLite Type Affinity</span>
+            </a>
+        </div>
+    </div>
+    
+    <div class="kiru-container">
+        <div class="pb-0 font-medium">
             <a href="https://kiru.io/til/2019-12-04-pid/" class="hover:underline">
                 <span class="text-blue-700 font-bold">Waiting for process</span>
-            </a>
-        </div>
-    </div>
-    
-    <div class="kiru-container">
-        <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2018-10-22-bash/" class="hover:underline">
-                <span class="text-blue-700 font-bold">.bash_profile vs .bashrc</span>
-            </a>
-        </div>
-    </div>
-    
-    <div class="kiru-container">
-        <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2017-03-29-uri/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Is URI case sensitive?</span>
             </a>
         </div>
     </div>

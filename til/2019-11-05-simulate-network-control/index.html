@@ -15,9 +15,14 @@
 <meta name="twitter:creator" content="@kiru_io"/>
 
 <meta property="og:title" content="TIL 05.11.2019"/>
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="https://30min.io/images/og-logo.png"/>
-<meta property="og:image" content="https://kiru.io/"/>
+<meta property="og:url" content="https://kiru.io/til/2019-11-05-simulate-network-control/" />
+<meta property="og:image" content="https://kiru.io/images/kiru-image.jpg"/>
+<meta property="og:description" content="There is a tc command on Ubunut to manipulate traffic control settings, for example to introduce artificial packet dropping.
+Add a packet delay of 100ms ± 10ms with the current delay depending 25% on the last delay:
+ tc qdisc change dev eth0 root netem delay 100ms 10ms 25%
+ You can even configure more convoluted settings:
+ sudo tc qdisc change dev lo root netem delay 50ms 200ms loss 10% 25% reorder 25% 50%" />
+<meta property="og:type" content="article" />
 
 
 <link rel="stylesheet" href="/css/kiru.css">
@@ -232,24 +237,24 @@ dropping.</p>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2019-12-04-pid/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Waiting for process</span>
+            <a href="https://kiru.io/til/2017-03-13-java-and-oracle/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Java Enum and extract in SQL</span>
             </a>
         </div>
     </div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2017-03-29-uri/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Is URI case sensitive?</span>
+            <a href="https://kiru.io/til/2017-03-28-sqllite/" class="hover:underline">
+                <span class="text-blue-700 font-bold">SQLite Type Affinity</span>
             </a>
         </div>
     </div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2019-10-22-fswatch/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Execute python file on change fswatch</span>
+            <a href="https://kiru.io/til/2019-12-07-new-javascript-features/" class="hover:underline">
+                <span class="text-blue-700 font-bold">JavaScript Function string</span>
             </a>
         </div>
     </div>

@@ -15,9 +15,12 @@
 <meta name="twitter:creator" content="@kiru_io"/>
 
 <meta property="og:title" content="TIL 04.12.2019"/>
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="https://30min.io/images/og-logo.png"/>
-<meta property="og:image" content="https://kiru.io/"/>
+<meta property="og:url" content="https://kiru.io/til/2019-12-04-pid/" />
+<meta property="og:image" content="https://kiru.io/images/kiru-image.jpg"/>
+<meta property="og:description" content="Until now, I did the following to wait for a process:
+$ wait $pid  The above does only work for child processes (stared by the same shell). The hack works for any processes:
+$ tail --pid=$pid -f /dev/null  Learned from to StackOverflow answer." />
+<meta property="og:type" content="article" />
 
 
 <link rel="stylesheet" href="/css/kiru.css">
@@ -221,8 +224,8 @@
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2017-03-27-case/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Various</span>
+            <a href="https://kiru.io/til/2019-12-04-pid/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Waiting for process</span>
             </a>
         </div>
     </div>
@@ -237,8 +240,8 @@
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2017-03-29-uri/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Is URI case sensitive?</span>
+            <a href="https://kiru.io/til/2019-10-22-fswatch/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Execute python file on change fswatch</span>
             </a>
         </div>
     </div>
