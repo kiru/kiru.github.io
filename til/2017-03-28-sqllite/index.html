@@ -17,7 +17,7 @@
 <meta property="og:title" content="TIL 28.03.2017"/>
 <meta property="og:url" content="https://kiru.io/til/2017-03-28-sqllite/" />
 <meta property="og:image" content="https://kiru.io/images/kiru-image.jpg"/>
-<meta property="og:description" content="SQLite has only four column types: INTEGER, REAL, TEXT, BLOB SQLite columns are dynamically typed Date and Time is stored either as TEXT (ISO8601 strings), REAL (number of days) or INTEGER (unix timestamp)1 Each column has a preferred type1 &gt; A column with NUMERIC affinity may contain values using all five storage classes. When text data is inserted into a NUMERIC column, &gt; the storage class of the text is converted to INTEGER or REAL (in order of preference) if such conversion is lossless and reversible." />
+<meta property="og:description" content="SQLite has only four column types: INTEGER, REAL, TEXT, BLOB SQLite columns are dynamically typed Date and Time is stored either as TEXT (ISO8601 strings), REAL (number of days) or INTEGER (unix timestamp)1 Each column has a preferred type1   A column with NUMERIC affinity may contain values using all five storage classes. When text data is inserted into a NUMERIC column, the storage class of the text is converted to INTEGER or REAL (in order of preference) if such conversion is lossless and reversible." />
 <meta property="og:type" content="article" />
 
 
@@ -76,7 +76,7 @@
 
     .markdown pre {
         background-color: rgba(178, 187, 193, 0.16);
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         line-height: 1.3;
 
         padding: 15px;
@@ -148,6 +148,7 @@
             <div class="mx-2 hover:underline"><a href="/til/">TIL</a></div>
            
            <div class="mx-2 hover:underline"><a href="/articles/">Articles</a></div>
+            <div class="mx-2 hover:underline text-orange-800 font-bold"><a href="/articles/adventofsaas2021/">AdventOfSaaS 2021</a></div>
             <div class="">
                 <a href="https://twitter.com/kiru_io/"
                    target="_blank"
@@ -192,7 +193,7 @@
 
 </div>
 
-<div class="mt-5 markdown-content text-lg">
+<div class="mt-5 markdown-content text-xl">
     <div class="kiru-container">
         <div class="pb-0 font-medium pb-5">
             <h1 class=" font-bold text-kiru-main text-2xl pb-1">SQLite Type Affinity</h1>
@@ -203,31 +204,31 @@
             <p><ul>
 <li>SQLite has only four column types: <code>INTEGER</code>, <code>REAL</code>, <code>TEXT</code>, <code>BLOB</code></li>
 <li>SQLite columns are dynamically typed</li>
-<li>Date and Time is stored either as TEXT (ISO8601 strings), REAL (number of days) or INTEGER (unix timestamp)<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></li>
-
-<li><p>Each column has a preferred type<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>
-&gt; A column with NUMERIC affinity may contain values using all five storage classes. When text data is inserted into a NUMERIC column,
-&gt; the storage class of the text is converted to INTEGER or REAL (in order of preference) if such conversion is lossless and reversible.</p></li>
-
-<li><p>This is a valid SQL in SQLite <sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup>:</p>
-
-<pre><code class="language-sql">CREATE TABLE foo (a smallint);
-INSERT INTO foo (a) VALUES (3);
-INSERT INTO foo (a) VALUES (3.14);
-INSERT INTO foo (a) VALUES ('pi');
-</code></pre></li>
+<li>Date and Time is stored either as TEXT (ISO8601 strings), REAL (number of days) or INTEGER (unix timestamp)<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></li>
+<li>Each column has a preferred type<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></li>
 </ul>
-<div class="footnotes">
-
-<hr />
-
+<blockquote>
+<p>A column with NUMERIC affinity may contain values using all five storage classes. When text data is inserted into a NUMERIC column,
+the storage class of the text is converted to INTEGER or REAL (in order of preference) if such conversion is lossless and reversible.</p>
+</blockquote>
+<ul>
+<li>This is a valid SQL in SQLite <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> foo (a smallint);
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> foo (a) <span style="color:#66d9ef">VALUES</span> (<span style="color:#ae81ff">3</span>);
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> foo (a) <span style="color:#66d9ef">VALUES</span> (<span style="color:#ae81ff">3</span>.<span style="color:#ae81ff">14</span>);
+<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> foo (a) <span style="color:#66d9ef">VALUES</span> (<span style="color:#e6db74">&#39;pi&#39;</span>);
+</code></pre></div><section class="footnotes" role="doc-endnotes">
+<hr>
 <ol>
-<li id="fn:1"><a href="http://www.sqlite.org/datatype3.html">SQLite Documentation</a>
- <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
-<li id="fn:2"><a href="http://ericsink.com/mssql_mobile/data_types.html">Data Types</a>
- <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
+<li id="fn:1" role="doc-endnote">
+<p><a href="http://www.sqlite.org/datatype3.html">SQLite Documentation</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p><a href="http://ericsink.com/mssql_mobile/data_types.html">Data Types</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
 </ol>
-</div>
+</section>
 </p>
         </div>
     </div>
@@ -239,24 +240,24 @@ INSERT INTO foo (a) VALUES ('pi');
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2018-10-22-bash/" class="hover:underline">
-                <span class="text-blue-700 font-bold">.bash_profile vs .bashrc</span>
+            <a href="https://kiru.io/til/2020-06-28-multiselect/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Empty multiselect is not set</span>
             </a>
         </div>
     </div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/" class="hover:underline">
-                <span class="text-blue-700 font-bold"></span>
+            <a href="https://kiru.io/til/2019-12-06-java-comment-code/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Java code comments</span>
             </a>
         </div>
     </div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2017-03-13-java-and-oracle/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Java Enum and extract in SQL</span>
+            <a href="https://kiru.io/til/2019-12-04-pid/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Waiting for process</span>
             </a>
         </div>
     </div>

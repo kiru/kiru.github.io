@@ -1,180 +1,103 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://kiru.io/</loc>
-    <lastmod>2021-05-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kiru.io/til/2021-05-25-tagged_templates/</loc>
-    <lastmod>2021-05-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kiru.io/tags/</loc>
-    <lastmod>2021-05-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kiru.io/til/</loc>
-    <lastmod>2021-05-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
   <url>
     <loc>https://kiru.io/tags/javascript/</loc>
     <lastmod>2021-05-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kiru.io/til/2020-06-28-multiselect/</loc>
-    <lastmod>2020-06-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://kiru.io/</loc>
+    <lastmod>2021-05-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kiru.io/tags/</loc>
+    <lastmod>2021-05-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kiru.io/til/2021-05-25-tagged_templates/</loc>
+    <lastmod>2021-05-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kiru.io/til/</loc>
+    <lastmod>2021-05-25T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://kiru.io/tags/html/</loc>
     <lastmod>2020-06-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kiru.io/til/2019-12-06-java-comment-code/</loc>
-    <lastmod>2019-12-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://kiru.io/til/2020-06-28-multiselect/</loc>
+    <lastmod>2020-06-28T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://kiru.io/tags/java/</loc>
     <lastmod>2019-12-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://kiru.io/til/2019-12-06-java-comment-code/</loc>
+    <lastmod>2019-12-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://kiru.io/til/2019-12-07-new-javascript-features/</loc>
     <lastmod>2019-12-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kiru.io/til/2019-12-04-pid/</loc>
-    <lastmod>2019-12-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kiru.io/tags/shell/</loc>
     <lastmod>2019-12-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kiru.io/til/2019-11-05-simulate-network-control/</loc>
-    <lastmod>2019-11-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://kiru.io/til/2019-12-04-pid/</loc>
+    <lastmod>2019-12-04T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://kiru.io/tags/networkinglinuxcommand/</loc>
     <lastmod>2019-11-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kiru.io/til/2019-10-22-fswatch/</loc>
-    <lastmod>2019-10-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://kiru.io/til/2019-11-05-simulate-network-control/</loc>
+    <lastmod>2019-11-05T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://kiru.io/tags/linuxbash/</loc>
     <lastmod>2019-10-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://kiru.io/til/2019-10-22-fswatch/</loc>
+    <lastmod>2019-10-22T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://kiru.io/projects/30min/</loc>
     <lastmod>2019-06-11T19:13:49+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kiru.io/projects/</loc>
     <lastmod>2019-06-11T19:13:49+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kiru.io/til/2019-05-17-pipe-linux/</loc>
-    <lastmod>2019-05-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kiru.io/tags/linux/</loc>
     <lastmod>2019-05-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://kiru.io/til/2019-05-17-pipe-linux/</loc>
+    <lastmod>2019-05-17T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://kiru.io/til/2018-10-22-bash/</loc>
     <lastmod>2018-10-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kiru.io/til/2017-03-30-bash-shortcuts/</loc>
     <lastmod>2017-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kiru.io/til/2017-03-29-uri/</loc>
     <lastmod>2017-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kiru.io/til/2017-03-28-sqllite/</loc>
     <lastmod>2017-03-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kiru.io/til/2017-03-27-case/</loc>
     <lastmod>2017-03-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kiru.io/til/2017-03-14-du/</loc>
     <lastmod>2017-03-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kiru.io/til/2017-03-13-java-and-oracle/</loc>
     <lastmod>2017-03-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kiru.io/til/2017-03-07-binding/</loc>
     <lastmod>2017-03-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kiru.io/til/2017-03-05-sms-length/</loc>
     <lastmod>2017-03-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kiru.io/about/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://kiru.io/articles/adventofsaas2021/</loc>
+  </url><url>
     <loc>https://kiru.io/articles/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kiru.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kiru.io/articles/coding-comments/</loc>
   </url>
-  
 </urlset>

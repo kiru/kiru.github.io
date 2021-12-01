@@ -79,7 +79,7 @@ $ ls -lah data total 0 drwxr-xr-x 4 kiru staff 136B Mar 18 21:12 . drwxr-xr-x 43
 
     .markdown pre {
         background-color: rgba(178, 187, 193, 0.16);
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         line-height: 1.3;
 
         padding: 15px;
@@ -151,6 +151,7 @@ $ ls -lah data total 0 drwxr-xr-x 4 kiru staff 136B Mar 18 21:12 . drwxr-xr-x 43
             <div class="mx-2 hover:underline"><a href="/til/">TIL</a></div>
            
            <div class="mx-2 hover:underline"><a href="/articles/">Articles</a></div>
+            <div class="mx-2 hover:underline text-orange-800 font-bold"><a href="/articles/adventofsaas2021/">AdventOfSaaS 2021</a></div>
             <div class="">
                 <a href="https://twitter.com/kiru_io/"
                    target="_blank"
@@ -195,7 +196,7 @@ $ ls -lah data total 0 drwxr-xr-x 4 kiru staff 136B Mar 18 21:12 . drwxr-xr-x 43
 
 </div>
 
-<div class="mt-5 markdown-content text-lg">
+<div class="mt-5 markdown-content text-xl">
     <div class="kiru-container">
         <div class="pb-0 font-medium pb-5">
             <h1 class=" font-bold text-kiru-main text-2xl pb-1">BASH Shortcuts I was not not aware of</h1>
@@ -204,18 +205,14 @@ $ ls -lah data total 0 drwxr-xr-x 4 kiru staff 136B Mar 18 21:12 . drwxr-xr-x 43
 
         <div class="markdown">
             <p><p>New Shortcuts:</p>
-
 <ul>
 <li><code>CTRL+A</code> Move cursor to start of the current line ( mnemnoic: <strong>A</strong>nfang)</li>
 <li><code>CTRL+K</code> Delete from cursor to end of line ( mnemnoic: reverse of <code>CTRL+U</code> )</li>
 <li><code>CTRL+Y</code> Apparently bash has a cut-register ( like vim ): paste from cut-register</li>
 </ul>
-
 <p>Bash <code>!</code> commands:</p>
-
 <p>After running the following command:</p>
-
-<pre><code>$ ls -lah data
+<pre tabindex="0"><code>$ ls -lah data
 total 0
 drwxr-xr-x   4 kiru  staff   136B Mar 18 21:12 .
 drwxr-xr-x  43 kiru  staff   1.4K Jul 15 23:13 ..
@@ -228,28 +225,18 @@ drwxr-xr-x   4 kiru  staff   136B Mar 18 21:12 .
 drwxr-xr-x  43 kiru  staff   1.4K Jul 15 23:13 ..
 drwxr-xr-x  13 kiru  staff   442B May 27 16:10 archive
 drwxr-xr-x   2 kiru  staff    68B Mar 18 21:12 upload
-</code></pre>
-
-<p><code>!$</code> last word of previous command ( menmonic: $ in vi jumps to the end of line, so this will give me the &lsquo;end&rsquo; of command)</p>
-
-<pre><code>$ !$
+</code></pre><p><code>!$</code> last word of previous command ( menmonic: $ in vi jumps to the end of line, so this will give me the &lsquo;end&rsquo; of command)</p>
+<pre tabindex="0"><code>$ !$
 data
 -bash: data: command not found
-</code></pre>
-
-<p><code>!$:p</code> print last word of command:</p>
-
-<pre><code>$ !$:p
+</code></pre><p><code>!$:p</code> print last word of command:</p>
+<pre tabindex="0"><code>$ !$:p
 data
-</code></pre>
-
-<p><code>!*</code> or <code>!*:p</code> second previous switch ( when is this useful?)</p>
-
-<pre><code>$ !*
+</code></pre><p><code>!*</code> or <code>!*:p</code> second previous switch ( when is this useful?)</p>
+<pre tabindex="0"><code>$ !*
 -lah data
 -bash: -lah: command not found
-</code></pre>
-</p>
+</code></pre></p>
         </div>
     </div>
 </div>
@@ -260,24 +247,24 @@ data
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
+            <a href="https://kiru.io/til/2017-03-30-bash-shortcuts/" class="hover:underline">
+                <span class="text-blue-700 font-bold">BASH Shortcuts I was not not aware of</span>
+            </a>
+        </div>
+    </div>
+    
+    <div class="kiru-container">
+        <div class="pb-0 font-medium">
+            <a href="https://kiru.io/til/2017-03-14-du/" class="hover:underline">
+                <span class="text-blue-700 font-bold">What is the difference between `du` and `df` command?</span>
+            </a>
+        </div>
+    </div>
+    
+    <div class="kiru-container">
+        <div class="pb-0 font-medium">
             <a href="https://kiru.io/til/2017-03-29-uri/" class="hover:underline">
                 <span class="text-blue-700 font-bold">Is URI case sensitive?</span>
-            </a>
-        </div>
-    </div>
-    
-    <div class="kiru-container">
-        <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2019-05-17-pipe-linux/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Shortcut for linux pipe</span>
-            </a>
-        </div>
-    </div>
-    
-    <div class="kiru-container">
-        <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2017-03-05-sms-length/" class="hover:underline">
-                <span class="text-blue-700 font-bold">What is the max length of an SMS?</span>
             </a>
         </div>
     </div>

@@ -17,11 +17,12 @@
 <meta property="og:title" content="TIL 07.03.2017"/>
 <meta property="og:url" content="https://kiru.io/til/2017-03-07-binding/" />
 <meta property="og:image" content="https://kiru.io/images/kiru-image.jpg"/>
-<meta property="og:description" content="binding 127.0.0.1 means listen to loopback interface Process bound to 127.0.0.1 can only be accessed by other programs from the same machine
- binding to 0.0.0.0 means listen to all interfaces ( e.g. all network interfaces connected to the machine )
- on Mac 27.0.0.1 /32 is bound to loopback
- on Windows 127.0.0.0 /8 is bound to loopback
-  Source: 0.0.0.0 vs 127.0.0.1" />
+<meta property="og:description" content="binding 127.0.0.1 means listen to loopback interface
+  Process bound to 127.0.0.1 can only be accessed by other programs from the same machine
+  binding to 0.0.0.0 means listen to all interfaces ( e.g. all network interfaces connected to the machine )
+  on Mac 27.0.0.1 /32 is bound to loopback
+  on Windows 127.0.0.0 /8 is bound to loopback
+  Source: [0.0.0.0 vs 127." />
 <meta property="og:type" content="article" />
 
 
@@ -80,7 +81,7 @@
 
     .markdown pre {
         background-color: rgba(178, 187, 193, 0.16);
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         line-height: 1.3;
 
         padding: 15px;
@@ -152,6 +153,7 @@
             <div class="mx-2 hover:underline"><a href="/til/">TIL</a></div>
            
            <div class="mx-2 hover:underline"><a href="/articles/">Articles</a></div>
+            <div class="mx-2 hover:underline text-orange-800 font-bold"><a href="/articles/adventofsaas2021/">AdventOfSaaS 2021</a></div>
             <div class="">
                 <a href="https://twitter.com/kiru_io/"
                    target="_blank"
@@ -196,7 +198,7 @@
 
 </div>
 
-<div class="mt-5 markdown-content text-lg">
+<div class="mt-5 markdown-content text-xl">
     <div class="kiru-container">
         <div class="pb-0 font-medium pb-5">
             <h1 class=" font-bold text-kiru-main text-2xl pb-1">What is the difference between 127.0.0.1 and 0.0.0.0?</h1>
@@ -205,20 +207,25 @@
 
         <div class="markdown">
             <p><ul>
-<li>binding 127.0.0.1 means listen to loopback interface</li>
-
-<li><p>Process bound to 127.0.0.1 can only be accessed by other programs from the same machine</p></li>
-
-<li><p>binding to 0.0.0.0 means listen to all interfaces ( e.g. all network interfaces connected to the machine )</p></li>
-
-<li><p>on Mac 27.0.0.1 /32 is bound to loopback</p></li>
-
-<li><p>on Windows 127.0.0.0 /8 is bound to loopback</p></li>
+<li>
+<p>binding 127.0.0.1 means listen to loopback interface</p>
+</li>
+<li>
+<p>Process bound to 127.0.0.1 can only be accessed by other programs from the same machine</p>
+</li>
+<li>
+<p>binding to 0.0.0.0 means listen to all interfaces ( e.g. all network interfaces connected to the machine )</p>
+</li>
+<li>
+<p>on Mac 27.0.0.1 /32 is bound to loopback</p>
+</li>
+<li>
+<p>on Windows 127.0.0.0 /8 is bound to loopback</p>
+</li>
 </ul>
-
-<p><span class="text-sm">
-Source: <a href="http://blog.lauramamina.com/article?title=0.0.0.0%20vs%20127.0.0.1">0.0.0.0 vs 127.0.0.1</a>
-</span></p>
+<span class="text-sm"> 
+Source: [0.0.0.0 vs 127.0.0.1](http://blog.lauramamina.com/article?title=0.0.0.0%20vs%20127.0.0.1)
+</span>
 </p>
         </div>
     </div>
@@ -230,16 +237,16 @@ Source: <a href="http://blog.lauramamina.com/article?title=0.0.0.0%20vs%20127.0.
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/" class="hover:underline">
-                <span class="text-blue-700 font-bold"></span>
+            <a href="https://kiru.io/til/2017-03-13-java-and-oracle/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Java Enum and extract in SQL</span>
             </a>
         </div>
     </div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2017-03-14-du/" class="hover:underline">
-                <span class="text-blue-700 font-bold">What is the difference between `du` and `df` command?</span>
+            <a href="https://kiru.io/til/2019-12-04-pid/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Waiting for process</span>
             </a>
         </div>
     </div>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>javascript on Kiru.io</title>
@@ -6,11 +6,7 @@
     <description>Recent content in javascript on Kiru.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 May 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://kiru.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 25 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kiru.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TIL 25.05.2021</title>
       <link>https://kiru.io/til/2021-05-25-tagged_templates/</link>
@@ -18,9 +14,9 @@
       
       <guid>https://kiru.io/til/2021-05-25-tagged_templates/</guid>
       <description>JavaScript supports template strings since ES2015:
-const me = &amp;quot;Kiru&amp;quot; const missing = 22/7 - Math.PI console.log(`Print var: ${me} and ${missing}`) console.log(`This also works: ${22/7} - ${Math.PI} = ${missing}`)  You can pass the tagged templates to functions:
-function printTemplates(strings, ...keys) { console.log(&amp;quot;Strings: &amp;quot;, strings); console.log(&amp;quot;Keys&amp;quot;, keys); } printTemplates`What is possible: ${me}`  Will print:
-Strings: [&amp;quot;What is possible: &amp;quot;, &amp;quot;&amp;quot;, raw: Array(2)] Keys [&amp;quot;Kiru&amp;quot;]  </description>
+const me = &amp;#34;Kiru&amp;#34; const missing = 22/7 - Math.PI console.log(`Print var: ${me}and ${missing}`) console.log(`This also works: ${22/7}- ${Math.PI}= ${missing}`) You can pass the tagged templates to functions:
+function printTemplates(strings, ...keys) { console.log(&amp;#34;Strings: &amp;#34;, strings); console.log(&amp;#34;Keys&amp;#34;, keys); } printTemplates`What is possible: ${me}` Will print:
+Strings: [&amp;quot;What is possible: &amp;quot;, &amp;quot;&amp;quot;, raw: Array(2)] Keys [&amp;quot;Kiru&amp;quot;] </description>
     </item>
     
   </channel>

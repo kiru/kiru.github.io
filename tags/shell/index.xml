@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>shell on Kiru.io</title>
@@ -6,11 +6,7 @@
     <description>Recent content in shell on Kiru.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Dec 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://kiru.io/tags/shell/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 04 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://kiru.io/tags/shell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TIL 04.12.2019</title>
       <link>https://kiru.io/til/2019-12-04-pid/</link>
@@ -18,8 +14,8 @@
       
       <guid>https://kiru.io/til/2019-12-04-pid/</guid>
       <description>Until now, I did the following to wait for a process:
-$ wait $pid  The above does only work for child processes (stared by the same shell). The hack works for any processes:
-$ tail --pid=$pid -f /dev/null  Learned from to StackOverflow answer.</description>
+$ wait $pid The above does only work for child processes (stared by the same shell). The hack works for any processes:
+$ tail --pid=$pid -f /dev/null Learned from to StackOverflow answer.</description>
     </item>
     
   </channel>

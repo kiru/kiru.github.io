@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tils on Kiru.io</title>
@@ -6,11 +6,7 @@
     <description>Recent content in Tils on Kiru.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 May 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://kiru.io/til/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 25 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kiru.io/til/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TIL 25.05.2021</title>
       <link>https://kiru.io/til/2021-05-25-tagged_templates/</link>
@@ -18,9 +14,9 @@
       
       <guid>https://kiru.io/til/2021-05-25-tagged_templates/</guid>
       <description>JavaScript supports template strings since ES2015:
-const me = &amp;quot;Kiru&amp;quot; const missing = 22/7 - Math.PI console.log(`Print var: ${me} and ${missing}`) console.log(`This also works: ${22/7} - ${Math.PI} = ${missing}`)  You can pass the tagged templates to functions:
-function printTemplates(strings, ...keys) { console.log(&amp;quot;Strings: &amp;quot;, strings); console.log(&amp;quot;Keys&amp;quot;, keys); } printTemplates`What is possible: ${me}`  Will print:
-Strings: [&amp;quot;What is possible: &amp;quot;, &amp;quot;&amp;quot;, raw: Array(2)] Keys [&amp;quot;Kiru&amp;quot;]  </description>
+const me = &amp;#34;Kiru&amp;#34; const missing = 22/7 - Math.PI console.log(`Print var: ${me}and ${missing}`) console.log(`This also works: ${22/7}- ${Math.PI}= ${missing}`) You can pass the tagged templates to functions:
+function printTemplates(strings, ...keys) { console.log(&amp;#34;Strings: &amp;#34;, strings); console.log(&amp;#34;Keys&amp;#34;, keys); } printTemplates`What is possible: ${me}` Will print:
+Strings: [&amp;quot;What is possible: &amp;quot;, &amp;quot;&amp;quot;, raw: Array(2)] Keys [&amp;quot;Kiru&amp;quot;] </description>
     </item>
     
     <item>
@@ -30,9 +26,9 @@ Strings: [&amp;quot;What is possible: &amp;quot;, &amp;quot;&amp;quot;, raw: Arr
       
       <guid>https://kiru.io/til/2020-06-28-multiselect/</guid>
       <description>Having the following input:
-&amp;lt;label for=&amp;quot;cars&amp;quot;&amp;gt;Make your choice:&amp;lt;/label&amp;gt; &amp;lt;select name=&amp;quot;choice&amp;quot; id=&amp;quot;choice&amp;quot; multiple&amp;gt; &amp;lt;option value=&amp;quot;Yes&amp;quot;&amp;gt;Volvo&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;quot;No&amp;quot;&amp;gt;Saab&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;quot;Maybe&amp;quot;&amp;gt;Saab&amp;lt;/option&amp;gt; &amp;lt;/select&amp;gt;  If nothing is selected, the name of the property is not sent to the server (e.g. if you expect the full set to be sent to the server)
+&amp;lt;label for=&amp;quot;cars&amp;quot;&amp;gt;Make your choice:&amp;lt;/label&amp;gt; &amp;lt;select name=&amp;quot;choice&amp;quot; id=&amp;quot;choice&amp;quot; multiple&amp;gt; &amp;lt;option value=&amp;quot;Yes&amp;quot;&amp;gt;Volvo&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;quot;No&amp;quot;&amp;gt;Saab&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;quot;Maybe&amp;quot;&amp;gt;Saab&amp;lt;/option&amp;gt; &amp;lt;/select&amp;gt; If nothing is selected, the name of the property is not sent to the server (e.g. if you expect the full set to be sent to the server)
 A hack to fix this is to add a hidden property with the same name.
-&amp;lt;input type=&amp;quot;hidden&amp;quot; name=&amp;quot;myitems&amp;quot; value=&amp;quot;&amp;quot; /&amp;gt;  </description>
+&amp;lt;input type=&amp;quot;hidden&amp;quot; name=&amp;quot;myitems&amp;quot; value=&amp;quot;&amp;quot; /&amp;gt; </description>
     </item>
     
     <item>
@@ -42,7 +38,7 @@ A hack to fix this is to add a hidden property with the same name.
       
       <guid>https://kiru.io/til/2019-12-06-java-comment-code/</guid>
       <description>Nea trick to hide code inside comments by closing enclosing code using unicode:
-public class Dafuq { /** * This does not do what you think it does. * &amp;lt;p&amp;gt; * You think code is documentation? No! Documentation is code! \u002a\u002f static { out.println(&amp;quot;No&amp;quot;); exit(0); } \u002f\u002a */ public static void main(String[] args) { out.println(&amp;quot;Yes&amp;quot;); } }  The above code prints &amp;ldquo;NO&amp;rdquo;, and taken from here.
+public class Dafuq { /** * This does not do what you think it does. * &amp;lt;p&amp;gt; * You think code is documentation? No! Documentation is code! \u002a\u002f static { out.println(&amp;#34;No&amp;#34;); exit(0); } \u002f\u002a */ public static void main(String[] args) { out.println(&amp;#34;Yes&amp;#34;); } } The above code prints &amp;ldquo;NO&amp;rdquo;, and taken from here.
 The above does only work for child processes (stared by the same shell).</description>
     </item>
     
@@ -53,8 +49,8 @@ The above does only work for child processes (stared by the same shell).</descri
       
       <guid>https://kiru.io/til/2019-12-07-new-javascript-features/</guid>
       <description>JavaScript functions have a toString() function which gives the source code a string.
-let f = () =&amp;gt; { alert(&amp;quot;kiru.io&amp;quot;) } f.toString()  Will emit
-&amp;quot;() =&amp;gt; { alert(\&amp;quot;kiru.io\&amp;quot;) }&amp;quot;  Learned from this resource.</description>
+let f = () =&amp;gt; { alert(&amp;#34;kiru.io&amp;#34;) } f.toString() Will emit
+&amp;quot;() =&amp;gt; { alert(\&amp;quot;kiru.io\&amp;quot;) }&amp;quot; Learned from this resource.</description>
     </item>
     
     <item>
@@ -64,8 +60,8 @@ let f = () =&amp;gt; { alert(&amp;quot;kiru.io&amp;quot;) } f.toString()  Will e
       
       <guid>https://kiru.io/til/2019-12-04-pid/</guid>
       <description>Until now, I did the following to wait for a process:
-$ wait $pid  The above does only work for child processes (stared by the same shell). The hack works for any processes:
-$ tail --pid=$pid -f /dev/null  Learned from to StackOverflow answer.</description>
+$ wait $pid The above does only work for child processes (stared by the same shell). The hack works for any processes:
+$ tail --pid=$pid -f /dev/null Learned from to StackOverflow answer.</description>
     </item>
     
     <item>
@@ -88,11 +84,12 @@ Add a packet delay of 100ms ± 10ms with the current delay depending 25% on the 
       
       <guid>https://kiru.io/til/2019-10-22-fswatch/</guid>
       <description>fswatch tracks file system events. Execute a command on file change (taken from 1 as reference to search in the future):
-fswatch -0 file.py | xargs -0 -I {} command  Explanation:
- -O split record by NUL character
- xargs -O matches fswatch splitting
- -I run given command on each file changes
-   How to Use fswatch [return]   </description>
+fswatch -0 file.py | xargs -0 -I {} command Explanation:
+  -O split record by NUL character
+  xargs -O matches fswatch splitting
+  -I run given command on each file changes
+    How to Use fswatch&amp;#160;&amp;#x21a9;&amp;#xfe0e;
+   </description>
     </item>
     
     <item>
@@ -116,10 +113,11 @@ This :
       
       <guid>https://kiru.io/til/2018-10-22-bash/</guid>
       <description>Mac OS X does always runs .bash_prfile intead of .bashrc 1. Simple test:
- Added: &amp;ldquo;echo &amp;ldquo;.bash_profile&amp;rdquo; to .bash_profile
- Added: &amp;ldquo;echo &amp;ldquo;.bashrc&amp;rdquo; to .bashrc
+  Added: &amp;ldquo;echo &amp;ldquo;.bash_profile&amp;rdquo; to .bash_profile
+  Added: &amp;ldquo;echo &amp;ldquo;.bashrc&amp;rdquo; to .bashrc
   Starting iTerm gives the following output:
-.bash_profile .bashrc   Bash profile [return]   </description>
+.bash_profile .bashrc   Bash profile&amp;#160;&amp;#x21a9;&amp;#xfe0e;
+   </description>
     </item>
     
     <item>
@@ -140,7 +138,8 @@ $ ls -lah data total 0 drwxr-xr-x 4 kiru staff 136B Mar 18 21:12 . drwxr-xr-x 43
       <pubDate>Wed, 29 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://kiru.io/til/2017-03-29-uri/</guid>
-      <description> Depends on the web server IIS is not case sensitive Apache is case sensitive 1   Are URIs case-insensitive? [return]   </description>
+      <description> Depends on the web server IIS is not case sensitive Apache is case sensitive 1    Are URIs case-insensitive?&amp;#160;&amp;#x21a9;&amp;#xfe0e;
+   </description>
     </item>
     
     <item>
@@ -149,7 +148,7 @@ $ ls -lah data total 0 drwxr-xr-x 4 kiru staff 136B Mar 18 21:12 . drwxr-xr-x 43
       <pubDate>Tue, 28 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://kiru.io/til/2017-03-28-sqllite/</guid>
-      <description>SQLite has only four column types: INTEGER, REAL, TEXT, BLOB SQLite columns are dynamically typed Date and Time is stored either as TEXT (ISO8601 strings), REAL (number of days) or INTEGER (unix timestamp)1 Each column has a preferred type1 &amp;gt; A column with NUMERIC affinity may contain values using all five storage classes. When text data is inserted into a NUMERIC column, &amp;gt; the storage class of the text is converted to INTEGER or REAL (in order of preference) if such conversion is lossless and reversible.</description>
+      <description>SQLite has only four column types: INTEGER, REAL, TEXT, BLOB SQLite columns are dynamically typed Date and Time is stored either as TEXT (ISO8601 strings), REAL (number of days) or INTEGER (unix timestamp)1 Each column has a preferred type1   A column with NUMERIC affinity may contain values using all five storage classes. When text data is inserted into a NUMERIC column, the storage class of the text is converted to INTEGER or REAL (in order of preference) if such conversion is lossless and reversible.</description>
     </item>
     
     <item>
@@ -168,8 +167,7 @@ $ ls -lah data total 0 drwxr-xr-x 4 kiru staff 136B Mar 18 21:12 . drwxr-xr-x 43
       
       <guid>https://kiru.io/til/2017-03-14-du/</guid>
       <description>df
- stands for Disk Free calculates file size based on the file system meta information if block size is 8kb and file size is only 1kb then file size for du is 8kb is faster but not accurate  
-du
+ stands for Disk Free calculates file size based on the file system meta information if block size is 8kb and file size is only 1kb then file size for du is 8kb is faster but not accurate   du
  Disk Usage counts size used on the file system per file recursively (df and du giving different results) does not count open files does not rely on block size: 1kb file size with 8kb block size is still 1kb for du is slow, but more reliable  See this post from Mike Golvach for thorough explanation: Why DU And DF Display Different Values On Linux And Unix</description>
     </item>
     
@@ -180,8 +178,8 @@ du
       
       <guid>https://kiru.io/til/2017-03-13-java-and-oracle/</guid>
       <description>Java class with enum switch statement is translated to switch statement with ordinal:
-public enum MyEnum { YES, NO; public static void main(String[] args) { MyEnum e = NO; switch (e) { // uses e.ordinal() case YES: System.out.println(&amp;quot;Yes&amp;quot;); break; case NO: System.out.println(&amp;quot;No&amp;quot;); break; } } }  You can use extract() in oracle in order to get the date parts
-select extract(year from created_timestamp), extract(month from created_timestamp), extract(day from created_timestamp) from student;  Source: EXTRACT</description>
+public enum MyEnum { YES, NO; public static void main(String[] args) { MyEnum e = NO; switch (e) { // uses e.ordinal()  case YES: System.out.println(&amp;#34;Yes&amp;#34;); break; case NO: System.out.println(&amp;#34;No&amp;#34;); break; } } } You can use extract() in oracle in order to get the date parts
+select extract(year from created_timestamp), extract(month from created_timestamp), extract(day from created_timestamp) from student; Source: [EXTRACT](https://docs.</description>
     </item>
     
     <item>
@@ -190,11 +188,12 @@ select extract(year from created_timestamp), extract(month from created_timestam
       <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://kiru.io/til/2017-03-07-binding/</guid>
-      <description>binding 127.0.0.1 means listen to loopback interface Process bound to 127.0.0.1 can only be accessed by other programs from the same machine
- binding to 0.0.0.0 means listen to all interfaces ( e.g. all network interfaces connected to the machine )
- on Mac 27.0.0.1 /32 is bound to loopback
- on Windows 127.0.0.0 /8 is bound to loopback
-  Source: 0.0.0.0 vs 127.0.0.1</description>
+      <description>binding 127.0.0.1 means listen to loopback interface
+  Process bound to 127.0.0.1 can only be accessed by other programs from the same machine
+  binding to 0.0.0.0 means listen to all interfaces ( e.g. all network interfaces connected to the machine )
+  on Mac 27.0.0.1 /32 is bound to loopback
+  on Windows 127.0.0.0 /8 is bound to loopback
+  Source: [0.0.0.0 vs 127.</description>
     </item>
     
     <item>

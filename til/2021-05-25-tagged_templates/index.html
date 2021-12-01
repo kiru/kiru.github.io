@@ -18,9 +18,9 @@
 <meta property="og:url" content="https://kiru.io/til/2021-05-25-tagged_templates/" />
 <meta property="og:image" content="https://kiru.io/images/kiru-image.jpg"/>
 <meta property="og:description" content="JavaScript supports template strings since ES2015:
-const me = &quot;Kiru&quot; const missing = 22/7 - Math.PI console.log(`Print var: ${me} and ${missing}`) console.log(`This also works: ${22/7} - ${Math.PI} = ${missing}`)  You can pass the tagged templates to functions:
-function printTemplates(strings, ...keys) { console.log(&quot;Strings: &quot;, strings); console.log(&quot;Keys&quot;, keys); } printTemplates`What is possible: ${me}`  Will print:
-Strings: [&quot;What is possible: &quot;, &quot;&quot;, raw: Array(2)] Keys [&quot;Kiru&quot;]  " />
+const me = &#34;Kiru&#34; const missing = 22/7 - Math.PI console.log(`Print var: ${me}and ${missing}`) console.log(`This also works: ${22/7}- ${Math.PI}= ${missing}`) You can pass the tagged templates to functions:
+function printTemplates(strings, ...keys) { console.log(&#34;Strings: &#34;, strings); console.log(&#34;Keys&#34;, keys); } printTemplates`What is possible: ${me}` Will print:
+Strings: [&quot;What is possible: &quot;, &quot;&quot;, raw: Array(2)] Keys [&quot;Kiru&quot;] " />
 <meta property="og:type" content="article" />
 
 
@@ -79,7 +79,7 @@ Strings: [&quot;What is possible: &quot;, &quot;&quot;, raw: Array(2)] Keys [&qu
 
     .markdown pre {
         background-color: rgba(178, 187, 193, 0.16);
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         line-height: 1.3;
 
         padding: 15px;
@@ -151,6 +151,7 @@ Strings: [&quot;What is possible: &quot;, &quot;&quot;, raw: Array(2)] Keys [&qu
             <div class="mx-2 hover:underline"><a href="/til/">TIL</a></div>
            
            <div class="mx-2 hover:underline"><a href="/articles/">Articles</a></div>
+            <div class="mx-2 hover:underline text-orange-800 font-bold"><a href="/articles/adventofsaas2021/">AdventOfSaaS 2021</a></div>
             <div class="">
                 <a href="https://twitter.com/kiru_io/"
                    target="_blank"
@@ -195,7 +196,7 @@ Strings: [&quot;What is possible: &quot;, &quot;&quot;, raw: Array(2)] Keys [&qu
 
 </div>
 
-<div class="mt-5 markdown-content text-lg">
+<div class="mt-5 markdown-content text-xl">
     <div class="kiru-container">
         <div class="pb-0 font-medium pb-5">
             <h1 class=" font-bold text-kiru-main text-2xl pb-1">Tagged Templates in JavaScript</h1>
@@ -204,28 +205,20 @@ Strings: [&quot;What is possible: &quot;, &quot;&quot;, raw: Array(2)] Keys [&qu
 
         <div class="markdown">
             <p><p>JavaScript supports template strings since ES2015:</p>
-
-<pre><code class="language-javascript">const me = &quot;Kiru&quot;
-const missing  = 22/7 - Math.PI
-console.log(`Print var: ${me} and ${missing}`)
-console.log(`This also works: ${22/7} - ${Math.PI} = ${missing}`)
-</code></pre>
-
-<p>You can pass the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#tagged_templates">tagged templates to functions</a>:</p>
-
-<pre><code class="language-javascript">function printTemplates(strings, ...keys) {
-  console.log(&quot;Strings: &quot;, strings);
-  console.log(&quot;Keys&quot;, keys);
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">me</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Kiru&#34;</span>
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">missing</span>  <span style="color:#f92672">=</span> <span style="color:#ae81ff">22</span><span style="color:#f92672">/</span><span style="color:#ae81ff">7</span> <span style="color:#f92672">-</span> Math.<span style="color:#a6e22e">PI</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Print var: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">me</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> and </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">missing</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>)
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`This also works: </span><span style="color:#e6db74">${</span><span style="color:#ae81ff">22</span><span style="color:#f92672">/</span><span style="color:#ae81ff">7</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">${</span>Math.<span style="color:#a6e22e">PI</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> = </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">missing</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>)
+</code></pre></div><p>You can pass the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#tagged_templates">tagged templates to functions</a>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">printTemplates</span>(<span style="color:#a6e22e">strings</span>, ...<span style="color:#a6e22e">keys</span>) {
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Strings: &#34;</span>, <span style="color:#a6e22e">strings</span>);
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Keys&#34;</span>, <span style="color:#a6e22e">keys</span>);
 }
-printTemplates`What is possible: ${me}`
-</code></pre>
-
-<p>Will print:</p>
-
-<pre><code>Strings: [&quot;What is possible: &quot;, &quot;&quot;, raw: Array(2)]
+<span style="color:#a6e22e">printTemplates</span><span style="color:#e6db74">`What is possible: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">me</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>
+</code></pre></div><p>Will print:</p>
+<pre tabindex="0"><code>Strings: [&quot;What is possible: &quot;, &quot;&quot;, raw: Array(2)]
 Keys [&quot;Kiru&quot;]
-</code></pre>
-</p>
+</code></pre></p>
         </div>
     </div>
 </div>
@@ -236,24 +229,24 @@ Keys [&quot;Kiru&quot;]
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2017-03-29-uri/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Is URI case sensitive?</span>
+            <a href="https://kiru.io/til/2019-12-04-pid/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Waiting for process</span>
             </a>
         </div>
     </div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2017-03-05-sms-length/" class="hover:underline">
-                <span class="text-blue-700 font-bold">What is the max length of an SMS?</span>
+            <a href="https://kiru.io/til/2018-10-22-bash/" class="hover:underline">
+                <span class="text-blue-700 font-bold">.bash_profile vs .bashrc</span>
             </a>
         </div>
     </div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2017-03-14-du/" class="hover:underline">
-                <span class="text-blue-700 font-bold">What is the difference between `du` and `df` command?</span>
+            <a href="https://kiru.io/til/2019-12-06-java-comment-code/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Java code comments</span>
             </a>
         </div>
     </div>

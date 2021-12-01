@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>java on Kiru.io</title>
@@ -6,11 +6,7 @@
     <description>Recent content in java on Kiru.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Dec 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://kiru.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 06 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://kiru.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TIL 06.12.2019</title>
       <link>https://kiru.io/til/2019-12-06-java-comment-code/</link>
@@ -18,7 +14,7 @@
       
       <guid>https://kiru.io/til/2019-12-06-java-comment-code/</guid>
       <description>Nea trick to hide code inside comments by closing enclosing code using unicode:
-public class Dafuq { /** * This does not do what you think it does. * &amp;lt;p&amp;gt; * You think code is documentation? No! Documentation is code! \u002a\u002f static { out.println(&amp;quot;No&amp;quot;); exit(0); } \u002f\u002a */ public static void main(String[] args) { out.println(&amp;quot;Yes&amp;quot;); } }  The above code prints &amp;ldquo;NO&amp;rdquo;, and taken from here.
+public class Dafuq { /** * This does not do what you think it does. * &amp;lt;p&amp;gt; * You think code is documentation? No! Documentation is code! \u002a\u002f static { out.println(&amp;#34;No&amp;#34;); exit(0); } \u002f\u002a */ public static void main(String[] args) { out.println(&amp;#34;Yes&amp;#34;); } } The above code prints &amp;ldquo;NO&amp;rdquo;, and taken from here.
 The above does only work for child processes (stared by the same shell).</description>
     </item>
     
@@ -29,8 +25,8 @@ The above does only work for child processes (stared by the same shell).</descri
       
       <guid>https://kiru.io/til/2019-12-07-new-javascript-features/</guid>
       <description>JavaScript functions have a toString() function which gives the source code a string.
-let f = () =&amp;gt; { alert(&amp;quot;kiru.io&amp;quot;) } f.toString()  Will emit
-&amp;quot;() =&amp;gt; { alert(\&amp;quot;kiru.io\&amp;quot;) }&amp;quot;  Learned from this resource.</description>
+let f = () =&amp;gt; { alert(&amp;#34;kiru.io&amp;#34;) } f.toString() Will emit
+&amp;quot;() =&amp;gt; { alert(\&amp;quot;kiru.io\&amp;quot;) }&amp;quot; Learned from this resource.</description>
     </item>
     
   </channel>
