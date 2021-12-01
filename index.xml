@@ -220,7 +220,7 @@ select extract(year from created_timestamp), extract(month from created_timestam
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kiru.io/articles/adventofsaas2021/</guid>
-      <description>🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 25 days ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 100 customer  Table of content  01.12.2021: Work log   01.12.2021: Launch AdventOfSaas 2021  AdventOfCode 2021  What is AdventOfSaaS?  What am I going to work on?  What has been done until now?  What is a successful SaaS for me?      01.12.2021: Work log What I planned to do and what I did
+      <description>Progress: 🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 25 days  Table of content  01.12.2021: Work log   01.12.2021: Launch AdventOfSaas 2021  AdventOfCode 2021  What is AdventOfSaaS?  What am I going to work on?  What has been done until now?  What is a successful SaaS for me?  Got more questions?      01.12.2021: Work log What I planned to do and what I did
 □ Publish this page on kiru.</description>
     </item>
     
