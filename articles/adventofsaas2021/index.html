@@ -87,6 +87,7 @@
 
         border-left: 1px solid rgb(43, 108, 176);
         color: rgb(42, 67, 101);
+        overflow-x: auto;
     }
 
     .markdown blockquote {
@@ -223,23 +224,42 @@ Progress:
   </li>
 </ul>
 </div>
-<div class="bg-orange-200 p-1 font-semibold " id="02.12.2021">01.12.2021: Work log</div>
+<div class="bg-orange-200 p-1 font-semibold mt-8" id="02.12.2021">01.12.2021: Work log</div>
 <p><em>What I planned to do and what I did</em></p>
 <pre style="background-color: white; font-size: 1.1rem; padding: 1px" >
  ■ Publish this page on kiru.io 
  ■ Get domain flashdictation.com
  ■ Add progress bar in days on the main page
- □ Setup project on GitHub
- □ Setup initial landing page with simple description
- □ Make a simple logo 
+ ■ Setup project on GitHub
+ ■ Setup initial landing page with simple description
+ ■ Make a simple logo 
  □ Define MVP
  □ Define timeline
- □ Publish on Twitter
- □ Publish on IndieHackers
+ ■ Publish on Twitter
 </pre>
 <p>How did the day go?</p>
-<p><em>To be done</em></p>
-<div class="bg-orange-200 p-1 font-semibold " id="01.12.2021">
+<p>Registered domain via CloudFlare. The webpage is a simple Next.js static page (for now) which is deployed
+via CloudFlare Pages. This was the fastest way for me to get started.</p>
+<p>CloudFlare Pages deployment did not go smoothly. I ended up having the following error:</p>
+<pre tabindex="0"><code>19:21:05.595	export PATH=&quot;$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH&quot;
+19:21:05.595	[0m
+19:21:05.938	[32m&gt; Successfully installed Yarn 1.22.4! Please open another terminal where the `yarn` command will now be available.[0m
+19:21:06.302	Installing NPM modules using Yarn version 1.22.4
+19:21:06.745	yarn install v1.22.4
+19:21:06.836	[1/4] Resolving packages...
+19:21:07.046	[2/4] Fetching packages...
+19:21:19.165	error next@12.0.4: The engine &quot;node&quot; is incompatible with this module. Expected version &quot;&gt;=12.22.0&quot;. Got &quot;12.18.0&quot;
+19:21:19.177	error Found incompatible module.
+19:21:19.178	info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.
+19:21:19.199	Error during Yarn install
+19:21:19.202	Failed: build command exited with code: 1
+</code></pre><p>It turned out, without any config CloudFlare uses node version 12.18.0. To fix this I had to set the following environment variable: NODE_VERSION.
+Once that was done, everything went as expected.</p>
+<p>For the logo, I used <a href="https://hatchful.shopify.com/">Hatchful by Shopify</a>. I did not define the MVP yet, since the idea
+was not clear to me as well. So I spent most of the time writing down what I expect, and what problem it should solve.</p>
+<p>Go checkout what I produced today:</p>
+<h3 class="text-xl font-bold"><a href="http://flashdictation.com">flashdictation.com</a></h3>
+<div class="bg-orange-200 p-1 font-semibold mt-8" id="01.12.2021">
 01.12.2021: Launch AdventOfSaas 2021
 </div>
 <h3 class="font-bold text-xl pt-5" id="aof2021">AdventOfSaaS 2021</h3>
@@ -302,24 +322,24 @@ Hit me on Twitter (<a href="https://twitter.com/kiru_io" target="_blank">kiru_io
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2017-03-27-case/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Various</span>
+            <a href="https://kiru.io/til/2019-11-05-simulate-network-control/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Simulate network control</span>
             </a>
         </div>
     </div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2020-06-28-multiselect/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Empty multiselect is not set</span>
+            <a href="https://kiru.io/til/2019-05-17-pipe-linux/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Shortcut for linux pipe</span>
             </a>
         </div>
     </div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/" class="hover:underline">
-                <span class="text-blue-700 font-bold"></span>
+            <a href="https://kiru.io/til/2019-12-06-java-comment-code/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Java code comments</span>
             </a>
         </div>
     </div>
