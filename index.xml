@@ -220,7 +220,7 @@ select extract(year from created_timestamp), extract(month from created_timestam
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kiru.io/articles/adventofsaas2021/</guid>
-      <description>Progress: 🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 2/25 days  Table of content  Day 2: Define MVP   Day 1: Setup   Day 0: Launch AdventOfSaas 2021  AdventOfSaaS 2021  What is AdventOfSaaS?  What am I going to work on?  What has been done until now?  What is a successful SaaS for me?  Got more questions?      Day 2: Define MVP The main goal of today is to define the MVP, e.</description>
+      <description>Progress: 🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 3/25 days  Table of content  Day 3: Add video player   Day 2: Define MVP   Day 1: Setup   Day 0: Launch AdventOfSaas 2021  AdventOfSaaS 2021  What is AdventOfSaaS?  What am I going to work on?  What has been done until now?  What is a successful SaaS for me?  Got more questions?      Day 3: Add video player Today&amp;rsquo;s goal was to experiment with the video player.</description>
     </item>
     
     <item>
