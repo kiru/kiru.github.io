@@ -17,7 +17,7 @@
 <meta property="og:title" content="AdventOfSaaS 2021"/>
 <meta property="og:url" content="https://kiru.io/articles/adventofsaas2021/" />
 <meta property="og:image" content="https://kiru.io/images/kiru-image.jpg"/>
-<meta property="og:description" content="Progress: 🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 4/25 days  Table of content  Day 3: Add video player   Day 2: Define MVP   Day 1: Setup   Day 0: Launch AdventOfSaas 2021  AdventOfSaaS 2021  What is AdventOfSaaS?  What am I going to work on?  What has been done until now?  What is a successful SaaS for me?  Got more questions?      Day 4: Simple correction I managed to complete the simplest MVP:" />
+<meta property="og:description" content="Progress: 🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 4/25 days  Table of content  Day 4: Simple correction   Day 3: Add video player   Day 2: Define MVP   Day 1: Setup   Day 0: Launch AdventOfSaas 2021  AdventOfSaaS 2021  What is AdventOfSaaS?  What am I going to work on?  What has been done until now?  What is a successful SaaS for me?  Got more questions?" />
 <meta property="og:type" content="article" />
 
 
@@ -209,6 +209,7 @@ Progress:
 <div class="my-5">
 <h3 class="font-bold text-xl">Table of content</h3>
 <ul class="list-disc ml-3">
+  <li> <a href="#day4">Day 4: Simple correction</a> </li>
   <li> <a href="#day3">Day 3: Add video player</a> </li>
   <li> <a href="#day2">Day 2: Define MVP</a> </li>
   <li> <a href="#01.12.2021">Day 1: Setup</a> </li>
@@ -225,17 +226,25 @@ Progress:
   </li>
 </ul>
 </div>
-<div class="bg-orange-200 p-1 font-semibold mt-8" id="day3">Day 4: Simple correction</div>
+<div class="bg-orange-200 p-1 font-semibold mt-8" id="day4">Day 4: Simple correction</div>
 <p>I managed to complete the simplest MVP:</p>
 <ul>
 <li>A video player to listen, to pause and play</li>
 <li>The input to type what I hear</li>
 <li>One done, the correction</li>
 </ul>
-<p>Today I focused on implementing the text diff. Initially I spent the time to come up with a simple algorithm, but
-wasted too much time. I ended up using a diff-library (well I didn&rsquo;t think about &ldquo;diffing&rdquo;, I was trying to find miss-matched words, which in the end is &ldquo;diffing&rdquo; duh!)</p>
-<p>This is the result:</p>
-<img src="/images/day4.png" alt="Initial diff" class="lg:w-3/4 shadow-xl mx-auto py-2 border-default border-blue-800 rounded-lg">
+<p>Today I focused on implementing the correction part. Initially I spent some time to come up with a simple algorithm, but
+wasted too much time. I ended up using a diff-library
+(well I didn&rsquo;t think &ldquo;correction&rdquo; in terms of &ldquo;diffing&rdquo;, I was trying to find miss-matched words, which in the end is &ldquo;diffing&rdquo; duh!)</p>
+<p>This is the result:
+<img src="/images/day4.png" alt="Initial diff" class="lg:w-3/4 shadow-xl mx-auto py-2 border-default border-blue-800 rounded-lg"></p>
+<p>There are a few stuff changes I will make:</p>
+<ul>
+<li>The corrections are not perfect, the punctuations should be ignored (or I can add an option)</li>
+<li>The correction results is not intuitive to read (for non-programmers anyway), I will work on that in the future</li>
+<li>Don&rsquo;t show untyped text (e.g. in the above screenshto everythign after &ldquo;Et d&rsquo;ailleurs&rdquo; should be hidden)</li>
+<li>In the above screenshot you see, I had Grammerly activated. I will disable it in the future.</li>
+</ul>
 <div class="bg-orange-200 p-1 font-semibold mt-8" id="day3">Day 3: Add video player</div>
 <p>Today&rsquo;s goal was to experiment with the video player. It was fairly easy to add the player,
 most of the time I spent to make the page more prettier.</p>
@@ -353,16 +362,8 @@ Hit me on Twitter (<a href="https://twitter.com/kiru_io" target="_blank">kiru_io
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2017-03-07-binding/" class="hover:underline">
-                <span class="text-blue-700 font-bold">What is the difference between 127.0.0.1 and 0.0.0.0?</span>
-            </a>
-        </div>
-    </div>
-    
-    <div class="kiru-container">
-        <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2017-03-30-bash-shortcuts/" class="hover:underline">
-                <span class="text-blue-700 font-bold">BASH Shortcuts I was not not aware of</span>
+            <a href="https://kiru.io/til/2019-10-22-fswatch/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Execute python file on change fswatch</span>
             </a>
         </div>
     </div>
@@ -371,6 +372,14 @@ Hit me on Twitter (<a href="https://twitter.com/kiru_io" target="_blank">kiru_io
         <div class="pb-0 font-medium">
             <a href="https://kiru.io/til/2019-05-17-pipe-linux/" class="hover:underline">
                 <span class="text-blue-700 font-bold">Shortcut for linux pipe</span>
+            </a>
+        </div>
+    </div>
+    
+    <div class="kiru-container">
+        <div class="pb-0 font-medium">
+            <a href="https://kiru.io/til/2019-12-04-pid/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Waiting for process</span>
             </a>
         </div>
     </div>
