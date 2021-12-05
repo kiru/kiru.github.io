@@ -17,7 +17,7 @@
 <meta property="og:title" content="AdventOfSaaS 2021"/>
 <meta property="og:url" content="https://kiru.io/articles/adventofsaas2021/" />
 <meta property="og:image" content="https://kiru.io/images/kiru-image.jpg"/>
-<meta property="og:description" content="Progress: 🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 4/25 days  Table of content  Day 4: Simple correction   Day 3: Add video player   Day 2: Define MVP   Day 1: Setup   Day 0: Launch AdventOfSaas 2021  AdventOfSaaS 2021  What is AdventOfSaaS?  What am I going to work on?  What has been done until now?  What is a successful SaaS for me?  Got more questions?" />
+<meta property="og:description" content="Progress: 🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 5/25 days  Table of content  Day 5: Issue transcripts   Day 4: Simple correction   Day 3: Add video player   Day 2: Define MVP   Day 1: Setup   Day 0: Launch AdventOfSaas 2021  AdventOfSaaS 2021  What is AdventOfSaaS?  What am I going to work on?  What has been done until now?  What is a successful SaaS for me?" />
 <meta property="og:type" content="article" />
 
 
@@ -204,11 +204,12 @@
         <div class="markdown">
             <div class="text-sm font-mono tracking-wide">
 Progress: 
-🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 4/25 days
+🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 5/25 days
 </div>
 <div class="my-5">
 <h3 class="font-bold text-xl">Table of content</h3>
 <ul class="list-disc ml-3">
+  <li> <a href="#day5">Day 5: Issue transcripts</a> </li>
   <li> <a href="#day4">Day 4: Simple correction</a> </li>
   <li> <a href="#day3">Day 3: Add video player</a> </li>
   <li> <a href="#day2">Day 2: Define MVP</a> </li>
@@ -226,6 +227,22 @@ Progress:
   </li>
 </ul>
 </div>
+<div class="bg-orange-200 p-1 font-semibold mt-8" id="day5">Day 5: Issue transcripts</div>
+<p>Started with updating the todos on <a href="https://flashdictation.com/#roadmap">FlashDictation.com</a>. Apart from that, added a
+shortcut for the video-player (Key 1) for starting and stopping. That makes it easier to type what I hear without having to move my
+cursor and hit the Play/Pause button.</p>
+<p>This completes (imho) all the features needed to use the tool. Until now I hardcoded the transcript and the video.
+Optimally, I would like the user to enter a YouTube link and type what I hear. Getting the captions from via YouTube API seems possible.</p>
+<p>I spent most of today to figure out how easy it is to integrate the API. It seems doable, but I wanted to avoid adding an external dependency.</p>
+<p>There are few alternatives:</p>
+<p><strong>Limited set of audio+transcripts</strong>
+The alternative to YouTube links is, that I collect audio+transcripts (free to use) and allow only pre-selected ones.</p>
+<p><strong>Podcast transcripts</strong>
+While researching, I learned about the <code>podcast:transcript</code> tag for RSS feeds, which points to the transcript.</p>
+<blockquote>
+<p>&lt;podcast:transcript url=&ldquo;<a href="https://host.com/1.srt%22">https://host.com/1.srt&quot;</a> type=&ldquo;application/srt&rdquo; /&gt;</p>
+</blockquote>
+<p>This seems a great way to get the transcripts of the audio.</p>
 <div class="bg-orange-200 p-1 font-semibold mt-8" id="day4">Day 4: Simple correction</div>
 <p>I managed to complete the simplest MVP:</p>
 <ul>
@@ -362,6 +379,14 @@ Hit me on Twitter (<a href="https://twitter.com/kiru_io" target="_blank">kiru_io
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
+            <a href="https://kiru.io/til/" class="hover:underline">
+                <span class="text-blue-700 font-bold"></span>
+            </a>
+        </div>
+    </div>
+    
+    <div class="kiru-container">
+        <div class="pb-0 font-medium">
             <a href="https://kiru.io/til/2017-03-27-case/" class="hover:underline">
                 <span class="text-blue-700 font-bold">Various</span>
             </a>
@@ -370,16 +395,8 @@ Hit me on Twitter (<a href="https://twitter.com/kiru_io" target="_blank">kiru_io
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2019-12-07-new-javascript-features/" class="hover:underline">
-                <span class="text-blue-700 font-bold">JavaScript Function string</span>
-            </a>
-        </div>
-    </div>
-    
-    <div class="kiru-container">
-        <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2017-03-29-uri/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Is URI case sensitive?</span>
+            <a href="https://kiru.io/til/2017-03-13-java-and-oracle/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Java Enum and extract in SQL</span>
             </a>
         </div>
     </div>
