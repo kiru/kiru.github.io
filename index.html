@@ -220,12 +220,13 @@
         <div class="markdown">
             <div class="text-sm font-mono tracking-wide">
 Progress: 
-🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 6/25 days
+🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 7/25 days
 </div>
 <div class="my-5">
 <h3 class="font-bold text-xl">Table of content</h3>
 <ul class="list-disc ml-3">
-  <li> <a href="#day6">Day 6: Easy solution for Transcripts</a> </li>
+  <li> <a href="#day7">Day 7: First week done, goal for next week</a> </li>
+  <li> <a href="#day6">Day 6: Easy solution for transcripts</a> </li>
   <li> <a href="#day5">Day 5: Issue transcripts</a> </li>
   <li> <a href="#day4">Day 4: Simple correction</a> </li>
   <li> <a href="#day3">Day 3: Add video player</a> </li>
@@ -244,7 +245,28 @@ Progress:
   </li>
 </ul>
 </div>
-<div class="bg-orange-200 p-1 font-semibold mt-8" id="day6">Day 6: Easy solution for Transcripts</div>
+<div class="bg-orange-200 p-1 font-semibold mt-8" id="day7">Day 7: First week done, goal for next week</div>
+<p>Today marks one week I have been working every day for at least 1 hour. At the beginning, I made huge progress, got the PoC implemented very fast, and deployed it to flashdictation.com. Now I have something working, but I need some goals for the next two weeks.</p>
+<p>This project is called AdventOfSaaS - so where is the SaaS part? That is something I have been thinking about the last
+two days. How to monetize this project? What I have now is a web app to practice dictation. It is not perfect, does not
+work for anyone - but solved my problem. I could even extend it, such that I can paste the link to a video and enter the
+transcripts and create a &ldquo;dictation&rdquo; page for that video. That way, the user can share that link. Once you land on the
+page, you can see the video and an input area to type what you hear. Once done, let me correct your mistakes - as for
+now.</p>
+<p>So how to monetize? One way is to charge to create the &ldquo;dictation&rdquo; page and target teachers. As a teacher, you can create a dictation page and send it to your students. They can listen to the audio once - and type what they hear, and send it back to you. You can use the &ldquo;auto-correction&rdquo; tool to see what mistakes they made, and send it back to them - so they can correct them.</p>
+<p>For the above use case, I need to change Flashdictation as follows:</p>
+<ul>
+<li>Allow creating a dictation page (video/audio + transcript)</li>
+<li>On the main page, show a &ldquo;test dictation&rdquo; - so you know how it feels to use the dictation</li>
+<li>Allow creating a teacher-account
+<ul>
+<li>One teacher account contains &ldquo;dictations&rdquo;</li>
+<li>The number of users per dictation is limited</li>
+</ul>
+</li>
+</ul>
+<p>Deadline: 7 days! By 14th I want the MVP (with the above features) to be done.</p>
+<div class="bg-orange-200 p-1 font-semibold mt-8" id="day6">Day 6: Easy solution for transcripts</div>
 <p>My initial idea was to create an app as follows:</p>
 <img src="/images/day5.png" alt="Initial idea" class="lg:w-3/4 shadow-xl mx-auto py-2 border-default border-blue-800 rounded-lg">
 <p>After trying to figure the best way to integrate the YouTube-API (I wasted already ½-hour to figure out why the API-credentials were wrong.),
