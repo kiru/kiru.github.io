@@ -221,14 +221,15 @@
             <div class="text-sm font-mono tracking-wide">
 Progress: 
 <span id="progressbar">
-  🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜10 / 25 days
+  🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜11 / 25 days
 </span>
 
 </div>
 <div class="my-5">
 <h3 class="font-bold text-xl">Table of content</h3>
 <ul class="list-disc ml-3">
-  <li> <a href="#day9">Day 10: Navigation</a> </li>
+  <li> <a href="#day11">Day 11: Login</a> </li>
+  <li> <a href="#day10">Day 10: Navigation</a> </li>
   <li> <a href="#day9">Day 9: Landing Page for Mobile</a> </li>
   <li> <a href="#day8">Day 8: Landing Page</a> </li>
   <li> <a href="#day7">Day 7: First week done, goal for next week</a> </li>
@@ -251,30 +252,38 @@ Progress:
   </li>
 </ul>
 </div>
-<div class="bg-orange-200 p-1 font-semibold mt-8" id="day9">Day 10: Navigation</div>
+<div class="bg-orange-200 p-1 font-semibold mt-8" id="day11">Day 11: Login</div>
+<p>I moved away from Cloudflare Static pages to <a href="https://vercel.com/">Vercel</a>. Until now, I only had static content, and no server-rendered part.
+That might change, so I move rather now than later.</p>
+<p>There are not many visible changes today, but I reorganized the code, and started adding the login components.
+It takes more than a few hours to finish that, so I decide not to deploy the half-broken parts. I will complete it tomorrow and push a version.</p>
+<p>A few days ago, I wrote a mail to <a href="https://innerfrench.com/">innerfrench</a> ( A french podcast, targeted at beginners. ), and got a reply:</p>
+<img src="/images/day11.png" alt="Mail reply" class="lg:w-3/4 shadow-xl mx-auto py-2 border-default border-blue-800 rounded-lg">
+<p>This is great news! Next, I need to find some good English examples!</p>
+<div class="bg-orange-200 p-1 font-semibold mt-8" id="day10">Day 10: Navigation</div>
 <p>Added navigation to the page, visually this does not change much:
 <img src="/images/day10.png" alt="Navigation" class="lg:w-3/4 shadow-xl mx-auto py-2 border-default border-blue-800 rounded-lg"></p>
 <p>Behind the scene, I had to re-organize the code. The current online version is broken,
 since I host the page via Cloudflare (they only support static next.js builds).</p>
 <p>Next, (haha) I have to move away from Cloudflare. Maybe try Vercel or build on a VPS?</p>
 <div class="bg-orange-200 p-1 font-semibold mt-8" id="day9">Day 9: Landing Page for Mobile</div>
-<p>Continued on the landing page. Replaced the blue buttons by actual text and a logo, so it&rsquo;s more clear what each part stands for.</p>
-<p>I need to add more text to describe further in details, what every part is.<br>
+<p>Continued on the landing page. Replaced the blue buttons with actual text and a logo, so it&rsquo;s more clear what each part stands for.</p>
+<p>I need to add more text to describe further in detail, what every part is.<br>
 I don&rsquo;t like if you end up on a landing page, and you don&rsquo;t understand what the project is about.
 Nowadays, the focus is on fancy design and less text. But I don&rsquo;t see why we can&rsquo;t have both.</p>
-<p>Anyways, this is the result after todays work.</p>
+<p>Anyways, this is the result after today&rsquo;s work.</p>
 <img src="/images/day9-mobile.png" alt="Mobile" class="lg:w-3/4 shadow-xl mx-auto py-2 border-default border-blue-800 rounded-lg">
-<p>I also added Plausible.io to track how mayn people are using the page. Let&rsquo;s see tomorrow how many people visited the page.</p>
-<p>Note to myself: Add Plausible.io form the beginning next time!</p>
+<p>I also added Plausible.io to track how many people are using the page. Let&rsquo;s see tomorrow how many people visited the page.</p>
+<p>Note to me: Add Plausible.io from the beginning next time!</p>
 <div class="bg-orange-200 p-1 font-semibold mt-8" id="day8">Day 8: Landing Page</div>
 <p>Today I worked on redesigning the landing page.  This is how it looks like now:</p>
 <img src="/images/day8-page-before.png" alt="Page before" class="lg:w-3/4 shadow-xl mx-auto py-2 border-default border-blue-800 rounded-lg">
 <p>This is how it looks like now. It is not done yet, but almost:</p>
 <img src="/images/day8-page-now.png" alt="Page now" class="lg:w-3/4 shadow-xl mx-auto py-2 border-default border-blue-800 rounded-lg">
-<p>I need to add some info graphics and explanation what is going on. The page should be optimized for mobile as well.
+<p>I need to add some infographics and explain what is going on. The page should be optimized for mobile as well.
 Today I only focused on the desktop version. Tomorrow, I will fix the audio-player (it should auto-play and show that it&rsquo;s muted), and test it on mobile.</p>
 <p>The written text should also be synchronized with the audio. I need to add a &ldquo;correct me&rdquo; button. Once that is done, I can write down the final features.</p>
-<p>I am pretty happy with todays progress. 💪</p>
+<p>I am pretty happy with today&rsquo;s progress. 💪</p>
 <div class="bg-orange-200 p-1 font-semibold mt-8" id="day7">Day 7: First week done, goal for next week</div>
 <p>Today marks one week I have been working every day for at least 1 hour. At the beginning, I made huge progress, got the PoC implemented very fast, and deployed it to flashdictation.com. Now I have something working, but I need some goals for the next two weeks.</p>
 <p>This project is called AdventOfSaaS - so where is the SaaS part? That is something I have been thinking about the last
