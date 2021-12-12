@@ -17,7 +17,7 @@
 <meta property="og:title" content="AdventOfSaaS 2021"/>
 <meta property="og:url" content="https://kiru.io/articles/adventofsaas2021/" />
 <meta property="og:image" content="https://kiru.io/images/kiru-image.jpg"/>
-<meta property="og:description" content="Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜11 / 25 days   Table of content  Day 11: Login   Day 10: Navigation   Day 9: Landing Page for Mobile   Day 8: Landing Page   Day 7: First week done, goal for next week   Day 6: Easy solution for transcripts   Day 5: Issue transcripts   Day 4: Simple correction   Day 3: Add video player   Day 2: Define MVP   Day 1: Setup   Day 0: Launch AdventOfSaas 2021  AdventOfSaaS 2021  What is AdventOfSaaS?" />
+<meta property="og:description" content="Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜12 / 25 days   Table of content  Day 12: Login works   Day 11: Login   Day 10: Navigation   Day 9: Landing Page for Mobile   Day 8: Landing Page   Day 7: First week done, goal for next week   Day 6: Easy solution for transcripts   Day 5: Issue transcripts   Day 4: Simple correction   Day 3: Add video player   Day 2: Define MVP   Day 1: Setup   Day 0: Launch AdventOfSaas 2021  AdventOfSaaS 2021  What is AdventOfSaaS?" />
 <meta property="og:type" content="article" />
 
 
@@ -205,13 +205,14 @@
             <div class="text-sm font-mono tracking-wide">
 Progress: 
 <span id="progressbar">
-  🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜11 / 25 days
+  🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜12 / 25 days
 </span>
 
 </div>
 <div class="my-5">
 <h3 class="font-bold text-xl">Table of content</h3>
 <ul class="list-disc ml-3">
+  <li> <a href="#day12">Day 12: Login works</a> </li>
   <li> <a href="#day11">Day 11: Login</a> </li>
   <li> <a href="#day10">Day 10: Navigation</a> </li>
   <li> <a href="#day9">Day 9: Landing Page for Mobile</a> </li>
@@ -236,6 +237,29 @@ Progress:
   </li>
 </ul>
 </div>
+<div class="bg-orange-200 p-1 font-semibold mt-8" id="day12">Day 12: Login works</div>
+<p>Have a working authentication system. Initially I wanted to add <a href="https://next-auth.js.org/">NextAuth.js</a> and Google authenticator,
+but I still need a database to store the dictations.
+In the end, I decided to try out <a href="https://supabase.com/">Supabase</a>. why?</p>
+<ul>
+<li>I don&rsquo;t have to host a database, supports Authentication and storing data</li>
+<li>Native support for Next.js</li>
+<li>The free tier is good enough, the Pro tier is relatively cheap (20$/month)</li>
+<li>Possibility of migrating to a self-hosted version if needed</li>
+</ul>
+<p>I found <a href="https://github.com/vercel/nextjs-subscription-payments">this</a> nice project from Vercel, which implements Stripe and Supabase integration.
+Took it as template and adapt for my use case. This is the current result:</p>
+<img src="/images/day12-login.png" alt="Login" class="lg:w-3/4 shadow-xl mx-auto py-2 border-default border-blue-800 rounded-lg">
+<img src="/images/day12-login-user.png" alt="Login" class="lg:w-3/4 shadow-xl mx-auto py-2 border-default border-blue-800 rounded-lg">
+<p>The button looks ugly - since I had to adapt some css, and did not spend much time to make it prettier. What counts is, that I an login and create an account.
+I will focus on having all features done and then spend one or two days on make it prettier.</p>
+<p>For now, you can create an account and login. Be aware, I will wipe the database before I publish it on ProductHunt (or anywhere).</p>
+<p>Tomorrow, I should work on the following tasks</p>
+<ul>
+<li>Add a WIP banner (so ppl know it&rsquo;s not complete yet)</li>
+<li>ability to create &ldquo;dictations&rdquo; by given a URL + text</li>
+<li>Generate a unique link for dictation</li>
+</ul>
 <div class="bg-orange-200 p-1 font-semibold mt-8" id="day11">Day 11: Login</div>
 <p>I moved away from Cloudflare Static pages to <a href="https://vercel.com/">Vercel</a>. Until now, I only had static content, and no server-rendered part.
 That might change, so I move rather now than later.</p>
@@ -460,24 +484,24 @@ Hit me on Twitter (<a href="https://twitter.com/kiru_io" target="_blank">kiru_io
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2019-05-17-pipe-linux/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Shortcut for linux pipe</span>
+            <a href="https://kiru.io/til/" class="hover:underline">
+                <span class="text-blue-700 font-bold"></span>
             </a>
         </div>
     </div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2017-03-07-binding/" class="hover:underline">
-                <span class="text-blue-700 font-bold">What is the difference between 127.0.0.1 and 0.0.0.0?</span>
+            <a href="https://kiru.io/til/2017-03-13-java-and-oracle/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Java Enum and extract in SQL</span>
             </a>
         </div>
     </div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2017-03-05-sms-length/" class="hover:underline">
-                <span class="text-blue-700 font-bold">What is the max length of an SMS?</span>
+            <a href="https://kiru.io/til/2019-12-07-new-javascript-features/" class="hover:underline">
+                <span class="text-blue-700 font-bold">JavaScript Function string</span>
             </a>
         </div>
     </div>
