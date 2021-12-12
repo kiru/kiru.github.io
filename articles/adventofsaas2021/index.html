@@ -238,26 +238,26 @@ Progress:
 </ul>
 </div>
 <div class="bg-orange-200 p-1 font-semibold mt-8" id="day12">Day 12: Login works</div>
-<p>Have a working authentication system. Initially I wanted to add <a href="https://next-auth.js.org/">NextAuth.js</a> and Google authenticator,
-but I still need a database to store the dictations.
-In the end, I decided to try out <a href="https://supabase.com/">Supabase</a>. why?</p>
+<p>I have a working authentication system! Initially I wanted to add <a href="https://next-auth.js.org/">NextAuth.js</a> and Google authenticator.
+That approach needs a hosted database instance (to store dictations + text). In the end, I decided to try out <a href="https://supabase.com/">Supabase</a>. why?</p>
 <ul>
-<li>I don&rsquo;t have to host a database, supports Authentication and storing data</li>
+<li>I don&rsquo;t have to host a database</li>
+<li>Supports Authentication</li>
 <li>Native support for Next.js</li>
 <li>The free tier is good enough, the Pro tier is relatively cheap (20$/month)</li>
 <li>Possibility of migrating to a self-hosted version if needed</li>
 </ul>
-<p>I found <a href="https://github.com/vercel/nextjs-subscription-payments">this</a> nice project from Vercel, which implements Stripe and Supabase integration.
-Took it as template and adapt for my use case. This is the current result:</p>
-<img src="/images/day12-login.png" alt="Login" class="lg:w-3/4 shadow-xl mx-auto py-2 border-default border-blue-800 rounded-lg">
-<img src="/images/day12-login-user.png" alt="Login" class="lg:w-3/4 shadow-xl mx-auto py-2 border-default border-blue-800 rounded-lg">
-<p>The button looks ugly - since I had to adapt some css, and did not spend much time to make it prettier. What counts is, that I an login and create an account.
-I will focus on having all features done and then spend one or two days on make it prettier.</p>
+<p>I found <a href="https://github.com/vercel/nextjs-subscription-payments">this</a> nice project from Vercel, with Stripe and Supabase integration.
+Took it as template and adapted it for my use case. This is the current result:</p>
+<img src="/images/day12-login.png" alt="Login" class="lg:w-3/4 shadow-xl mx-auto py-4 border-default border-blue-800 rounded-lg">
+<img src="/images/day12-login-user.png" alt="Login" class="lg:w-3/4 shadow-xl mx-auto py-4 border-default border-blue-800 rounded-lg">
+<p>The UI looks ugly - since I had to adapt some css, and did not spend much time to make it prettier. What counts is, that I can login and create an account.
+I will focus on having all features done and then spend one or two days on makeup.</p>
 <p>For now, you can create an account and login. Be aware, I will wipe the database before I publish it on ProductHunt (or anywhere).</p>
 <p>Tomorrow, I should work on the following tasks</p>
 <ul>
 <li>Add a WIP banner (so ppl know it&rsquo;s not complete yet)</li>
-<li>ability to create &ldquo;dictations&rdquo; by given a URL + text</li>
+<li>Implement the ability to create &ldquo;dictations&rdquo; by given a URL + text</li>
 <li>Generate a unique link for dictation</li>
 </ul>
 <div class="bg-orange-200 p-1 font-semibold mt-8" id="day11">Day 11: Login</div>
@@ -484,24 +484,24 @@ Hit me on Twitter (<a href="https://twitter.com/kiru_io" target="_blank">kiru_io
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/" class="hover:underline">
-                <span class="text-blue-700 font-bold"></span>
+            <a href="https://kiru.io/til/2021-05-25-tagged_templates/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Tagged Templates in JavaScript</span>
             </a>
         </div>
     </div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2017-03-13-java-and-oracle/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Java Enum and extract in SQL</span>
+            <a href="https://kiru.io/til/2017-03-27-case/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Various</span>
             </a>
         </div>
     </div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2019-12-07-new-javascript-features/" class="hover:underline">
-                <span class="text-blue-700 font-bold">JavaScript Function string</span>
+            <a href="https://kiru.io/til/2017-03-05-sms-length/" class="hover:underline">
+                <span class="text-blue-700 font-bold">What is the max length of an SMS?</span>
             </a>
         </div>
     </div>
