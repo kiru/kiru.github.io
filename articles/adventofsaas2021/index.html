@@ -17,7 +17,7 @@
 <meta property="og:title" content="AdventOfSaaS 2021"/>
 <meta property="og:url" content="https://kiru.io/articles/adventofsaas2021/" />
 <meta property="og:image" content="https://kiru.io/images/kiru-image.jpg"/>
-<meta property="og:description" content="Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜12 / 25 days   Table of content  Day 12: Login works   Day 11: Login   Day 10: Navigation   Day 9: Landing Page for Mobile   Day 8: Landing Page   Day 7: First week done, goal for next week   Day 6: Easy solution for transcripts   Day 5: Issue transcripts   Day 4: Simple correction   Day 3: Add video player   Day 2: Define MVP   Day 1: Setup   Day 0: Launch AdventOfSaas 2021  AdventOfSaaS 2021  What is AdventOfSaaS?" />
+<meta property="og:description" content="Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜13 / 25 days   Table of content  Day 13: Add dictations   Day 12: Login works   Day 11: Login   Day 10: Navigation   Day 9: Landing Page for Mobile   Day 8: Landing Page   Day 7: First week done, goal for next week   Day 6: Easy solution for transcripts   Day 5: Issue transcripts   Day 4: Simple correction   Day 3: Add video player   Day 2: Define MVP   Day 1: Setup   Day 0: Launch AdventOfSaas 2021  AdventOfSaaS 2021  What is AdventOfSaaS?" />
 <meta property="og:type" content="article" />
 
 
@@ -205,13 +205,14 @@
             <div class="text-sm font-mono tracking-wide">
 Progress: 
 <span id="progressbar">
-  🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜12 / 25 days
+  🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜13 / 25 days
 </span>
 
 </div>
 <div class="my-5">
 <h3 class="font-bold text-xl">Table of content</h3>
 <ul class="list-disc ml-3">
+  <li> <a href="#day13">Day 13: Add dictations</a> </li>
   <li> <a href="#day12">Day 12: Login works</a> </li>
   <li> <a href="#day11">Day 11: Login</a> </li>
   <li> <a href="#day10">Day 10: Navigation</a> </li>
@@ -237,6 +238,24 @@ Progress:
   </li>
 </ul>
 </div>
+<div class="bg-orange-200 p-1 font-semibold mt-8" id="day13">Day 13: Add dictations</div>
+<p>From yesterday&rsquo;s plan:</p>
+<ul>
+<li>Implement the ability to create &ldquo;dictations&rdquo; by given a URL + text</li>
+<li>Generate a unique link for dictation</li>
+</ul>
+<p>Those are implemented. Now I can add a new dictations, and see them. It took me some time to grasp the Supabase Row level Security feature, but once
+I understood it, the implementation was straightforward.</p>
+<p>The forms looks ugly (as usual), I did not spent much time to make it better:</p>
+<img src="/images/day13-dictation.png" alt="Add dictation" class="lg:w-3/4 shadow-xl mx-auto py-4 border-default border-blue-800 rounded-lg">
+<p>The login + adding dictation workflow works as expected. I should add some checks (e.g. empty values and so on), but for now I have something working:</p>
+<img src="/images/day13-add-dictation.gif" alt="Add dictation" class="lg:w-3/4 shadow-xl mx-auto py-4 border-default border-blue-800 rounded-lg">
+<p>For tomorrow, I will focus on the following two items:</p>
+<ul>
+<li>Add a WIP banner (so ppl know it&rsquo;s not complete yet) (from yesterday)</li>
+<li>Show dictation page, where user can type what he hears and we show a diff!</li>
+<li>Fix login in production ( I can&rsquo;t login for some reason)</li>
+</ul>
 <div class="bg-orange-200 p-1 font-semibold mt-8" id="day12">Day 12: Login works</div>
 <p>I have a working authentication system! Initially I wanted to add <a href="https://next-auth.js.org/">NextAuth.js</a> and Google authenticator.
 That approach needs a hosted database instance (to store dictations + text). In the end, I decided to try out <a href="https://supabase.com/">Supabase</a>. why?</p>
@@ -484,24 +503,24 @@ Hit me on Twitter (<a href="https://twitter.com/kiru_io" target="_blank">kiru_io
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2017-03-30-bash-shortcuts/" class="hover:underline">
-                <span class="text-blue-700 font-bold">BASH Shortcuts I was not not aware of</span>
-            </a>
-        </div>
-    </div>
-    
-    <div class="kiru-container">
-        <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2021-05-25-tagged_templates/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Tagged Templates in JavaScript</span>
-            </a>
-        </div>
-    </div>
-    
-    <div class="kiru-container">
-        <div class="pb-0 font-medium">
             <a href="https://kiru.io/til/2018-10-22-bash/" class="hover:underline">
                 <span class="text-blue-700 font-bold">.bash_profile vs .bashrc</span>
+            </a>
+        </div>
+    </div>
+    
+    <div class="kiru-container">
+        <div class="pb-0 font-medium">
+            <a href="https://kiru.io/til/2017-03-27-case/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Various</span>
+            </a>
+        </div>
+    </div>
+    
+    <div class="kiru-container">
+        <div class="pb-0 font-medium">
+            <a href="https://kiru.io/til/2017-03-14-du/" class="hover:underline">
+                <span class="text-blue-700 font-bold">What is the difference between `du` and `df` command?</span>
             </a>
         </div>
     </div>
