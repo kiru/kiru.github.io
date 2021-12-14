@@ -17,7 +17,7 @@
 <meta property="og:title" content="AdventOfSaaS 2021"/>
 <meta property="og:url" content="https://kiru.io/articles/adventofsaas2021/" />
 <meta property="og:image" content="https://kiru.io/images/kiru-image.jpg"/>
-<meta property="og:description" content="FlashDictation            Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜14 / 25 days   Table of content  Day 14: Share dictations   Day 13: Add dictations   Day 12: Login works   Day 11: Login   Day 10: Navigation   Day 9: Landing Page for Mobile   Day 8: Landing Page   Day 7: First week done, goal for next week   Day 6: Easy solution for transcripts   Day 5: Issue transcripts   Day 4: Simple correction   Day 3: Add video player   Day 2: Define MVP   Day 1: Setup   Day 0: Launch AdventOfSaas 2021  AdventOfSaaS 2021  What is AdventOfSaaS?" />
+<meta property="og:description" content="14 / 25 days 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜    FlashDictation            Table of content  Day 14: Share dictations   Day 13: Add dictations   Day 12: Login works   Day 11: Login   Day 10: Navigation   Day 9: Landing Page for Mobile   Day 8: Landing Page   Day 7: First week done, goal for next week   Day 6: Easy solution for transcripts   Day 5: Issue transcripts   Day 4: Simple correction   Day 3: Add video player   Day 2: Define MVP   Day 1: Setup   Day 0: Launch AdventOfSaas 2021  AdventOfSaaS 2021  What is AdventOfSaaS?" />
 <meta property="og:type" content="article" />
 
 
@@ -109,7 +109,7 @@
         max-width: 720px;
         margin: 0 auto;
     }
-</style><body class="antialiased h-screen mt-3  mx-2">
+</style><body class="antialiased h-screen mt-3  mx-4 md:mx-2">
 
 <div class="fixed left-0 top-0 h-full bg-blue-600 hidden lg:block" style="width: 15px"></div>
 <div class="fixed left-0 top-0 h-full bg-blue-700 hidden md:block" style="width: 10px"></div>
@@ -143,13 +143,13 @@
         </div>
     </div>
 </div><div class="bg-blue-100">
-    <div class="kiru-container  py-2 text-xl ">
-        <div class="flex flex-1 my-4 text-blue-800 justify-center" style="text-underline-offset: 5px">
-            <div class="mx-2 hover:underline"><a href="/">Home</a></div>
-            <div class="mx-2 hover:underline"><a href="/til/">TIL</a></div>
+    <div class="kiru-container p-2 text-xl ">
+        <div class="flex flex-col md:flex-row md:flex-1 m-4 gap-4 text-blue-800 justify-center" style="text-underline-offset: 5px">
+            <div class="hover:underline"><a href="/">Home</a></div>
+            <div class="hover:underline"><a href="/til/">TIL</a></div>
            
-           <div class="mx-2 hover:underline"><a href="/articles/">Articles</a></div>
-            <div class="mx-2 hover:underline text-orange-800 font-bold"><a href="/articles/adventofsaas2021/">AdventOfSaaS 2021</a></div>
+           <div class="hover:underline"><a href="/articles/">Articles</a></div>
+            <div class="hover:underline text-orange-800 font-bold"><a href="/articles/adventofsaas2021/">AdventOfSaaS 2021</a></div>
             <div class="">
                 <a href="https://twitter.com/kiru_io/"
                    target="_blank"
@@ -202,11 +202,18 @@
         </div>
 
         <div class="markdown">
-            <a target="_blank" href="https://www.flashdictation.com/">
+            <div class="text-sm font-mono tracking-wide mx-auto text-center pb-3">
+<div class="text-xs">14 / 25 days</div>
+<span id="progressbar" class="text-xs ">
+  🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
+</span>
+
+</div>
+<a target="_blank" href="https://www.flashdictation.com/">
 
   <div class="kiru-container ">
-    <div class="w-2/3 mx-auto mb-3">
-      <svg viewBox="0 68 150 30" version="1.1" id="svg_null" class="">
+    <div class="w-2/3 mx-auto">
+      <svg viewBox="20 68 130 30" version="1.1" id="svg_null" class="">
         <g id="root" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g id="group" transform="translate(60.000000, 69.000000)">
             <rect id="Rectangle-14" x="0" y="0" width="84" height="22"></rect>
@@ -228,13 +235,6 @@
   </div>
 </a>
 
-<div class="text-sm font-mono tracking-wide">
-Progress: 
-<span id="progressbar">
-  🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜14 / 25 days
-</span>
-
-</div>
 <div class="my-5">
 <h3 class="font-bold text-xl">Table of content</h3>
 <ul class="list-disc ml-3">
@@ -544,24 +544,24 @@ Hit me on Twitter (<a href="https://twitter.com/kiru_io" target="_blank">kiru_io
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/" class="hover:underline">
-                <span class="text-blue-700 font-bold"></span>
+            <a href="https://kiru.io/til/2017-03-29-uri/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Is URI case sensitive?</span>
             </a>
         </div>
     </div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2019-11-05-simulate-network-control/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Simulate network control</span>
+            <a href="https://kiru.io/til/2017-03-05-sms-length/" class="hover:underline">
+                <span class="text-blue-700 font-bold">What is the max length of an SMS?</span>
             </a>
         </div>
     </div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2017-03-07-binding/" class="hover:underline">
-                <span class="text-blue-700 font-bold">What is the difference between 127.0.0.1 and 0.0.0.0?</span>
+            <a href="https://kiru.io/til/2017-03-28-sqllite/" class="hover:underline">
+                <span class="text-blue-700 font-bold">SQLite Type Affinity</span>
             </a>
         </div>
     </div>
