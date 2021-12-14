@@ -221,13 +221,15 @@
             <div class="text-sm font-mono tracking-wide">
 Progress: 
 <span id="progressbar">
-  🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜13 / 25 days
+  🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜14 / 25 days
 </span>
 
 </div>
 <div class="my-5">
 <h3 class="font-bold text-xl">Table of content</h3>
 <ul class="list-disc ml-3">
+  <li> <a href="#today">www.flashdictation.com</a> </li>
+  <li> <a href="#day14">Day 14: Share dictations</a> </li>
   <li> <a href="#day13">Day 13: Add dictations</a> </li>
   <li> <a href="#day12">Day 12: Login works</a> </li>
   <li> <a href="#day11">Day 11: Login</a> </li>
@@ -254,6 +256,23 @@ Progress:
   </li>
 </ul>
 </div>
+<a target="_blank" href="https://www.flashdictation.com/">
+<div id="today" class="bg-orange-200 text-orange-800 text-2xl font-mono p-1 my-1 text-center rounded-sm font-semibold" >www.flashdictation.com</div>
+</a>
+<div class="bg-orange-200 p-1 font-semibold mt-8" id="day14">Day 14: Share dictations</div>
+<p>Let&rsquo;s begin with the simplest change: Added a WIP based on <a href="https://shkspr.mobi/blog/2021/09/pure-css-corner-banner/">this</a> blog post:</p>
+<img src="/images/day14-wip.png" alt="WIP" class="lg:w-3/4 shadow-xl mx-auto py-4 border-default border-blue-800 rounded-lg">
+<p>Implemented the actual dictation page. The user can type what he hears and see a score.
+For the score, right now I use the <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein</a> distance
+(for non-programmers:  An algorithm which gives how close to words are). It is not the best score, but
+I get a single value for free. I have to brainstorm more about what is a good metric.</p>
+<p>The workflow looks like this:
+<img src="/images/day14-dictation.gif" alt="Dictation scoring workflow" class="lg:w-3/4 shadow-xl mx-auto border-default my-4"></p>
+<p>You can still not login in to production. I have to setup a proper production environment in Supabase, because
+the URL which is sent in the mail (for the magic-link) is hard-coded. I tried to fix it in a few minutes, but
+it will take longer than that. I decide to postpone it until all features are complete.</p>
+<p>For tomorrow, I will spend some time to make all ui-component consistent, and test on mobile.</p>
+<p>I got asked where the link for the project is a few times, added a prominent link on the top of this page.</p>
 <div class="bg-orange-200 p-1 font-semibold mt-8" id="day13">Day 13: Add dictations</div>
 <p>From yesterday&rsquo;s plan:</p>
 <ul>
