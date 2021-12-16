@@ -17,7 +17,7 @@
 <meta property="og:title" content="AdventOfSaaS 2021"/>
 <meta property="og:url" content="https://kiru.io/articles/adventofsaas2021/" />
 <meta property="og:image" content="https://kiru.io/images/kiru-image.jpg"/>
-<meta property="og:description" content="15 / 25 days 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜    FlashDictation            Table of content  Day 15: Makeup Part 1   Day 14: Share dictations   Day 13: Add dictations   Day 12: Login works   Day 11: Login   Day 10: Navigation   Day 9: Landing Page for Mobile   Day 8: Landing Page   Day 7: First week done, goal for next week   Day 6: Easy solution for transcripts   Day 5: Issue transcripts   Day 4: Simple correction   Day 3: Add video player   Day 2: Define MVP   Day 1: Setup   Day 0: Launch AdventOfSaas 2021  AdventOfSaaS 2021  What is AdventOfSaaS?" />
+<meta property="og:description" content="16 / 25 days 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜    FlashDictation            Table of content  Day 15: Makeup Part 1   Day 14: Share dictations   Day 13: Add dictations   Day 12: Login works   Day 11: Login   Day 10: Navigation   Day 9: Landing Page for Mobile   Day 8: Landing Page   Day 7: First week done, goal for next week   Day 6: Easy solution for transcripts   Day 5: Issue transcripts   Day 4: Simple correction   Day 3: Add video player   Day 2: Define MVP   Day 1: Setup   Day 0: Launch AdventOfSaas 2021  AdventOfSaaS 2021  What is AdventOfSaaS?" />
 <meta property="og:type" content="article" />
 
 <link rel="stylesheet" href="/css/kiru.css">
@@ -203,9 +203,9 @@
 
         <div class="markdown">
             <div class="text-sm font-mono tracking-wide mx-auto text-center pb-3">
-<div class="text-xs">15 / 25 days</div>
+<div class="text-xs">16 / 25 days</div>
 <span id="progressbar" class="text-xs ">
-  🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
+  🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
 </span>
 
 </div>
@@ -268,12 +268,12 @@
 </div>
 <div class="bg-orange-200 p-1 font-semibold mt-8" id="day15">Day 15: Makeup Part 1</div>
 <p>Before I changed all pages to be consistent, I re-evaluated the todos, and reorganized them:</p>
-<img src="/images/day15-roadmap.png" alt="Roadmap" class="lg:w-3/4 shadow-md mx-auto py-4 border-default border-blue-800 rounded-lg">
+<img src="/images/day15-roadmap.png" alt="Roadmap" class="lg:w-3/4 shadow-md mx-auto my-4 border-default border-blue-800 rounded-lg">
 <p>This is the result after re-doing the dictation pages:</p>
 <div class="flex gap-3 py-3">
-<img src="/images/day15-home.png" alt="Makeup Home page" class="lg:w-3/4 shadow-md mx-auto py-4 border-default border-blue-800 rounded-lg">
-<img src="/images/day15-dictations.png" alt="Makeup dictations page" class="lg:w-3/4 shadow-md mx-auto py-4 border-default border-blue-800 rounded-lg">
-<img src="/images/day15-edit.png" alt="Makeup edit page page" class="lg:w-3/4 shadow-md mx-auto py-4 border-default border-blue-800 rounded-lg">
+<img src="/images/day15-home.png" alt="Makeup Home page" class="lg:w-3/4 shadow-md mx-auto my-4 border-default border-blue-800 rounded-lg">
+<img src="/images/day15-dictations.png" alt="Makeup dictations page" class="lg:w-3/4 shadow-md mx-auto my-4 border-default border-blue-800 rounded-lg">
+<img src="/images/day15-edit.png" alt="Makeup edit page page" class="lg:w-3/4 shadow-md mx-auto my-4 border-default border-blue-800 rounded-lg">
 </div>
 <p>The landing page is not complete yet, as well as the login and the actual dictation page (which you share).
 I did not have much time to finish those today.</p>
@@ -281,7 +281,7 @@ I did not have much time to finish those today.</p>
 <p>I will update <a href="www.flashdictation.com">flashdictation.com</a> once all of those pages are complete.</p>
 <div class="bg-orange-200 p-1 font-semibold mt-8" id="day14">Day 14: Share dictations</div>
 <p>Let&rsquo;s begin with the simplest change: Added a WIP based on <a href="https://shkspr.mobi/blog/2021/09/pure-css-corner-banner/">this</a> blog post:</p>
-<img src="/images/day14-wip.png" alt="WIP" class="lg:w-3/4 shadow-xl mx-auto py-4 border-default border-blue-800 rounded-lg">
+<img src="/images/day14-wip.png" alt="WIP" class="lg:w-3/4 shadow-xl mx-auto my-4 border-default border-blue-800 rounded-lg">
 <p>Implemented the actual dictation page. The user can type what he hears and see a score.
 For the score, right now I use the <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein</a> distance
 (for non-programmers:  An algorithm which gives how close to words are). It is not the best score, but
@@ -302,9 +302,9 @@ it will take longer than that. I decide to postpone it until all features are co
 <p>Those are implemented. Now I can add new dictations, and see them. It took me some time to grasp the Supabase Row-level Security feature, but once
 I understood it, the implementation was straightforward.</p>
 <p>The form looks ugly (as usual), I did not spend much time making it better:</p>
-<img src="/images/day13-dictation.png" alt="Add dictation" class="lg:w-3/4 shadow-xl mx-auto py-4 border-default border-blue-800 rounded-lg">
+<img src="/images/day13-dictation.png" alt="Add dictation" class="lg:w-3/4 shadow-xl mx-auto my-4 border-default border-blue-800 rounded-lg">
 <p>The login + adding dictation workflow works as expected. I should add some checks (e.g. empty values and so on), but for now, I have something working:</p>
-<img src="/images/day13-add-dictation.gif" alt="Add dictation" class="lg:w-3/4 shadow-xl mx-auto py-4 border-default border-blue-800 rounded-lg">
+<img src="/images/day13-add-dictation.gif" alt="Add dictation" class="lg:w-3/4 shadow-xl mx-auto my-4 border-default border-blue-800 rounded-lg">
 <p>For tomorrow, I will focus on the following two items:</p>
 <ul>
 <li>Add a WIP banner (so ppl know it&rsquo;s not complete yet) (from yesterday)</li>
@@ -323,8 +323,8 @@ That approach needs a hosted database instance (to store dictations + text). In 
 </ul>
 <p>I found <a href="https://github.com/vercel/nextjs-subscription-payments">this</a> nice project from Vercel, with Stripe and Supabase integration.
 Took it as a template and adapted it for my use case. This is the current result:</p>
-<img src="/images/day12-login.png" alt="Login" class="lg:w-3/4 shadow-xl mx-auto py-4 border-default border-blue-800 rounded-lg">
-<img src="/images/day12-login-user.png" alt="Login" class="lg:w-3/4 shadow-xl mx-auto py-4 border-default border-blue-800 rounded-lg">
+<img src="/images/day12-login.png" alt="Login" class="lg:w-3/4 shadow-xl mx-auto my-4 border-default border-blue-800 rounded-lg">
+<img src="/images/day12-login-user.png" alt="Login" class="lg:w-3/4 shadow-xl mx-auto my-4 border-default border-blue-800 rounded-lg">
 <p>The UI looks ugly - since I had to adapt some css, and did not spend much time to make it prettier. What counts is, that I can login and create an account.
 I will focus on having all features done and then spend one or two days on makeup.</p>
 <p>For now, you can create an account and login. Be aware, I will wipe the database before I publish it on ProductHunt (or anywhere).</p>
@@ -558,24 +558,24 @@ Hit me on Twitter (<a href="https://twitter.com/kiru_io" target="_blank">kiru_io
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2019-05-17-pipe-linux/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Shortcut for linux pipe</span>
+            <a href="https://kiru.io/til/2019-10-22-fswatch/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Execute python file on change fswatch</span>
             </a>
         </div>
     </div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2019-12-06-java-comment-code/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Java code comments</span>
+            <a href="https://kiru.io/til/2018-10-22-bash/" class="hover:underline">
+                <span class="text-blue-700 font-bold">.bash_profile vs .bashrc</span>
             </a>
         </div>
     </div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2017-03-27-case/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Various</span>
+            <a href="https://kiru.io/til/2019-11-05-simulate-network-control/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Simulate network control</span>
             </a>
         </div>
     </div>
