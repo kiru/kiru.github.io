@@ -17,7 +17,7 @@
 <meta property="og:title" content="AdventOfSaaS 2021"/>
 <meta property="og:url" content="https://kiru.io/articles/adventofsaas2021/" />
 <meta property="og:image" content="https://kiru.io/images/kiru-image.jpg"/>
-<meta property="og:description" content="16 / 25 days 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜    FlashDictation            Table of content  Day 16: Makeup Part 2   Day 15: Makeup Part 1   Day 14: Share dictations   Day 13: Add dictations   Day 12: Login works   Day 11: Login   Day 10: Navigation   Day 9: Landing Page for Mobile   Day 8: Landing Page   Day 7: First week done, goal for next week   Day 6: Easy solution for transcripts   Day 5: Issue transcripts   Day 4: Simple correction   Day 3: Add video player   Day 2: Define MVP   Day 1: Setup   Day 0: Launch AdventOfSaas 2021  AdventOfSaaS 2021  What is AdventOfSaaS?" />
+<meta property="og:description" content="17 / 25 days 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜    FlashDictation            Table of content  Day 17: Production   Day 16: Makeup Part 2   Day 15: Makeup Part 1   Day 14: Share dictations   Day 13: Add dictations   Day 12: Login works   Day 11: Login   Day 10: Navigation   Day 9: Landing Page for Mobile   Day 8: Landing Page   Day 7: First week done, goal for next week   Day 6: Easy solution for transcripts   Day 5: Issue transcripts   Day 4: Simple correction   Day 3: Add video player   Day 2: Define MVP   Day 1: Setup   Day 0: Launch AdventOfSaas 2021  AdventOfSaaS 2021  What is AdventOfSaaS?" />
 <meta property="og:type" content="article" />
 
 <link rel="stylesheet" href="/css/kiru.css">
@@ -203,9 +203,9 @@
 
         <div class="markdown">
             <div class="text-sm font-mono tracking-wide mx-auto text-center pb-3">
-<div class="text-xs">16 / 25 days</div>
+<div class="text-xs">17 / 25 days</div>
 <span id="progressbar" class="text-xs ">
-  🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
+  🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜
 </span>
 
 </div>
@@ -238,6 +238,7 @@
 <div class="my-5">
 <h3 class="font-bold text-xl">Table of content</h3>
 <ul class="list-disc ml-3">
+  <li> <a href="#day17">Day 17: Production</a> </li>
   <li> <a href="#day16">Day 16: Makeup Part 2</a> </li>
   <li> <a href="#day15">Day 15: Makeup Part 1</a> </li>
   <li> <a href="#day14">Day 14: Share dictations</a> </li>
@@ -267,6 +268,13 @@
   </li>
 </ul>
 </div>
+<div class="bg-orange-200 p-1 font-semibold mt-8" id="day17">Day 17: Production</div>
+<p>No UI changes today. I tried to fix the production environment, but there were too many issues. The main problem is, that
+I have to setup a different Supabase project and copy all data. Unfortunately, that is not easy. So I decided to re-do all database
+and recreate the data. Most of them being Stripe-products. Then I spent some time to fix stripe production.</p>
+<p>Obviously this did not work as flawlessly. Finally, I gave up and thought I can at least fix Vercel to have the landing page fixed.
+After ignoring bunch of TypeScript errors, I have a new version online:</p>
+<img src="/images/day17-landing.png" alt="edit page" class="lg:w-3/4 shadow-md mx-auto my-4 border-default border-blue-800 rounded-lg">
 <div class="bg-orange-200 p-1 font-semibold mt-8" id="day16">Day 16: Makeup Part 2</div>
 <p>As planned, finished the redesign for the login and dictation pages:</p>
 <div class="flex flex-col md:flex-row md:gap-3 py-3">
@@ -568,24 +576,24 @@ Hit me on Twitter (<a href="https://twitter.com/kiru_io" target="_blank">kiru_io
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2017-03-30-bash-shortcuts/" class="hover:underline">
-                <span class="text-blue-700 font-bold">BASH Shortcuts I was not not aware of</span>
+            <a href="https://kiru.io/til/2017-03-05-sms-length/" class="hover:underline">
+                <span class="text-blue-700 font-bold">What is the max length of an SMS?</span>
             </a>
         </div>
     </div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2018-10-22-bash/" class="hover:underline">
-                <span class="text-blue-700 font-bold">.bash_profile vs .bashrc</span>
+            <a href="https://kiru.io/til/2017-03-29-uri/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Is URI case sensitive?</span>
             </a>
         </div>
     </div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2019-12-07-new-javascript-features/" class="hover:underline">
-                <span class="text-blue-700 font-bold">JavaScript Function string</span>
+            <a href="https://kiru.io/til/2017-03-13-java-and-oracle/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Java Enum and extract in SQL</span>
             </a>
         </div>
     </div>
