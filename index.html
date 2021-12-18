@@ -219,9 +219,9 @@
 
         <div class="markdown">
             <div class="text-sm font-mono tracking-wide mx-auto text-center pb-3">
-<div class="text-xs">17 / 25 days</div>
+<div class="text-xs">18 / 25 days</div>
 <span id="progressbar" class="text-xs ">
-  🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜
+  🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜
 </span>
 
 </div>
@@ -254,6 +254,7 @@
 <div class="my-5">
 <h3 class="font-bold text-xl">Table of content</h3>
 <ul class="list-disc ml-3">
+  <li> <a href="#day18">Day 18: Production ready?</a> </li>
   <li> <a href="#day17">Day 17: Production</a> </li>
   <li> <a href="#day16">Day 16: Makeup Part 2</a> </li>
   <li> <a href="#day15">Day 15: Makeup Part 1</a> </li>
@@ -284,6 +285,23 @@
   </li>
 </ul>
 </div>
+<div class="bg-orange-200 p-1 font-semibold mt-8" id="day18">Day 18: Production ready?</div>
+<p>Managed to fix the production environment (by copying all data from dev to production). But be aware, I will wipe the DB before I put the project on ProductHunt.</p>
+<p>I am preparing to add Stripe integration. A warning is shown once you hit 5 dictations:</p>
+<p><img src="/images/day18-premium.png" alt="Premium" 
+class="lg:w-3/4 shadow-md mx-auto my-4 border-default border-blue-800 rounded-lg"></p>
+<p>There are not many changes, and my time to work alongside is limited. Therefore, I will focus now on completing a
+&ldquo;SaaS&rdquo; project, then having all the features. Once the project is online and I have a few users using them, I can still add new features.</p>
+<p>These are the missing steps:</p>
+<ul>
+<li>Add Stripe integration</li>
+<li>Reset database</li>
+<li>Fix all og-tags</li>
+<li>Add terms and services + privacy page</li>
+<li>Add pricing information on the landing page and examples</li>
+<li>Make a small marketing plan (when to put it on which platform)</li>
+</ul>
+<p>The goal should be to invest next week in marketing (aka promoting the project on different platforms). Wish me luck.</p>
 <div class="bg-orange-200 p-1 font-semibold mt-8" id="day17">Day 17: Production</div>
 <p>No UI changes today. I tried to fix the production environment, but there were too many issues. The main problem is, that
 I have to setup a different Supabase project and copy all data. Unfortunately, that is not easy. So I decided to re-do the database
