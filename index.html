@@ -219,9 +219,9 @@
 
         <div class="markdown">
             <div class="text-sm font-mono tracking-wide mx-auto text-center pb-3">
-<div class="text-xs">18 / 25 days</div>
+<div class="text-xs">19 / 25 days</div>
 <span id="progressbar" class="text-xs ">
-  🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜
+  🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜
 </span>
 
 </div>
@@ -254,6 +254,7 @@
 <div class="my-5">
 <h3 class="font-bold text-xl">Table of content</h3>
 <ul class="list-disc ml-3">
+  <li> <a href="#day19">Day 19: Production ready!</a> </li>
   <li> <a href="#day18">Day 18: Production ready?</a> </li>
   <li> <a href="#day17">Day 17: Production</a> </li>
   <li> <a href="#day16">Day 16: Makeup Part 2</a> </li>
@@ -285,6 +286,26 @@
   </li>
 </ul>
 </div>
+<div class="bg-orange-200 p-1 font-semibold mt-8" id="day19">Day 19: Production ready!</div>
+<p>Today was the longest I worked for on this project at once. I wanted to finish almost all tasks which needed to be done
+before going Live. I don&rsquo;t know where to start, there were too many changes. Among the major tasks, here are some:</p>
+<p><strong>Added pricing to the landing page:</strong></p>
+<img src="/images/day19-pricing.png" alt="Pricing" class="lg:w-3/4 shadow-md mx-auto my-4 border-default border-blue-800 rounded-lg">
+<p><strong>Added Stripe integration:</strong></p>
+<p>This was something I have been postponing for a while. Just out of fear it would take longer than I expected. In the end it did!
+I spent too much time debugging a stripe-api call issue, but eventually managed to fix everything.
+There is still a tiny bug left on production - but I don&rsquo;t know exactly how to fix that. Once I create a subscription, Stripe forwards me to a page, but that
+page contains the Vercel URL - instead of flashdictation.com (for now that is not a huge issue, I will focus on marketing and fix it later).</p>
+<p>Once you click on subscription, you will be forwarded to Stripe, where you can provide your payment information:</p>
+<img src="/images/day19-subscription.png" alt="Subscription" class="lg:w-3/4 shadow-md mx-auto my-4 border-default border-blue-800 rounded-lg">
+<p><strong>Some tiny tasks</strong></p>
+<ul>
+<li>Checked all pages on mobile</li>
+<li>Added footer and privacy information</li>
+<li>Added contact information</li>
+<li>Fixed all bugs (e.g edit did not work before)</li>
+</ul>
+<p>Next week, I will focus on promoting the project. Finding some customers, and fixing any major bugs.</p>
 <div class="bg-orange-200 p-1 font-semibold mt-8" id="day18">Day 18: Production ready?</div>
 <p>Managed to fix the production environment (by copying all data from dev to production). But be aware, I will wipe the DB before I put the project on ProductHunt.</p>
 <p>I am preparing to add Stripe integration. A warning is shown once you hit 5 dictations:</p>
