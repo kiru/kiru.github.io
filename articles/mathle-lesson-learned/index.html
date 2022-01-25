@@ -4,7 +4,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 
-<title>TIL 22.10.2019 - Kiru.io</title>
+<title>Mathle: Lessons Learned - Kiru.io</title>
 
 
 <meta name="description" content=""/>
@@ -14,16 +14,12 @@
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:creator" content="@kiru_io"/>
 
-<meta property="og:title" content="TIL 22.10.2019"/>
-<meta property="og:url" content="https://kiru.io/til/2019-10-22-fswatch/" />
+<meta property="og:title" content="Mathle: Lessons Learned"/>
+<meta property="og:url" content="https://kiru.io/articles/mathle-lesson-learned/" />
 <meta property="og:image" content="https://kiru.io/images/kiru-image.jpg"/>
-<meta property="og:description" content="fswatch tracks file system events. Execute a command on file change (taken from 1 as reference to search in the future):
-fswatch -0 file.py | xargs -0 -I {} command Explanation:
-  -O split record by NUL character
-  xargs -O matches fswatch splitting
-  -I run given command on each file changes
-    How to Use fswatch&#160;&#x21a9;&#xfe0e;
-   " />
+<meta property="og:description" content="I spent a few hours coding Mathle, which is a mathy version of Wordle. The idea came after I came across Primel (find a 5-digit prime number in 6 guesses) and struggled to solve it.
+The whole page is implemented with React (specifically Next.js). Here are a few lessons I learned about developing a simple game from idea on the paper to actual page and the launch:
+   TypeScript makes it easier to abstract certain parts with types." />
 <meta property="og:type" content="article" />
 
 <link rel="stylesheet" href="/css/kiru.css">
@@ -205,63 +201,85 @@ fswatch -0 file.py | xargs -0 -I {} command Explanation:
 <div class="mt-5 markdown-content text-xl">
     <div class="kiru-container">
         <div class="pb-0 font-medium pb-5">
-            <h1 class=" font-bold text-kiru-main text-2xl pb-1">Execute python file on change fswatch</h1>
-            <div class="text-gray-500 text-sm">TIL 22.10.2019</div>
+            <h1 class="text-kiru-main text-3xl pb-1">Mathle: Lessons Learned</h1>
+            <div class="text-gray-500 text-sm">25.01.2021</div>
         </div>
 
         <div class="markdown">
-            <p><p><code>fswatch</code> tracks file system events. Execute a command on file change
-(taken from <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> as reference to search in the future):</p>
-<pre tabindex="0"><code>fswatch -0 file.py | xargs -0 -I {} command
-</code></pre><p>Explanation:</p>
-<ul>
+            <p>I spent a few hours coding <a href="https://mathle.bykiru.rocks/">Mathle</a>, which is a mathy version of <a href="https://www.powerlanguage.co.uk/wordle/">Wordle</a>.
+The idea came after I came across <a href="https://converged.yt/primel/">Primel</a> (find a 5-digit prime number in 6 guesses) and struggled to solve it.</p>
+<p>The whole page is implemented with React (specifically Next.js). Here are a few lessons I learned about developing a
+simple game from idea on the paper to actual page and the launch:</p>
+<div class="flex justify-center">
+<a href="https://mathle.bykiru.rocks/" target="_blank">
+<img src="/images/mathle-instruction.png" 
+alt="Mathle instruction" class="rounded shadow-lg border-blue-100 border-2 max-w-md my-4">
+</a>
+</div>
+<ol class="list-decimal flex gap-3 flex-col">
 <li>
-<p><code>-O</code> split record by <code>NUL</code> character</p>
+TypeScript makes it easier to abstract certain parts with types. For example, I have an enum <span class="bg-gray-300 px-1">Color</span> to 
+represent the cell color, or a type RowSolution to represent the actual solution. Use types where useful, otherwise ignore it (remember, the goal is to have a working prototype)
 </li>
 <li>
-<p><code>xargs -O</code> matches fswatch splitting</p>
+TypeScript type warnings with React are annoying. Fall back to @ts-ignore. I was using a mix of typed functional components and untyped functions.
 </li>
 <li>
-<p><code>-I</code> run given command on each file changes</p>
+Ignore the user interface and focus on a bug-free proof of concept. 
+I spent too much time making everything pretty, but spend another few hours fixing and introducings more bugs:
+<div class="flex justify-center">
+<a href="https://mathle.bykiru.rocks/" target="_blank">
+<img src="/images/mathle-bug1.png" 
+alt="Mathle bug" class="rounded shadow-md my-4">
+</a>
+</div>
 </li>
-</ul>
-<section class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1" role="doc-endnote">
-<p><a href="https://github.com/emcrisostomo/fswatch/wiki/How-to-Use-fswatch">How to Use fswatch</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li>
+If it is easier to do it by hand, then don't automate. For now, I generate a puzzle once a day and re-publish the whole project. 
+I did not find an easy way (since the whole page is on the client-side) to provide the solution to the puzzle. 
+The next task is to automate this process. 
+</li>
+<li>
+Check on HackerNews if anyone launched a similar project: When I submitted my project to HN, there were three other projects related to Wordle 🤦.  
+</li>
+<li>
+Take more screenshots and document the process better next time. That way this article would contain more pictures. 
+</li>
+<li>It is possible to "hack" something workable in 5h and spend another 6h fixing all the bugs.</li>
+<li>
+Don't buy a domain for each project. Actually, this is something obvious for everyone, but I am a domain-buyer-and-never-user. 
+Too many domains expired without any associated projects being born, so I decided to publish this project as a subdomain. 
+That saves me money and reduces the struggle of setting it up each time. 
 </li>
 </ol>
-</section>
-</p>
         </div>
     </div>
 </div>
 
 <div class="mt-5"></div>
 <div class="kiru-container pt-3 pb-5 border-t-default border-blue-200">
-    <div class="pb-1">Learn more:</div>
+    <div class="pb-1">Random article:</div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2017-03-30-bash-shortcuts/" class="hover:underline">
-                <span class="text-blue-700 font-bold">BASH Shortcuts I was not not aware of</span>
+            <a href="https://kiru.io/til/2017-03-13-java-and-oracle/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Java Enum and extract in SQL</span>
             </a>
         </div>
     </div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2017-03-28-sqllite/" class="hover:underline">
-                <span class="text-blue-700 font-bold">SQLite Type Affinity</span>
+            <a href="https://kiru.io/til/2021-05-25-tagged_templates/" class="hover:underline">
+                <span class="text-blue-700 font-bold">Tagged Templates in JavaScript</span>
             </a>
         </div>
     </div>
     
     <div class="kiru-container">
         <div class="pb-0 font-medium">
-            <a href="https://kiru.io/til/2019-10-22-fswatch/" class="hover:underline">
-                <span class="text-blue-700 font-bold">Execute python file on change fswatch</span>
+            <a href="https://kiru.io/til/" class="hover:underline">
+                <span class="text-blue-700 font-bold"></span>
             </a>
         </div>
     </div>

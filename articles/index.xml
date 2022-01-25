@@ -16,6 +16,17 @@
     </item>
     
     <item>
+      <title>Mathle: Lessons Learned</title>
+      <link>https://kiru.io/articles/mathle-lesson-learned/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kiru.io/articles/mathle-lesson-learned/</guid>
+      <description>I spent a few hours coding Mathle, which is a mathy version of Wordle. The idea came after I came across Primel (find a 5-digit prime number in 6 guesses) and struggled to solve it.
+The whole page is implemented with React (specifically Next.js). Here are a few lessons I learned about developing a simple game from idea on the paper to actual page and the launch:
+   TypeScript makes it easier to abstract certain parts with types.</description>
+    </item>
+    
+    <item>
       <title>Unconventional Programming Tips: Comments</title>
       <link>https://kiru.io/articles/coding-comments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
