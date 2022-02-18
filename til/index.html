@@ -24,6 +24,9 @@
 <link rel="shortcut icon" href="/images/favicon.ico">
 <script defer data-domain="kiru.io" src="https://plausible.io/js/plausible.js"></script>
 
+
+
+
 <style>
     .markdown {
         word-break: break-word;
@@ -109,6 +112,13 @@
         max-width: 720px;
         margin: 0 auto;
     }
+
+    code.has-jax {
+        -webkit-font-smoothing: antialiased;
+        background: inherit !important;
+        border: none !important;
+        font-size: 100%;
+    }
 </style><body class="antialiased h-screen mt-3  mx-4 md:mx-2">
 
 <div class="fixed left-0 top-0 h-full bg-blue-600 hidden lg:block" style="width: 15px"></div>
@@ -142,17 +152,17 @@
             </div>
         </div>
     </div>
-</div><div class="bg-blue-100">
+</div><div class="bg-blue-100 rounded-lg shadow">
   <div class="kiru-container p-2 text-xl ">
-    <div class="flex justify-between flex-col md:flex-row">
-      <div class="flex flex-col md:flex-row md:flex-1 my-4 gap-4 text-blue-800"
+    <div class="flex justify-between flex-row md:flex-row">
+      <div class="flex flex-row md:flex-row md:flex-1 my-2 gap-4 text-blue-800"
            style="text-underline-offset: 5px">
         <div class="hover:underline"><a href="/">Home</a></div>
         <div class="hover:underline"><a href="/til/">TIL</a></div>
         
         <div class="hover:underline"><a href="/articles/">Articles</a></div>
       </div>
-      <div class="flex flex-col my-4 gap-4 text-blue-800">
+      <div class="flex flex-col my-2 gap-4 text-blue-800">
         <a href="https://twitter.com/kiru_io/"
            target="_blank"
            class="text-blue-800 font-bold hover:text-blue-600 hover:underline">@kiru_io</a>
