@@ -224,15 +224,15 @@ select extract(year from created_timestamp), extract(month from created_timestam
     </item>
     
     <item>
-      <title>ChangeThisText.com - Changelog</title>
+      <title>ChangeThisText.com - Timeline</title>
       <link>https://kiru.io/articles/changethistext-launch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kiru.io/articles/changethistext-launch/</guid>
-      <description>16. April 2021
+      <description>TLDR Changethistext.com is going to expire. Can I publish it online and make enough money to save it?
+16. April 2021
 My Brain: 💡 What if I had a webpage with a simple text message. Anyone can decide to change that message, but has to pay a small fee.
-Me: This is the best idea I have to date! I can implement this in a few hours, put it online and expect some 💰 and more traffic. Let&amp;rsquo;s buy the domain.
-Looks for the cheapest place to buy changethistext.</description>
+Me: This is the best idea I have had to date! I can implement this in a few hours, put it online and expect some 💰 and more traffic.</description>
     </item>
     
     <item>
