@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="500"
+   height="500"
+   viewBox="0 0 500 500"
+   xml:space="preserve"
+   id="svg516"
+   sodipodi:docname="k_only.svg"
+   inkscape:version="1.2.1 (9c6d41e4, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs520" /><sodipodi:namedview
+   id="namedview518"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   showgrid="false"
+   inkscape:zoom="1.586"
+   inkscape:cx="260.71879"
+   inkscape:cy="334.48928"
+   inkscape:window-width="2560"
+   inkscape:window-height="1387"
+   inkscape:window-x="0"
+   inkscape:window-y="25"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="g796" />
+    <g
+   transform="matrix(1 0 0 1 271.63 241.19)"
+   id="hOBV7oRFq22Ml0ucL-0Q5">
+<g
+   id="g796"
+   transform="translate(138.08323,1.261034)"><rect
+     style="fill:#bc2a61;stroke:#000000;stroke-width:0;fill-opacity:1"
+     id="rect856"
+     width="580.07568"
+     height="556.74652"
+     x="-408.45221"
+     y="-241.19002" /><path
+     style="opacity:1;fill:#ffffff;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;fill-opacity:1"
+     vector-effect="non-scaling-stroke"
+     d="m -208.06403,66.1095 c -1.239,5.664 -3.894,14.16 1.416,14.16 3.363,0 9.381,-3.009 13.806,-15.576 2.832,-7.788 6.018,-22.833 9.027,-37.347 0.708,-3.009 2.124,-18.408 6.549,-18.408 5.31,0 11.505,6.372 20.355,16.992 16.107,19.47 17.877,68.499 55.401,68.499 10.266,0 13.452,-4.425 13.452,-11.505 0,-2.655 -1.416,-3.54 -3.54,-3.54 -3.363,0 -8.673,2.124 -12.567,2.124 -23.01,0 -22.125,-43.011 -41.772,-69.384 -5.133,-6.903 -14.16,-10.974 -20.178,-11.328 22.833,-11.859 60.711,-60.534 60.711,-86.73 0,-5.664 -1.947,-8.496 -7.965,-8.496 -4.071,0 -5.841,7.611 -7.611,13.275 -9.027,29.559 -40.887,62.658 -56.109,75.579 0,-0.354 -0.177,-0.708 -0.177,-1.239 2.478,-15.399 7.08,-41.772 11.859,-56.817 1.947,-6.372 5.133,-14.514 5.133,-21.063 0,-6.372 -5.487,-7.257 -10.797,-7.257 -4.602,0 -6.372,3.009 -7.788,7.08 -9.912,29.205 -15.576,82.659 -24.072,128.148 -1.239,7.08 -3.717,16.284 -5.133,22.833 z"
+     stroke-linecap="round"
+     id="path513"
+     sodipodi:nodetypes="csccscssssccssccccssccc"
+     transform="translate(0)" /></g>
+</g>
+</svg>

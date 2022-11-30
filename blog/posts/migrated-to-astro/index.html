@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <!-- Global Metadata --><meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
@@ -10,31 +9,32 @@
 <link rel="manifest" href="/site.webmanifest">
 
 <!-- Primary Meta Tags -->
-<title></title>
-<meta name="title">
-<meta name="description">
+<title>Migrating from Hugo to Astro</title>
+<meta name="title" content="Migrating from Hugo to Astro">
+<meta name="description" content="Moved from Hugo to Astro as static site builder. These are the lessons learned.">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://kiru.io/projects">
-<meta property="og:title">
-<meta property="og:description">
+<meta property="og:url" content="https://kiru.io/blog/posts/migrated-to-astro">
+<meta property="og:title" content="Migrating from Hugo to Astro">
+<meta property="og:description" content="Moved from Hugo to Astro as static site builder. These are the lessons learned.">
 <meta property="og:image" content="https://kiru.io/TwitterCard.png">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://kiru.io/projects">
-<meta property="twitter:title">
-<meta property="twitter:description">
+<meta property="twitter:url" content="https://kiru.io/blog/posts/migrated-to-astro">
+<meta property="twitter:title" content="Migrating from Hugo to Astro">
+<meta property="twitter:description" content="Moved from Hugo to Astro as static site builder. These are the lessons learned.">
 <meta property="twitter:image" content="https://kiru.io/TwitterCard.png">
 
 
+<link rel="stylesheet" href="/assets/5f66a14e.5ccacf18.css" />
 <link rel="stylesheet" href="/assets/af0be431.cf5f37d0.css" />
-<link rel="stylesheet" href="/assets/5f66a14e.5ccacf18.css" /></head>
+<link rel="stylesheet" href="/assets/af5c5a31.fcd55ad0.css" /></head>
 
 <body class="w-full">
 <div class="">
-  <div style="background-color: #014b7d">
+  <div style="background-color: #360e71">
     <div class="flex items-center justify-between max-w-6xl mx-auto py-10 py-6 px-4 sm:px-2">
       <a href="/" class="noSelect">
         <div class="text-white hover:text-[#bc2a61] w-32 ">
@@ -56,16 +56,136 @@
     </div>
   </div>
 
-  <div style="background-color: #c0efff" class="">
+  <div style="background-color: white" class="">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 120 1440 170">
-      <path fill="#014b7d" fill-opacity="1" d="M0,160L130.9,224L261.8,64L392.7,128L523.6,192L654.5,160L785.5,224L916.4,256L1047.3,32L1178.2,192L1309.1,288L1440,128L1440,0L1309.1,0L1178.2,0L1047.3,0L916.4,0L785.5,0L654.5,0L523.6,0L392.7,0L261.8,0L130.9,0L0,0Z"></path>
+      <path fill="#360e71" fill-opacity="1" d="M0,160L130.9,224L261.8,64L392.7,128L523.6,192L654.5,160L785.5,224L916.4,256L1047.3,32L1178.2,192L1309.1,288L1440,128L1440,0L1309.1,0L1178.2,0L1047.3,0L916.4,0L785.5,0L654.5,0L523.6,0L392.7,0L261.8,0L130.9,0L0,0Z"></path>
     </svg>
   </div>
 
   <div class="pt-8">
-    <div class="h-screen bg-[#c0efff]">
-    as
+    <article class="max-w-2xl mx-auto px-2 min-h-screen astro-APBCR6DP">
+
+    <header class="astro-APBCR6DP">
+      <h1 class="title astro-APBCR6DP">Migrating from Hugo to Astro</h1>
+      <time class="astro-APBCR6DP">11.08.2022</time>
+
+      
+    </header>
+    <main class="prose lg:prose-lg astro-APBCR6DP">
+      <div class="bg-green-100 rounded-md px-6 py-1 text-lg"><p><strong>TLDR</strong>: Decided to give this page a fresh look, and changed the template-engine on the way.
+Replaced Hugo by Astro, because it offered a more familiar template syntax. Would I recommend it for you? No!</p></div>
+<p>Before you start reading this, this article suits you well if you</p>
+<ul>
+<li>have been using JavaScript or TypeScript</li>
+<li>have been using any React-like frameworks</li>
+<li>are using Hugo right now and consider moving away</li>
+</ul>
+<h4 id="what-i-had-before">What I had before</h4>
+<p>The previous version of this page was using <a href="https://gohugo.io/">Hugo</a> with a modified template I found online.</p>
+<p>I was not happy with Hugo as static site builder. Notably for the following reasons:</p>
+<ul>
+<li>I had to learn a new template syntax</li>
+<li>The Hugo version I used was too old. The choice was either to spent the time migrating to the latest version or look for another alternative (thb, I don’t know how difficult the migration would have been)</li>
+<li>I wanted to add more dynamic elements (e.g. include a dynamic content inside an article). I had to dig deeper to figure out how to add more dynamic elements with Hugo</li>
+<li>I wanted to add dynamic <code>og:images</code> to each blog article. With Hugo it was not as simple as I thought. (this is not done yet with Astro either, but on my roadmap). With Astro,
+my hope is I could easily generate do it with JS.</li>
+</ul>
+<p>The main pain point (for me) was the templating syntax, it was too different from what I was used to.
+Take for example this snippet, which gives a list of <a href="https://beta.kiru.io/til/">TIL</a> entries:</p>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#c9d1d9">{{ range sort (where .Site.Pages &quot;Section&quot; &quot;til&quot;) &quot;Params.Date&quot; }}</span></span>
+<span class="line"><span style="color:#c9d1d9">  &lt;article&gt;</span></span>
+<span class="line"><span style="color:#c9d1d9">  &lt;/article&gt;</span></span>
+<span class="line"><span style="color:#c9d1d9">{{ end }}</span></span></code></pre>
+<p>I wanted to shrink the list to 3 random entries. That is impossible for me, without consulting the Hugo documentation. (If you are using Hugo, would you have known it instantly?)</p>
+<p>This is how I did it with Astro.</p>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#c9d1d9">---</span></span>
+<span class="line"><span style="color:#c9d1d9">function shuffleArray(array) {</span></span>
+<span class="line"><span style="color:#c9d1d9">  for (let i = array.length - 1; i &gt; 0; i--) {</span></span>
+<span class="line"><span style="color:#c9d1d9">    const j = Math.floor(Math.random() * (i + 1));</span></span>
+<span class="line"><span style="color:#c9d1d9">    [array[i], array[j]] = [array[j], array[i]];</span></span>
+<span class="line"><span style="color:#c9d1d9">  }</span></span>
+<span class="line"><span style="color:#c9d1d9">  return array;</span></span>
+<span class="line"><span style="color:#c9d1d9">}</span></span>
+<span class="line"><span style="color:#c9d1d9"></span></span>
+<span class="line"><span style="color:#c9d1d9">const unsortedPosts = shuffleArray(await Astro.glob(&#39;../pages/til/entries/**/*.mdx&#39;));</span></span>
+<span class="line"><span style="color:#c9d1d9">---</span></span>
+<span class="line"><span style="color:#c9d1d9">{unsortedPosts.slice(0, 3).map(post =&gt;</span></span>
+<span class="line"><span style="color:#c9d1d9">  &lt;article&gt;</span></span>
+<span class="line"><span style="color:#c9d1d9">  &lt;/article&gt;</span></span>
+<span class="line"><span style="color:#c9d1d9">)}</span></span></code></pre>
+<p>Granted I had to figure out how to use the Astro library, but that is something I understood after reading their <a href="https://docs.astro.build/en/tutorial/0-introduction/">Tutorial</a>,
+so it was easy to copy from another file. The same goes for the shuffle function, in case I am offline, I could easily copy it from another of my projects.</p>
+<h4 id="why-astro">Why Astro?</h4>
+<p>I have been using Next.js for all my recent projects. Initially, I wanted to migrate this blog to it as well, but then reconsidered it. The framework is moving too fast for me. My less-than-one-year old projects are already behind a major version. I feel Vercel (the company behind Next.js) is going towards enterprise customers, so I am happy to explore another option.</p>
+<p>To be honest, I did not do much research about which static site builder to use. Astro was something I saw few times on HackerNews and Twitter, and thought why not try it out.</p>
+<p>There were few convince points which were encouraging for me:</p>
+<ul>
+<li>
+<p>TypeScript: As mentioned before, the templates are written in react style components with am mix of FrontMatter syntax.</p>
+</li>
+<li>
+<p>I can use existing react components! This is a huge plus for me, since I have few projects written in React I can easily copy components from there.</p>
+</li>
+<li>
+<p>Good enough documentation: The documentation is not perfect, but I can find what I want via Google Search</p>
+</li>
+<li>
+<p><a href="https://mdxjs.com/">MDX</a> Support: Migrating my existing Hugo content from Markdown should be simple that way. If I am not happy with the framework, I can easily switch to another solution (as the content is in <em>Markdown</em>).</p>
+</li>
+</ul>
+<h4 id="migrating-from-hugo-to-astro">Migrating from Hugo to Astro</h4>
+<p>Migrating from Hugo was pretty straightforward. Hugo FrontMatter-syntax is natively supported by Astro. Transferring the content was not complicated either.</p>
+<p>Working with Astro felt more familiar to me (as said, for someone who works mostly with JavaScript).
+Compared to Hugo, I feel I can understand the template and I can easly guess a solution without googling.
+That was something I missed with Hugo.</p>
+<h4 id="regrets-of-choosing-astro">Regrets of choosing Astro</h4>
+<p>Not everything was perfect with Astro. I have been working on this migration for a few months, alongside all my projects. The earliest Astro commit was on in September 2022. With astro 1.0.8.
+The latest version is 1.6.11 (as of November). I already fear to upgrade to the latest version.
+I hope the current version I am using covers all my need, and I can stick with it as long as possible.
+I simply want a static site builder with decent documentation. Is that so difficult?</p>
+<p>Apart form that, the error messages are sometimes not really helpful. Many times you would face a message like this:</p>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#c9d1d9">failed to load module for ssr: ../components/Header.astro</span></span>
+<span class="line"><span style="color:#c9d1d9">Error: failed to load module for ssr: ../components/Header.astro</span></span>
+<span class="line"><span style="color:#c9d1d9">  at instantiateModule (file:///path/node_modules/vite/dist/node/chunks/dep-0fc8e132.js:50468:15</span></span></code></pre>
+<p>Not really very helpful. It would hve been more useful to give a more detailed message then telling me the error is in Header.astro. Googling will tell you this is due to a <a href="https://github.com/withastro/astro/issues/2781#issuecomment-1154252074">typo in the imports</a>.</p>
+<h3 id="take-away">Take away</h3>
+<p>I migrated this page from Hugo to Astro. Mainly since I am more familiar with the syntax and build environment.
+I don’t recommend you to migrate from Hugo to Astro. Do it only if you are in a similar situation like me.
+Otherwise, stick with what’s working best for you.</p>
+    </main>
+  </article><div class="border-b border-b-[#8f5a8a] sm:border-none astro-APBCR6DP">
+    <div class=" astro-APBCR6DP">
+      <div class="mt-24 astro-APBCR6DP">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="astro-APBCR6DP">
+          <path fill="#fee2e4" fill-opacity="1" d="M0,128L96,256L192,224L288,256L384,256L480,160L576,256L672,256L768,128L864,64L960,64L1056,32L1152,160L1248,0L1344,160L1440,32L1440,320L1344,320L1248,320L1152,320L1056,320L960,320L864,320L768,320L672,320L576,320L480,320L384,320L288,320L192,320L96,320L0,320Z" class="astro-APBCR6DP"></path>
+        </svg>
+      </div>
+      <div class="bg-[#fee2e4] text-black astro-APBCR6DP">
+      <div class="max-w-2xl mx-auto py-8 px-2 astro-APBCR6DP">
+        <h2 class="text-lg pb-4 underline-offset-2 underline font-base astro-APBCR6DP">You might be interested</h2>
+        <div class="space-y-2 astro-APBCR6DP">
+        <article class="astro-APBCR6DP">
+          <a href="/blog/posts/2022/changethistext-launch" class="hover:underline-animate text-md sm:text-lg astro-APBCR6DP">
+            <span class="astro-APBCR6DP">ChangeThisText.com - Timeline</span>
+          </a>
+        </article><article class="astro-APBCR6DP">
+          <a href="/blog/posts/2021/AdventOfSaas2021" class="hover:underline-animate text-md sm:text-lg astro-APBCR6DP">
+            <span class="astro-APBCR6DP">AdventOfSaaS 2021</span>
+          </a>
+        </article><article class="astro-APBCR6DP">
+          <a href="/blog/posts/2021/mathle-lesson-learned" class="hover:underline-animate text-md sm:text-lg astro-APBCR6DP">
+            <span class="astro-APBCR6DP">Mathle: Lessons Learned</span>
+          </a>
+        </article>
+      </div>
+    </div>
+
   </div>
+</div>
+
+
+
+</div>
   </div>
 
   <footer class="bg-[#fee2e4]">

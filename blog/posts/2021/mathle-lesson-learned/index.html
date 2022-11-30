@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <!-- Global Metadata --><meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
@@ -10,31 +9,32 @@
 <link rel="manifest" href="/site.webmanifest">
 
 <!-- Primary Meta Tags -->
-<title></title>
-<meta name="title">
-<meta name="description">
+<title>Mathle: Lessons Learned</title>
+<meta name="title" content="Mathle: Lessons Learned">
+<meta name="description" content="Mathlegame.com was  fun project to develop. Some lessons I learned while putting the game online.">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://kiru.io/projects">
-<meta property="og:title">
-<meta property="og:description">
+<meta property="og:url" content="https://kiru.io/blog/posts/2021/mathle-lesson-learned">
+<meta property="og:title" content="Mathle: Lessons Learned">
+<meta property="og:description" content="Mathlegame.com was  fun project to develop. Some lessons I learned while putting the game online.">
 <meta property="og:image" content="https://kiru.io/TwitterCard.png">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://kiru.io/projects">
-<meta property="twitter:title">
-<meta property="twitter:description">
+<meta property="twitter:url" content="https://kiru.io/blog/posts/2021/mathle-lesson-learned">
+<meta property="twitter:title" content="Mathle: Lessons Learned">
+<meta property="twitter:description" content="Mathlegame.com was  fun project to develop. Some lessons I learned while putting the game online.">
 <meta property="twitter:image" content="https://kiru.io/TwitterCard.png">
 
 
+<link rel="stylesheet" href="/assets/5f66a14e.5ccacf18.css" />
 <link rel="stylesheet" href="/assets/af0be431.cf5f37d0.css" />
-<link rel="stylesheet" href="/assets/5f66a14e.5ccacf18.css" /></head>
+<link rel="stylesheet" href="/assets/af5c5a31.fcd55ad0.css" /></head>
 
 <body class="w-full">
 <div class="">
-  <div style="background-color: #014b7d">
+  <div style="background-color: #360e71">
     <div class="flex items-center justify-between max-w-6xl mx-auto py-10 py-6 px-4 sm:px-2">
       <a href="/" class="noSelect">
         <div class="text-white hover:text-[#bc2a61] w-32 ">
@@ -56,16 +56,71 @@
     </div>
   </div>
 
-  <div style="background-color: #c0efff" class="">
+  <div style="background-color: white" class="">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 120 1440 170">
-      <path fill="#014b7d" fill-opacity="1" d="M0,160L130.9,224L261.8,64L392.7,128L523.6,192L654.5,160L785.5,224L916.4,256L1047.3,32L1178.2,192L1309.1,288L1440,128L1440,0L1309.1,0L1178.2,0L1047.3,0L916.4,0L785.5,0L654.5,0L523.6,0L392.7,0L261.8,0L130.9,0L0,0Z"></path>
+      <path fill="#360e71" fill-opacity="1" d="M0,160L130.9,224L261.8,64L392.7,128L523.6,192L654.5,160L785.5,224L916.4,256L1047.3,32L1178.2,192L1309.1,288L1440,128L1440,0L1309.1,0L1178.2,0L1047.3,0L916.4,0L785.5,0L654.5,0L523.6,0L392.7,0L261.8,0L130.9,0L0,0Z"></path>
     </svg>
   </div>
 
   <div class="pt-8">
-    <div class="h-screen bg-[#c0efff]">
-    as
+    <article class="max-w-2xl mx-auto px-2 min-h-screen astro-APBCR6DP">
+
+    <header class="astro-APBCR6DP">
+      <h1 class="title astro-APBCR6DP">Mathle: Lessons Learned</h1>
+      <time class="astro-APBCR6DP">25.01.2022</time>
+
+      
+    </header>
+    <main class="prose lg:prose-lg astro-APBCR6DP">
+      <p>I spent a few hours coding <a href="https://mathlegame.com/">Mathle</a>, which is a mathy version of <a href="https://www.powerlanguage.co.uk/wordle/">Wordle</a>.
+The idea came after I came across <a href="https://converged.yt/primel/">Primel</a> (find a 5-digit prime number in 6 guesses) and struggled to solve it.</p>
+<p>Mathle is implemented with React (specifically Next.js). Here are a few lessons I learned about developing a
+simple game from idea on the paper to working prototype and the launch:</p>
+<p><img src="/assets/blog/mathle-instruction.png" alt="Mathle Instructions"/></p>
+<ol><li><p>TypeScript makes it easier to abstract certain parts with types. For example, I have an enum <code>Color</code> to
+represent the cell color, or a type RowSolution to represent the actual solution. Use types where useful, otherwise
+ignore it (remember, the goal is to have a working prototype)</p></li><li><p>TypeScript type warnings with React are annoying. Fall back to <code>@ts-ignore</code>. I was using a mix of typed functional
+components and untyped functions.</p></li><li><p>Ignore the user interface and focus on a bug-free proof of concept:
+I spent too much time making everything pretty, but spend another few hours fixing and introducing new bugs, which an online user pointed out:
+<img src="/assets/blog/mathle-bug1.png" alt="Mathle bug"/></p></li><li><p>If it is easier to do it by hand, then don’t automate it. For now, I generate a puzzle once a day and publish them by hand.
+This was the simplest approach for me. Once I have enough time, I will automate this process.</p></li><li><p>Check on Hacker News if anyone launched a similar project: When I submitted my project to HN, there were three other
+projects related to Wordle 🤦. So next time the recently submitted projects, before putting your own project.</p></li><li><p>Take more screenshots and document the process better next time. That way this article would contain more pictures.</p></li><li>It is possible to <em>hack</em> something workable in 5h and spend another 6h fixing all the bugs.</li><li><p>Don’t buy a domain for each project. Actually, this is something obvious for everyone, but I am a domain-buyer-and-never-user.
+Too many domains expired without any associated projects being born out of it, so I decided to publish this project as a
+subdomain. That saves me money and reduces the struggle of setting it up each time.</p></li></ol>
+    </main>
+  </article><div class="border-b border-b-[#8f5a8a] sm:border-none astro-APBCR6DP">
+    <div class=" astro-APBCR6DP">
+      <div class="mt-24 astro-APBCR6DP">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="astro-APBCR6DP">
+          <path fill="#fee2e4" fill-opacity="1" d="M0,128L96,256L192,224L288,256L384,256L480,160L576,256L672,256L768,128L864,64L960,64L1056,32L1152,160L1248,0L1344,160L1440,32L1440,320L1344,320L1248,320L1152,320L1056,320L960,320L864,320L768,320L672,320L576,320L480,320L384,320L288,320L192,320L96,320L0,320Z" class="astro-APBCR6DP"></path>
+        </svg>
+      </div>
+      <div class="bg-[#fee2e4] text-black astro-APBCR6DP">
+      <div class="max-w-2xl mx-auto py-8 px-2 astro-APBCR6DP">
+        <h2 class="text-lg pb-4 underline-offset-2 underline font-base astro-APBCR6DP">You might be interested</h2>
+        <div class="space-y-2 astro-APBCR6DP">
+        <article class="astro-APBCR6DP">
+          <a href="/blog/posts/2022/changethistext-launch" class="hover:underline-animate text-md sm:text-lg astro-APBCR6DP">
+            <span class="astro-APBCR6DP">ChangeThisText.com - Timeline</span>
+          </a>
+        </article><article class="astro-APBCR6DP">
+          <a href="/blog/posts/2021/AdventOfSaas2021" class="hover:underline-animate text-md sm:text-lg astro-APBCR6DP">
+            <span class="astro-APBCR6DP">AdventOfSaaS 2021</span>
+          </a>
+        </article><article class="astro-APBCR6DP">
+          <a href="/blog/posts/migrated-to-astro" class="hover:underline-animate text-md sm:text-lg astro-APBCR6DP">
+            <span class="astro-APBCR6DP">Migrating from Hugo to Astro</span>
+          </a>
+        </article>
+      </div>
+    </div>
+
   </div>
+</div>
+
+
+
+</div>
   </div>
 
   <footer class="bg-[#fee2e4]">

@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <!-- Global Metadata --><meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
@@ -10,31 +9,32 @@
 <link rel="manifest" href="/site.webmanifest">
 
 <!-- Primary Meta Tags -->
-<title></title>
-<meta name="title">
+<title>Tagged Templates in JavaScript</title>
+<meta name="title" content="Tagged Templates in JavaScript">
 <meta name="description">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://kiru.io/projects">
-<meta property="og:title">
+<meta property="og:url" content="https://kiru.io/til/entries/2021-05-25-tagged_templates">
+<meta property="og:title" content="Tagged Templates in JavaScript">
 <meta property="og:description">
 <meta property="og:image" content="https://kiru.io/TwitterCard.png">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://kiru.io/projects">
-<meta property="twitter:title">
+<meta property="twitter:url" content="https://kiru.io/til/entries/2021-05-25-tagged_templates">
+<meta property="twitter:title" content="Tagged Templates in JavaScript">
 <meta property="twitter:description">
 <meta property="twitter:image" content="https://kiru.io/TwitterCard.png">
 
 
+<link rel="stylesheet" href="/assets/5f66a14e.5ccacf18.css" />
 <link rel="stylesheet" href="/assets/af0be431.cf5f37d0.css" />
-<link rel="stylesheet" href="/assets/5f66a14e.5ccacf18.css" /></head>
+<link rel="stylesheet" href="/assets/b24968be.96df3516.css" /></head>
 
 <body class="w-full">
 <div class="">
-  <div style="background-color: #014b7d">
+  <div style="background-color: #7900a3">
     <div class="flex items-center justify-between max-w-6xl mx-auto py-10 py-6 px-4 sm:px-2">
       <a href="/" class="noSelect">
         <div class="text-white hover:text-[#bc2a61] w-32 ">
@@ -56,15 +56,58 @@
     </div>
   </div>
 
-  <div style="background-color: #c0efff" class="">
+  <div style="background-color: undefined" class="">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 120 1440 170">
-      <path fill="#014b7d" fill-opacity="1" d="M0,160L130.9,224L261.8,64L392.7,128L523.6,192L654.5,160L785.5,224L916.4,256L1047.3,32L1178.2,192L1309.1,288L1440,128L1440,0L1309.1,0L1178.2,0L1047.3,0L916.4,0L785.5,0L654.5,0L523.6,0L392.7,0L261.8,0L130.9,0L0,0Z"></path>
+      <path fill="#7900a3" fill-opacity="1" d="M0,160L130.9,224L261.8,64L392.7,128L523.6,192L654.5,160L785.5,224L916.4,256L1047.3,32L1178.2,192L1309.1,288L1440,128L1440,0L1309.1,0L1178.2,0L1047.3,0L916.4,0L785.5,0L654.5,0L523.6,0L392.7,0L261.8,0L130.9,0L0,0Z"></path>
     </svg>
   </div>
 
   <div class="pt-8">
-    <div class="h-screen bg-[#c0efff]">
-    as
+    <article class="max-w-2xl mx-auto px-2 min-h-screen astro-TFOVXDCZ">
+    <header class=" astro-TFOVXDCZ">
+      <h1 class="title astro-TFOVXDCZ">Tagged Templates in JavaScript</h1>
+      <time class="astro-TFOVXDCZ">TIL 25.05.2021</time>
+    </header>
+    <main class="prose sm:prose-lg astro-TFOVXDCZ">
+      <p>JavaScript supports template strings since ES2015:</p>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#FF7B72">const</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">me</span><span style="color:#C9D1D9"> </span><span style="color:#FF7B72">=</span><span style="color:#C9D1D9"> </span><span style="color:#A5D6FF">&quot;Kiru&quot;</span></span>
+<span class="line"><span style="color:#FF7B72">const</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">missing</span><span style="color:#C9D1D9">  </span><span style="color:#FF7B72">=</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">22</span><span style="color:#FF7B72">/</span><span style="color:#79C0FF">7</span><span style="color:#C9D1D9"> </span><span style="color:#FF7B72">-</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">Math</span><span style="color:#C9D1D9">.</span><span style="color:#79C0FF">PI</span></span>
+<span class="line"><span style="color:#C9D1D9">console.</span><span style="color:#D2A8FF">log</span><span style="color:#C9D1D9">(</span><span style="color:#A5D6FF">`Print var: ${</span><span style="color:#C9D1D9">me</span><span style="color:#A5D6FF">} and ${</span><span style="color:#C9D1D9">missing</span><span style="color:#A5D6FF">}`</span><span style="color:#C9D1D9">)</span></span>
+<span class="line"><span style="color:#C9D1D9">console.</span><span style="color:#D2A8FF">log</span><span style="color:#C9D1D9">(</span><span style="color:#A5D6FF">`This also works: ${</span><span style="color:#79C0FF">22</span><span style="color:#FF7B72">/</span><span style="color:#79C0FF">7</span><span style="color:#A5D6FF">} - ${</span><span style="color:#79C0FF">Math</span><span style="color:#A5D6FF">.</span><span style="color:#79C0FF">PI</span><span style="color:#A5D6FF">} = ${</span><span style="color:#C9D1D9">missing</span><span style="color:#A5D6FF">}`</span><span style="color:#C9D1D9">)</span></span></code></pre>
+<p>You can pass the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#tagged_templates">tagged templates to functions</a>:</p>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#FF7B72">function</span><span style="color:#C9D1D9"> </span><span style="color:#D2A8FF">printTemplates</span><span style="color:#C9D1D9">(</span><span style="color:#FFA657">strings</span><span style="color:#C9D1D9">, </span><span style="color:#FF7B72">...</span><span style="color:#FFA657">keys</span><span style="color:#C9D1D9">) {</span></span>
+<span class="line"><span style="color:#C9D1D9">  console.</span><span style="color:#D2A8FF">log</span><span style="color:#C9D1D9">(</span><span style="color:#A5D6FF">&quot;Strings: &quot;</span><span style="color:#C9D1D9">, strings);</span></span>
+<span class="line"><span style="color:#C9D1D9">  console.</span><span style="color:#D2A8FF">log</span><span style="color:#C9D1D9">(</span><span style="color:#A5D6FF">&quot;Keys&quot;</span><span style="color:#C9D1D9">, keys);</span></span>
+<span class="line"><span style="color:#C9D1D9">}</span></span>
+<span class="line"><span style="color:#D2A8FF">printTemplates</span><span style="color:#A5D6FF">`What is possible: ${</span><span style="color:#C9D1D9">me</span><span style="color:#A5D6FF">}`</span></span></code></pre>
+<p>Will print:</p>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#c9d1d9">Strings: [&quot;What is possible: &quot;, &quot;&quot;, raw: Array(2)]</span></span>
+<span class="line"><span style="color:#c9d1d9">Keys [&quot;Kiru&quot;]</span></span></code></pre>
+    </main>
+  </article><div class=" astro-TFOVXDCZ">
+    <div class="mt-24 astro-TFOVXDCZ">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="astro-TFOVXDCZ">
+        <path fill="#fee2e4" fill-opacity="1" d="M0,128L96,256L192,224L288,256L384,256L480,160L576,256L672,256L768,128L864,64L960,64L1056,32L1152,160L1248,0L1344,160L1440,32L1440,320L1344,320L1248,320L1152,320L1056,320L960,320L864,320L768,320L672,320L576,320L480,320L384,320L288,320L192,320L96,320L0,320Z" class="astro-TFOVXDCZ"></path>
+      </svg>
+    </div>
+    <div class="bg-[#fee2e4] text-black astro-TFOVXDCZ">
+      <div class="max-w-2xl mx-auto py-8 px-4 astro-TFOVXDCZ">
+        <h2 class="text-lg pb-1 uppercase font-base astro-TFOVXDCZ">Other Lessons</h2>
+        <article class="astro-TFOVXDCZ">
+          <a href="/til/entries/2017-03-13-java-and-oracle" class="hover:underline-animate font-semibold astro-TFOVXDCZ">
+            <span class="astro-TFOVXDCZ">Java Enum and extract in SQL</span>
+          </a>
+        </article><article class="astro-TFOVXDCZ">
+          <a href="/til/entries/2019-12-04-pid" class="hover:underline-animate font-semibold astro-TFOVXDCZ">
+            <span class="astro-TFOVXDCZ">Waiting for process</span>
+          </a>
+        </article><article class="astro-TFOVXDCZ">
+          <a href="/til/entries/2017-03-28-sqllite" class="hover:underline-animate font-semibold astro-TFOVXDCZ">
+            <span class="astro-TFOVXDCZ">SQLite Type Affinity</span>
+          </a>
+        </article>
+      </div>
+    </div>
   </div>
   </div>
 
@@ -123,3 +166,5 @@
 </footer>
 </div>
 </body></html>
+
+

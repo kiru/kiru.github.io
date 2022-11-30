@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <!-- Global Metadata --><meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
@@ -10,31 +9,32 @@
 <link rel="manifest" href="/site.webmanifest">
 
 <!-- Primary Meta Tags -->
-<title></title>
-<meta name="title">
-<meta name="description">
+<title>Unconventional Programming Tips: Comments</title>
+<meta name="title" content="Unconventional Programming Tips: Comments">
+<meta name="description" content="What are good comments? Personally good comments follow a simple rule.">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://kiru.io/projects">
-<meta property="og:title">
-<meta property="og:description">
+<meta property="og:url" content="https://kiru.io/blog/posts/2021/coding-comments">
+<meta property="og:title" content="Unconventional Programming Tips: Comments">
+<meta property="og:description" content="What are good comments? Personally good comments follow a simple rule.">
 <meta property="og:image" content="https://kiru.io/TwitterCard.png">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://kiru.io/projects">
-<meta property="twitter:title">
-<meta property="twitter:description">
+<meta property="twitter:url" content="https://kiru.io/blog/posts/2021/coding-comments">
+<meta property="twitter:title" content="Unconventional Programming Tips: Comments">
+<meta property="twitter:description" content="What are good comments? Personally good comments follow a simple rule.">
 <meta property="twitter:image" content="https://kiru.io/TwitterCard.png">
 
 
+<link rel="stylesheet" href="/assets/5f66a14e.5ccacf18.css" />
 <link rel="stylesheet" href="/assets/af0be431.cf5f37d0.css" />
-<link rel="stylesheet" href="/assets/5f66a14e.5ccacf18.css" /></head>
+<link rel="stylesheet" href="/assets/af5c5a31.fcd55ad0.css" /></head>
 
 <body class="w-full">
 <div class="">
-  <div style="background-color: #014b7d">
+  <div style="background-color: #360e71">
     <div class="flex items-center justify-between max-w-6xl mx-auto py-10 py-6 px-4 sm:px-2">
       <a href="/" class="noSelect">
         <div class="text-white hover:text-[#bc2a61] w-32 ">
@@ -56,16 +56,84 @@
     </div>
   </div>
 
-  <div style="background-color: #c0efff" class="">
+  <div style="background-color: white" class="">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 120 1440 170">
-      <path fill="#014b7d" fill-opacity="1" d="M0,160L130.9,224L261.8,64L392.7,128L523.6,192L654.5,160L785.5,224L916.4,256L1047.3,32L1178.2,192L1309.1,288L1440,128L1440,0L1309.1,0L1178.2,0L1047.3,0L916.4,0L785.5,0L654.5,0L523.6,0L392.7,0L261.8,0L130.9,0L0,0Z"></path>
+      <path fill="#360e71" fill-opacity="1" d="M0,160L130.9,224L261.8,64L392.7,128L523.6,192L654.5,160L785.5,224L916.4,256L1047.3,32L1178.2,192L1309.1,288L1440,128L1440,0L1309.1,0L1178.2,0L1047.3,0L916.4,0L785.5,0L654.5,0L523.6,0L392.7,0L261.8,0L130.9,0L0,0Z"></path>
     </svg>
   </div>
 
   <div class="pt-8">
-    <div class="h-screen bg-[#c0efff]">
-    as
+    <article class="max-w-2xl mx-auto px-2 min-h-screen astro-APBCR6DP">
+
+    <header class="astro-APBCR6DP">
+      <h1 class="title astro-APBCR6DP">Unconventional Programming Tips: Comments</h1>
+      <time class="astro-APBCR6DP">26.10.2021</time>
+
+      
+    </header>
+    <main class="prose lg:prose-lg astro-APBCR6DP">
+      <div class="bg-green-100 rounded-md px-6 py-1 text-lg"><p><strong>TLDR</strong>: Best comments are written when you read the code - not when you write it.</p></div>
+<p><em>Random thoughts on programming</em></p>
+<p>I was recently reading <a href="https://stackoverflow.blog/2021/07/05/best-practices-for-writing-code-comments/">Best Practices for writing code comments</a> by Ellen Spertus.
+While there are some helpful tips, it misses the most important ones for me:</p>
+<ul>
+<li><strong>Add “why” comments when you write the code.</strong></li>
+<li><strong>Add all the other comments when you read the code.</strong></li>
+</ul>
+<h3 id="what-is-the-main-purpose-of-comments">What is the main purpose of comments?</h3>
+<p>They should help me understand the code easier. More than often, when I write the code, it is immediately clear what I was trying to solve. I have the context and the reason for my decisions are freshly in my mind.</p>
+<p>Few days later, re-reading the code, I don’t know anymore why I wrote the code like that. That is when I add the most valuable comments. Many people tell you not to duplicate code with comments, but if it makes it easier to understand the code - why not? Don’t follow any advices blindly - even the above ones.</p>
+<p>Consider this example:</p>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#c9d1d9">while (element.parentElement != null){</span></span>
+<span class="line"><span style="color:#c9d1d9">  // do some stufff</span></span>
+<span class="line"><span style="color:#c9d1d9">}</span></span>
+<span class="line"><span style="color:#c9d1d9"></span></span>
+<span class="line"><span style="color:#c9d1d9">while (element.parentElement != null){ // we didn&#39;t reach root</span></span>
+<span class="line"><span style="color:#c9d1d9">  // do some stufff</span></span>
+<span class="line"><span style="color:#c9d1d9">}</span></span></code></pre>
+<p>On a daily basis, I don’t tend to write many while loops. That makes while loops not always easy to grasp. If I encounter one, it is not very easy to understand the conditions. In the above case, the condition is simple, nevertheless the added comment improves the code quality for me. I don’t have to focus on the condition, I can read the inner parts knowing they are executed until we reach the root.</p>
+<p>In many cases, null checks are another good example. Null has so many semantics, while I write the code, I know the meaning of a variable being null, but when I read it again, it is not clear what the initial reason was:</p>
+<ul>
+<li>is it because null means the value has not been set?</li>
+<li>is it because null means the value was there, but has not been set?</li>
+<li>is it because null means the value is invalid?</li>
+<li>is null the expected value?</li>
+</ul>
+<p>Try to add a comment why you expect null. You don’t have to add it each time - only in the cases where it is not clear from reading the code.</p>
+    </main>
+  </article><div class="border-b border-b-[#8f5a8a] sm:border-none astro-APBCR6DP">
+    <div class=" astro-APBCR6DP">
+      <div class="mt-24 astro-APBCR6DP">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="astro-APBCR6DP">
+          <path fill="#fee2e4" fill-opacity="1" d="M0,128L96,256L192,224L288,256L384,256L480,160L576,256L672,256L768,128L864,64L960,64L1056,32L1152,160L1248,0L1344,160L1440,32L1440,320L1344,320L1248,320L1152,320L1056,320L960,320L864,320L768,320L672,320L576,320L480,320L384,320L288,320L192,320L96,320L0,320Z" class="astro-APBCR6DP"></path>
+        </svg>
+      </div>
+      <div class="bg-[#fee2e4] text-black astro-APBCR6DP">
+      <div class="max-w-2xl mx-auto py-8 px-2 astro-APBCR6DP">
+        <h2 class="text-lg pb-4 underline-offset-2 underline font-base astro-APBCR6DP">You might be interested</h2>
+        <div class="space-y-2 astro-APBCR6DP">
+        <article class="astro-APBCR6DP">
+          <a href="/blog/posts/2021/coding-comments" class="hover:underline-animate text-md sm:text-lg astro-APBCR6DP">
+            <span class="astro-APBCR6DP">Unconventional Programming Tips: Comments</span>
+          </a>
+        </article><article class="astro-APBCR6DP">
+          <a href="/blog/posts/2021/mathle-lesson-learned" class="hover:underline-animate text-md sm:text-lg astro-APBCR6DP">
+            <span class="astro-APBCR6DP">Mathle: Lessons Learned</span>
+          </a>
+        </article><article class="astro-APBCR6DP">
+          <a href="/blog/posts/2022/changethistext-launch" class="hover:underline-animate text-md sm:text-lg astro-APBCR6DP">
+            <span class="astro-APBCR6DP">ChangeThisText.com - Timeline</span>
+          </a>
+        </article>
+      </div>
+    </div>
+
   </div>
+</div>
+
+
+
+</div>
   </div>
 
   <footer class="bg-[#fee2e4]">

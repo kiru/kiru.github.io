@@ -1,0 +1,656 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- Primary Meta Tags -->
+<title>AdventOfSaaS 2021</title>
+<meta name="title" content="AdventOfSaaS 2021">
+<meta name="description" content="A timeline of my first AdventOfSaaS project. Read in details how I created Flashdictation.com day by day">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kiru.io/blog/posts/2021/AdventOfSaas2021">
+<meta property="og:title" content="AdventOfSaaS 2021">
+<meta property="og:description" content="A timeline of my first AdventOfSaaS project. Read in details how I created Flashdictation.com day by day">
+<meta property="og:image" content="https://kiru.io/TwitterCard.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://kiru.io/blog/posts/2021/AdventOfSaas2021">
+<meta property="twitter:title" content="AdventOfSaaS 2021">
+<meta property="twitter:description" content="A timeline of my first AdventOfSaaS project. Read in details how I created Flashdictation.com day by day">
+<meta property="twitter:image" content="https://kiru.io/TwitterCard.png">
+
+
+<link rel="stylesheet" href="/assets/5f66a14e.5ccacf18.css" />
+<link rel="stylesheet" href="/assets/af0be431.cf5f37d0.css" />
+<link rel="stylesheet" href="/assets/af5c5a31.fcd55ad0.css" /></head>
+
+<body class="w-full">
+<div class="">
+  <div style="background-color: #360e71">
+    <div class="flex items-center justify-between max-w-6xl mx-auto py-10 py-6 px-4 sm:px-2">
+      <a href="/" class="noSelect">
+        <div class="text-white hover:text-[#bc2a61] w-32 ">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="50 100 450 280" xml:space="preserve">
+            <g transform="matrix(1 0 0 1 271.63 241.19)" id="hOBV7oRFq22Ml0ucL-0Q5">
+              <path style="stroke: white; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: currentColor;  fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(0, 0)" d="M -208.06403 66.1095 C -209.30303 71.7735 -211.95803 80.2695 -206.64803 80.2695 C -203.28503 80.2695 -197.26703 77.2605 -192.84203 64.6935 C -190.01003 56.9055 -186.82403 41.8605 -183.81503 27.3465 C -183.10703 24.3375 -181.69103 8.938499999999998 -177.26603 8.938499999999998 C -171.95603 8.938499999999998 -165.76103 15.310499999999998 -156.91103 25.9305 C -140.80403 45.400499999999994 -139.03403 94.42949999999999 -101.51003 94.42949999999999 C -91.24403 94.42949999999999 -88.05803 90.0045 -88.05803 82.9245 C -88.05803 80.2695 -89.47403 79.38449999999999 -91.59803000000001 79.38449999999999 C -94.96103000000001 79.38449999999999 -100.27103000000001 81.50849999999998 -104.16503 81.50849999999998 C -127.17503 81.50849999999998 -126.29003 38.49749999999998 -145.93703 12.124499999999983 C -151.07003 5.221499999999984 -160.09703 1.1504999999999832 -166.11503 0.796499999999984 C -143.28203 -11.062500000000016 -105.40402999999999 -59.73750000000001 -105.40402999999999 -85.93350000000002 C -105.40402999999999 -91.59750000000003 -107.35103 -94.42950000000002 -113.36903 -94.42950000000002 C -117.44003 -94.42950000000002 -119.21002999999999 -86.81850000000001 -120.98003 -81.15450000000001 C -130.00703 -51.595500000000015 -161.86703 -18.49650000000001 -177.08903 -5.575500000000019 C -177.08903 -5.9295000000000195 -177.26603 -6.28350000000002 -177.26603 -6.814500000000019 C -174.78803 -22.213500000000018 -170.18603 -48.586500000000015 -165.40703 -63.63150000000002 C -163.46003 -70.00350000000002 -160.27402999999998 -78.14550000000001 -160.27402999999998 -84.69450000000002 C -160.27402999999998 -91.06650000000002 -165.76102999999998 -91.95150000000002 -171.07102999999998 -91.95150000000002 C -175.67302999999998 -91.95150000000002 -177.44302999999996 -88.94250000000002 -178.85903 -84.87150000000003 C -188.77103 -55.66650000000003 -194.43502999999998 -2.21250000000002 -202.93103 43.27649999999997 C -204.17003 50.35649999999997 -206.64803 59.56049999999997 -208.06403 66.10949999999997 z M -93.01403 -36.1965 C -86.99603 -36.1965 -83.98703 -43.0995 -83.98703 -48.2325 C -83.98703 -51.7725 -85.22603000000001 -56.3745 -89.65103 -56.3745 C -96.90803000000001 -56.3745 -99.74003 -50.0025 -99.74003 -44.515499999999996 C -99.74003 -40.7985 -97.08503 -36.19649999999999 -93.01403 -36.19649999999999 z M -99.91703 34.6035 C -89.12003 34.6035 -67.70303 5.3984999999999985 -67.70303 -3.451500000000003 C -67.70303 -5.044500000000003 -68.05703 -6.106500000000002 -69.82703 -6.106500000000002 C -76.37603 -6.106500000000002 -90.35902999999999 22.213499999999996 -95.31503 22.213499999999996 C -97.97003 22.213499999999996 -98.14702999999999 18.1425 -98.14702999999999 16.372499999999995 C -98.14702999999999 -5.221500000000006 -89.65102999999999 -13.186500000000006 -89.65102999999999 -20.974500000000006 C -89.65102999999999 -25.576500000000006 -92.30602999999999 -26.638500000000008 -96.55403 -26.638500000000008 C -105.75802999999999 -26.638500000000008 -111.77602999999999 -3.628500000000006 -111.77602999999999 11.416499999999992 C -111.77602999999999 18.850499999999993 -110.00603 34.6035 -99.91703 34.6035 z M -58.67603 54.0735 C -46.10903 54.0735 -13.895029999999998 7.6995000000000005 -13.01003 -4.336499999999994 C -12.83303 -6.283499999999994 -14.95703 -6.106499999999993 -16.37303 -6.106499999999993 C -19.55903 -1.150499999999993 -45.22403 37.61250000000001 -50.71103 37.61250000000001 C -51.95003 37.61250000000001 -51.77303 35.84250000000001 -51.77303 34.95750000000001 C -50.88803 25.04550000000001 -42.92303 14.956500000000009 -42.03803 4.513500000000011 C -40.97603 -6.460499999999989 -49.649029999999996 -6.637499999999989 -58.49903 -9.646499999999989 C -54.25103 -13.540499999999989 -50.357029999999995 -21.15149999999999 -49.826029999999996 -26.63849999999999 C -49.29503 -33.18749999999999 -53.189029999999995 -43.27649999999999 -60.80002999999999 -43.27649999999999 C -73.36703 -43.27649999999999 -77.96902999999999 -30.53249999999999 -78.85403 -20.26649999999999 C -80.27002999999999 -2.5664999999999907 -67.17202999999999 -1.32749999999999 -54.25102999999999 2.7435000000000116 C -54.42802999999999 5.752500000000012 -58.67602999999999 14.602500000000012 -60.092029999999994 18.142500000000013 C -62.924029999999995 25.753500000000013 -65.75603 33.71850000000001 -66.46403 41.68350000000001 C -66.99503 48.05550000000001 -66.28702999999999 54.07350000000001 -58.67603 54.07350000000001 z M -60.62303 -25.5765 C -60.97703 -22.0365 -62.74703 -13.894499999999999 -65.40203 -11.4165 C -68.05703 -12.8325 -68.41103 -17.4345 -68.23402999999999 -20.2665 C -67.88002999999999 -22.567500000000003 -66.81803 -32.3025 -63.27802999999999 -32.3025 C -60.800029999999985 -32.3025 -60.446029999999986 -27.346500000000002 -60.623029999999986 -25.576500000000003 z M -8.05403 30.8865 C 6.105970000000001 30.8865 16.194969999999998 14.602500000000003 20.265970000000003 2.212500000000002 C 18.849970000000003 10.000500000000002 15.840970000000002 22.9215 15.840970000000002 30.709500000000002 C 15.840970000000002 38.8515 19.026970000000002 46.9935 28.230970000000003 46.9935 C 35.133970000000005 46.9935 40.97497 41.860499999999995 45.222970000000004 36.9045 C 50.532970000000006 30.7095 67.34797 3.451499999999996 67.34797 -3.6285000000000025 C 67.34797 -5.044500000000003 67.17097 -6.106500000000002 65.40097 -6.106500000000002 C 58.32097 -6.106500000000002 39.91297 34.6035 33.00997 34.6035 C 31.416970000000003 34.6035 31.239970000000003 32.479499999999994 31.239970000000003 31.417499999999997 C 31.239970000000003 15.487499999999997 37.788970000000006 0.44249999999999545 37.788970000000006 -14.779500000000006 C 37.788970000000006 -19.735500000000005 34.42597000000001 -23.452500000000008 28.230970000000006 -23.452500000000008 C 20.265970000000006 -23.452500000000008 8.760970000000007 18.49649999999999 -4.514029999999991 18.49649999999999 C -6.992029999999991 18.49649999999999 -7.877029999999991 17.08049999999999 -7.877029999999991 12.47849999999999 C -7.877029999999991 2.03549999999999 -3.0980299999999907 -8.761500000000009 0.972970000000009 -21.85950000000001 C 1.680970000000009 -24.337500000000013 0.618970000000009 -28.58550000000001 -3.0980299999999907 -28.58550000000001 C -16.550029999999992 -28.58550000000001 -22.03702999999999 -2.920500000000011 -22.03702999999999 9.823499999999989 C -22.03702999999999 18.49649999999999 -20.44402999999999 30.886499999999987 -8.05402999999999 30.886499999999987 z M 72.48097 53.8965 C 78.32197 53.8965 85.04796999999999 48.0555 85.75597 42.74550000000001 C 86.28697000000001 38.49750000000001 82.21597 34.426500000000004 77.25997000000001 34.426500000000004 C 71.59597000000001 34.426500000000004 66.28597 39.73650000000001 65.75497000000001 45.93150000000001 C 65.40097000000002 50.71050000000001 68.23297000000001 53.8965 72.48097000000001 53.8965 z M 121.33297 -36.1965 C 127.35097 -36.1965 130.35997 -43.0995 130.35997 -48.2325 C 130.35997 -51.7725 129.12097 -56.3745 124.69597 -56.3745 C 117.43897 -56.3745 114.60697 -50.0025 114.60697 -44.515499999999996 C 114.60697 -40.7985 117.26197 -36.19649999999999 121.33297 -36.19649999999999 z M 114.42997 34.6035 C 125.22697 34.6035 146.64397 5.3984999999999985 146.64397 -3.451500000000003 C 146.64397 -5.044500000000003 146.28996999999998 -6.106500000000002 144.51997 -6.106500000000002 C 137.97097 -6.106500000000002 123.98797 22.213499999999996 119.03197 22.213499999999996 C 116.37697 22.213499999999996 116.19997000000001 18.1425 116.19997000000001 16.372499999999995 C 116.19997000000001 -5.221500000000006 124.69597 -13.186500000000006 124.69597 -20.974500000000006 C 124.69597 -25.576500000000006 122.04097 -26.638500000000008 117.79297 -26.638500000000008 C 108.58896999999999 -26.638500000000008 102.57097 -3.628500000000006 102.57097 11.416499999999992 C 102.57097 18.850499999999993 104.34097 34.6035 114.42997 34.6035 z M 154.25497 45.2235 C 167.52997 45.2235 179.03497 31.594500000000004 184.16797 14.956500000000002 C 194.96497 13.717500000000001 209.83297 2.9205000000000023 209.83297 -3.8054999999999986 C 209.83297 -5.3984999999999985 208.94797 -6.9914999999999985 207.70897 -7.345499999999999 C 202.22197 -2.9204999999999988 192.66397 2.389500000000001 186.64597 3.982500000000001 C 186.99997000000002 1.6815000000000007 186.99997000000002 -0.6194999999999995 186.99997000000002 -2.9204999999999988 C 186.99997000000002 -20.4435 177.61897000000002 -36.1965 166.99897 -36.1965 C 158.32597 -36.1965 148.59097000000003 -25.753500000000003 148.59097000000003 -16.549500000000002 C 148.59097000000003 -16.195500000000003 148.59097000000003 -15.664500000000002 148.59097000000003 -15.310500000000001 C 139.91797000000003 -8.230500000000001 134.96197000000004 3.4514999999999993 134.96197000000004 16.5495 C 134.96197000000004 33.1875 143.10397000000003 45.2235 154.25497000000004 45.2235 z M 176.20297 2.0355 C 168.59197 -2.2125000000000004 160.09597 -11.0625 160.09597 -16.372500000000002 C 160.09597 -19.558500000000002 163.45897 -23.2755 166.64497 -23.2755 C 171.77797 -23.2755 176.37997000000001 -13.1865 176.37997000000001 -2.0355000000000025 C 176.37997000000001 -0.6195000000000026 176.37997000000001 0.6194999999999973 176.20297000000002 2.035499999999997 z M 174.25597 13.5405 C 171.24697 24.868499999999997 165.58297 34.6035 158.85697 34.6035 C 154.07797 34.6035 149.65296999999998 26.815499999999997 149.65296999999998 18.319499999999998 C 149.65296999999998 11.593499999999999 152.48496999999998 3.0974999999999984 155.49397 -0.7965000000000018 C 160.44996999999998 5.3984999999999985 167.52997 10.885499999999999 174.25597 13.540499999999998 z" stroke-linecap="round"></path>
+            g>
+          </g></svg>
+        </div>
+      </a>
+
+
+      <div class="flex items-baseline gap-2 text-right uppercase font-medium text-white text-md sm:text-lg md:text-xl lg:text-2xl">
+        <div class="hover:underline-animate"><a href="/">Home</a></div>
+        <div class="border-l border-l-white pl-2 hover:underline-animate"><a href="/blog">Blog</a></div>
+<!--        <div class="border-l border-l-white pl-2 hover:underline-animate"><a href="/projects/">Projects</a></div>-->
+        <div class="border-l border-l-white pl-2 hover:underline-animate"><a href="/til">TIL</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background-color: white" class="">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 120 1440 170">
+      <path fill="#360e71" fill-opacity="1" d="M0,160L130.9,224L261.8,64L392.7,128L523.6,192L654.5,160L785.5,224L916.4,256L1047.3,32L1178.2,192L1309.1,288L1440,128L1440,0L1309.1,0L1178.2,0L1047.3,0L916.4,0L785.5,0L654.5,0L523.6,0L392.7,0L261.8,0L130.9,0L0,0Z"></path>
+    </svg>
+  </div>
+
+  <div class="pt-8">
+    <article class="max-w-2xl mx-auto px-2 min-h-screen astro-APBCR6DP">
+
+    <header class="astro-APBCR6DP">
+      <h1 class="title astro-APBCR6DP">AdventOfSaaS 2021</h1>
+      <time class="astro-APBCR6DP">25.12.2021</time>
+
+      
+    </header>
+    <main class="prose lg:prose-lg astro-APBCR6DP">
+      <div class="bg-green-100 rounded-md px-6 py-1 text-lg"><p><strong>TLDR</strong>: I managed to create Flashdictation by working every day at least one hour on it in an Advent of Code fashion.</p><span class="text-sm"><p>Warning: This article is very long.</p></span></div>
+<a target="_blank" href="https://www.flashdictation.com/"><div class="my-8"><div class="w-2/3 mx-auto"><svg viewBox="20 68 130 30" version="1.1" id="svg_null" class=""><g id="root" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="group" transform="translate(60.000000, 69.000000)"><rect id="Rectangle-14" x="0" y="0" width="84" height="22"></rect><text id="headerText.primary" font-family="Dancing Script" font-size="14.249089214094761" font-weight="400" letter-spacing="NaN" fill="#014b7d" data-text-alignment="L" font-style="normal"><tspan x="0" y="17">FlashDictation</tspan></text></g><rect id="icon.primary" x="23" y="68" width="24" height="24" display="none" fill="#434343"></rect><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600" version="1.1" fill="#014b7d" id="svg_icon.primary" x="23" y="68" width="30" height="30"><g id="surface1"><path d="m593.54 348.79h-59.863c-0.51953 0-1.0312 0.089844-1.5195 0.27344l-28.023 10.359h0.003906c-34.574 12.785-72.91 10.633-105.83-5.9492-9.7344-4.9375-20.012-8.7188-30.625-11.266-0.21875-0.054687-0.44141-0.089844-0.66797-0.10938-1.4102-0.13281-2.8125-0.20703-4.2227-0.30469h-0.085937c-18.945-1.3008-37.582-0.28516-54.152 0.63281-21.633 1.2148-42.043 2.3516-47.207-3.7422-0.52344-0.625-2.1875-2.5156-0.875-8.0938 8.0156-41.32 125.99-63.504 170.77-68.555h0.003906c2.4141-0.27344 4.1523-2.4531 3.8828-4.8672-0.27344-2.418-2.4531-4.1562-4.8672-3.8828-3.6328 0.41406-50.816 5.918-95.812 19.402l93.078-121.98 48.508 42.887c23.168 20.449 53.008 31.727 83.91 31.719h33.602c2.4141 0 4.375-1.957 4.375-4.375s-1.9609-4.375-4.375-4.375h-33.602c-28.766 0.007812-56.547-10.496-78.113-29.531l-49.012-43.227 14.777-19.371v0.003906c0.70312-0.92578 1.0117-2.0898 0.85547-3.2422-0.15625-1.1523-0.76172-2.1914-1.6875-2.8945l-35-26.754-35-26.719c-0.92188-0.70703-2.0859-1.0156-3.2383-0.86328s-2.1953 0.75781-2.8984 1.6836l-34.137 44.734c-0.078125 0-0.13281-0.066406-0.19531-0.085937-7.0234-1.6172-68.992-15.727-81.18-14.984-15.016 0.97266-107.09 75.992-120.07 92.969-14.395 18.688 12.238 129.18 17.73 151.13 0.49609 1.9336 2.2461 3.2812 4.2422 3.2812 0.58984 0 1.1758-0.12109 1.7188-0.35156 0.31641-0.13281 0.58984-0.28516 0.89844-0.41406l-33.285 43.648c-0.61719 0.59375-1.0469 1.3555-1.2383 2.1875l-22.969 103.05c-0.37891 1.6758 0.25781 3.418 1.625 4.457 1.3711 1.0352 3.2227 1.1758 4.7305 0.35547l92.762-49.469c0.21094-0.10156 0.41406-0.22266 0.60156-0.36328 0.3125-0.19531 0.59766-0.42969 0.85156-0.69922 0.097656-0.10937 0.24219-0.15234 0.33984-0.27344l16-20.977c4.1562 9.8438 10.051 18.398 16.953 24.324 6.4961 5.5898 13.344 8.4883 19.84 8.4883h0.003906c2.3047 0.007813 4.5938-0.35937 6.7812-1.0938 15.312-5.1523 21.602-26.73 15.684-50.719 0.28516 0.26172 0.57031 0.54688 0.85156 0.79688 6.4961 5.5898 13.355 8.4766 19.852 8.4766 2.3086 0.011719 4.5977-0.35938 6.7812-1.0938 12.5-4.2109 19.031-19.414 17.75-37.953 6.082 4.9883 12.664 7.7773 19.031 7.7656h0.003907c2.3047 0.007812 4.5938-0.35938 6.7812-1.0938 10.477-3.543 17.008-15.07 17.75-30.625 9.4219 2.3672 18.551 5.7656 27.223 10.141 35.102 17.684 75.969 19.988 112.83 6.3672l27.289-10.094h59.062v-0.003906c2.418 0 4.375-1.957 4.375-4.375 0-2.4141-1.957-4.375-4.375-4.375zm-272.96-72.418c-0.19141 0.29687-0.34766 0.61719-0.46094 0.95312-34.016 11.77-63.82 28.438-68.273 51.461-1.4531 6.4414-0.52344 11.68 2.7578 15.562 2.6016 2.832 5.9727 4.832 9.7031 5.7539l-65.539 85.891-24.781-18.855-2.418-1.8477 238.32-314.14 28.066 21.426zm-178.66-82.773c13.594-17.785 102.87-88.102 113.68-89.555 7.8516-0.65625 47.84 7.7422 74.977 13.945l-58.844 77.098c-23.953 3.4219-75.809 11.836-82.316 21.469-2.3828 3.5117-2.0547 9.582-1.0938 22.969 2.0117 28.066 5.3359 74.254-28.352 92.574-12.094-49.688-26.828-127.05-18.055-138.5zm55.148 45.293c-0.52344-7.3516-1.0938-15.695-0.41406-17.379 3.6641-4.375 35.996-11.508 67.453-16.406l-68.906 90.32c4.4805-20.07 2.9492-41.586 1.8672-56.57zm177.78-164.51 28.078 21.426-238.32 314.17-28.973-22.102zm-242.66 321.96 37.984 28.918 21.242 16.219-37.656 20.094-30.855-23.492zm-11.387 51.164 24.445 18.594-32.43 17.348zm139.04-0.25c-5.3047 1.793-11.746-0.24219-18.113-5.7188-6.9453-5.9727-12.773-15.148-16.406-25.844l29.105-38.141v-0.003907c6.2227 6.7188 10.902 14.715 13.715 23.43 7.1094 21.219 3.3125 42.352-8.3008 46.277zm43.137-42.559c-5.3164 1.793-11.746-0.24219-18.113-5.7188-7-6.0273-12.863-15.312-16.504-26.086-0.98047-2.9102-1.7773-5.875-2.3828-8.8828-0.10938-0.38281-0.26172-0.75-0.46094-1.0938l8.5-11.133c8.75 0.75391 19.688 0.23047 32.309-0.46875v-0.003907c1.7383 3.957 3.8164 7.7539 6.2109 11.355 5.3281 19.695 1.3125 38.379-9.5586 42.031zm43.562-31.293c-7.9609 2.668-18.156-3.4688-26.031-14.668-0.31641-1.0391-0.60156-2.0781-0.95312-3.1289-0.57031-1.6719-1.1914-3.2812-1.8477-4.9102h0.003906c13.535-0.84766 27.109-0.98828 40.664-0.42578-0.44922 11.902-4.8789 20.805-11.801 23.145z"></path></g></svg></g></svg></div></div></a>
+<div class="my-5"><h3 class="font-bold text-xl">Table of content</h3><ul class="list-disc ml-3 text-base"><li><a href="#day0">Day 0: Launch AdventOfSaas 2021</a><ul><a href="#aof2021"> <li>AdventOfSaaS 2021</li> </a>
+<a href="#what-is-advent"> <li>What is AdventOfSaaS?</li> </a>
+<a href="#work"> <li>What am I going to work on?</li> </a>
+<a href="#done"> <li>What has been done until now?</li> </a>
+<a href="#success"> <li>What is a successful SaaS for me?</li> </a>
+<a href="#quest"> <li>Got more questions?</li> </a></ul></li><li> <a href="#day1">Day 1: Setup</a> </li>
+<li> <a href="#day2">Day 2: Define MVP</a> </li>
+<li> <a href="#day3">Day 3: Add video player</a> </li>
+<li> <a href="#day4">Day 4: Simple correction</a> </li>
+<li> <a href="#day5">Day 5: Issue transcripts</a> </li>
+<li> <a href="#day6">Day 6: Easy solution for transcripts</a> </li>
+<li> <a href="#day7">Day 7: First week done, goal for next week</a> </li>
+<li> <a href="#day8">Day 8: Landing Page</a> </li>
+<li> <a href="#day9">Day 9: Landing Page for Mobile</a> </li>
+<li> <a href="#day10">Day 10: Navigation</a> </li>
+<li> <a href="#day11">Day 11: Login</a> </li>
+<li> <a href="#day12">Day 12: Login works</a> </li>
+<li> <a href="#day13">Day 13: Add dictations</a> </li>
+<li> <a href="#day14">Day 14: Share dictations</a> </li>
+<li> <a href="#day15">Day 15: Makeup Part 1</a> </li>
+<li> <a href="#day16">Day 16: Makeup Part 2</a> </li>
+<li> <a href="#day17">Day 17: Production</a> </li>
+<li> <a href="#day18">Day 18: Production ready?</a> </li>
+<li> <a href="#day19">Day 19: Production ready!</a> </li>
+<li> <a href="#day20">Day 20: Focus Marketing</a> </li>
+<li> <a href="#day21">Day 21: HackerNews and IH entry</a> </li>
+<li> <a href="#day22">Day 22: Break</a> </li>
+<li> <a href="#day23">Day 23: Tiny video</a> </li>
+<li> <a href="#day24">Day 24: ProductHunt Launch</a> </li>
+<li> <a href="#day25">Day 25: Summary and Outlook</a></li></ul></div>
+<span id="day0"><h3 id="day-0-launch-adventofsaas-2021">Day 0: Launch AdventOfSaas 2021</h3></span>
+<span id="aof2021"><h4 id="adventofsaas-2021">AdventOfSaaS 2021</h4></span>
+<p>Is it possible to bootstrap a successful SaaS business in 24 days? Let’s find it out together:  AdventOfSaaS 2021!</p>
+<p>My name is Kiru. Join me on the journey of this project. I will keep this page up-to-date with daily progress and
+any interesting stats.</p>
+<span id="what-is-advent"><h4 id="what-is-adventofsaas">What is AdventOfSaaS?</h4></span>
+<p>You probably know AdventOfCode, where you solve a different puzzle every day. Similarly, I work on a SaaS (Software as a
+Service) project every day. The time spent varies depending on my workload. This project is done alongside my usual
+work. From 1.12.2021 to 25.12.2021, I pledge to dedicate at least 1h per day (with 4h weekend budget) and post daily updates here.</p>
+<span id="done"><h4 id="what-has-been-done-until-now">What has been done until now?</h4></span>
+<p>This launch post was written before December, as well as the project ideas were collected. No code has been written
+until now.</p>
+<span id="work"><h4 id="what-am-i-going-to-work-on">What am I going to work on?</h4></span>
+<p>Dictatly: I am trying to improve my French. One effective tool is dictation. I would like to watch a video or listen
+to a podcast and write down what I hear. Right now, I do this by hand and then go over the text to correct it. It
+would be simpler to use the existing transcript to autocorrect and show the mistakes, as well as track my mistakes.</p>
+<p>Few notes on the idea:</p>
+<ul>
+<li>I did not find a tool that satisfies my need</li>
+<li>My usage is to learn languages, but it can be extended to a general dictation tool</li>
+<li>Not free after the beta phase</li>
+</ul>
+<p>The first step is to create a landing page, which will contain more information.</p>
+<span id="success"><h4 id="what-is-a-successful-saas-for-me">What is a successful SaaS for me?</h4></span>
+<p>These are the milestones I set to rank the project success in the end:</p>
+<span id="levels"></span>
+<p><strong>Level 0:</strong></p>
+<ul>
+<li>Project is online</li>
+<li>The project is usable by me to practice French</li>
+</ul>
+<p><strong>Level 1:</strong></p>
+<ul>
+<li>At least one paying customer</li>
+<li>At least 5 new Twitter followers</li>
+</ul>
+<p><strong>Level 2:</strong></p>
+<ul>
+<li>MRR to Cover all the costs (server + domain and other services used)</li>
+<li>Double my Twitter follower count (new 122)</li>
+</ul>
+<p><strong>Level(s) 3:</strong></p>
+<ul>
+<li>100 paying customers</li>
+<li>Goes viral</li>
+<li><code>&gt;500</code> Twitter followers</li>
+<li>Consistency: I manage to work for 24 days for 1h per day</li>
+</ul>
+<span id="quest"><h4 id="got-more-questions">Got more questions?</h4></span>
+<p>If something is not clear, or you just want to contact me, go ahead. Hit me on Twitter: <a href="https://twitter.com/kiru_io" target="_blank">@kiru_io</a></p>
+<span id="day1"><h3 id="day-1-setup">Day 1: Setup</h3></span>
+<p><em>What I planned to do and what I did</em></p>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#c9d1d9"> ■ Publish this page on kiru.io</span></span>
+<span class="line"><span style="color:#c9d1d9"> ■ Get domain flashdictation.com</span></span>
+<span class="line"><span style="color:#c9d1d9"> ■ Add progress bar in days on the main page</span></span>
+<span class="line"><span style="color:#c9d1d9"> ■ Setup project on GitHub</span></span>
+<span class="line"><span style="color:#c9d1d9"> ■ Setup initial landing page with a simple description</span></span>
+<span class="line"><span style="color:#c9d1d9"> ■ Make a simple logo</span></span>
+<span class="line"><span style="color:#c9d1d9"> □ Define MVP (Minimal Viable Product)</span></span>
+<span class="line"><span style="color:#c9d1d9"> □ Define timeline</span></span>
+<span class="line"><span style="color:#c9d1d9"> ■ Publish on Twitter</span></span>
+<span class="line"><span style="color:#c9d1d9"> □ Publish on IndieHackers</span></span></code></pre>
+<p><strong>How did the day go?</strong></p>
+<p>I registered the domain via Cloudflare. The webpage is a simple Next.js static page (for now) deployed via
+Cloudflare Pages. Why? Because it was the fastest way for me to get started. Cloudflare Pages deployment did not go
+smoothly. I ended up having the following error:</p>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#c9d1d9">19:21:05.595	export PATH=&quot;$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH&quot;</span></span>
+<span class="line"><span style="color:#c9d1d9">19:21:05.595	[0m</span></span>
+<span class="line"><span style="color:#c9d1d9">19:21:05.938	[32m&gt; Successfully installed Yarn 1.22.4! Please open another terminal where the `yarn` command will now be available.[0m</span></span>
+<span class="line"><span style="color:#c9d1d9">19:21:06.302	Installing NPM modules using Yarn version 1.22.4</span></span>
+<span class="line"><span style="color:#c9d1d9">19:21:06.745	yarn install v1.22.4</span></span>
+<span class="line"><span style="color:#c9d1d9">19:21:06.836	[1/4] Resolving packages...</span></span>
+<span class="line"><span style="color:#c9d1d9">19:21:07.046	[2/4] Fetching packages...</span></span>
+<span class="line"><span style="color:#c9d1d9">19:21:19.165	error next@12.0.4: The engine &quot;node&quot; is incompatible with this module. Expected version &quot;&gt;=12.22.0&quot;. Got &quot;12.18.0&quot;</span></span>
+<span class="line"><span style="color:#c9d1d9">19:21:19.177	error Found incompatible module.</span></span>
+<span class="line"><span style="color:#c9d1d9">19:21:19.178	info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.</span></span>
+<span class="line"><span style="color:#c9d1d9">19:21:19.199	Error during Yarn install</span></span>
+<span class="line"><span style="color:#c9d1d9">19:21:19.202	Failed: build command exited with code: 1</span></span></code></pre>
+<p>It turned out, without any config, CloudFlare uses node version 12.18.0. To fix this I had to set the following
+environment variable: <code>NODE_VERSION</code>.</p>
+<p>Once that was done, everything went as expected.</p>
+<p>For the logo, I used <a href="https://hatchful.shopify.com/">Hatchful by Shopify</a>. I did not define the MVP (Minimal Viable
+Product) yet, since the idea was not clear to me as well. So I spent most of the time writing down what I expect,
+and what problem it should solve.</p>
+<p>Go checkout what I produced today: <a href="https://flashdictation.com">Flashdictation.com</a></p>
+<span id="day2"><h3 id="day-2-define-mvp">Day 2: Define MVP</h3></span>
+<p>The main goal of today is to define the MVP, e.g. more in detail and the tiny steps needed to go there.
+The detailed tasks help me to stay focused, and not get distracted by other (nice to have) features.
+For the audio, I need a way to show a player on my page. I will try with this component: <a href="https://www.npmjs.com/package/react-player">react-component</a>.
+It seems easy to use and allows audio and video - so I don’t have to implement it by myself.</p>
+<p>For testing, I will use the <a href="https://www.youtube.com/channel/UCI4xp8qHD1MDErkqxb1dPbA">innerFrench</a> video - especially since they come with proper subtitles, and the transcripts are free.</p>
+<p>Apart from that, I want to focus on attracting more traffic to <a href="http://flashdictation.com"> flashdictation.com</a> and to this site, so I published this project on IndieHackers.com:
+<a href="https://www.indiehackers.com/post/adventofsaas-2021-flashdictation-3ba2cf528b">AdventOfSaaS 2021: flashdictation</a></p>
+<span id="day3"><h3 id="day-3-add-video-player">Day 3: Add video player</h3></span>
+<p>Today’s goal was to experiment with the video player. It was fairly easy to add the player, most of the time I spent making the page prettier.</p>
+<p>The final result is:
+<img src="/assets/blog/adventofsaas2021/day3.png" alt="Screenshot Day 3"/></p>
+<p>Tomorrow, I am going to add the correction logic. That should be enough to test the MVP. The next step is to add a
+few shortcuts to control the player.  With the above mockup, I can easily explain this project to anyone.</p>
+<span id="day4"><h3 id="day-4-simple-correction">Day 4: Simple correction</h3></span>
+<p>I managed to complete the simplest MVP:</p>
+<ul>
+<li>A video player to listen, pause and play</li>
+<li>The input to type what I hear</li>
+<li>Once done, the correction</li>
+</ul>
+<p>Today I focused on implementing the correction part. Initially, I spent some time coming up with a simple algorithm but
+wasted too much time. I ended up using a diff-library
+(well I didn’t think “correction” in terms of “diffing”, I was trying to find miss-matched words, which in the end is “diffing” duh!)</p>
+<p>This is the result:
+<img src="/assets/blog/adventofsaas2021/day4.png" alt="Initial diff"/></p>
+<p>There are a few changes I will make:</p>
+<ul>
+<li>The corrections are not perfect, the punctuations should be ignored (or I can add an option)</li>
+<li>The correction results are not intuitive to read (for non-programmers anyway), I will work on that in the future</li>
+<li>Don’t show the untyped text (e.g. in the above screenshot everything after “Et d’ailleurs” should be hidden)</li>
+<li>In the above screenshot you see, I had Grammarly activated. I will disable it in the future.</li>
+</ul>
+<span id="day5"><h3 id="day-5-issue-transcripts">Day 5: Issue transcripts</h3></span>
+<p>Started with updating the todos on <a href="https://flashdictation.com/#roadmap">FlashDictation.com</a>. Apart from that, added a
+shortcut for the video-player (Key 1) for starting and stopping. That makes it easier to type what I hear without having to move my
+cursor and hit the Play/Pause button.</p>
+<p>This completes (imho) all the features needed to use the tool. Until now I hardcoded the transcript and the video.
+Optimally, I would like the user to enter a YouTube link and play the video. Getting the captions via YouTube API seems possible.</p>
+<p>I spent most of today figuring out how easy it is to integrate the API. It seems doable, but I wanted to avoid adding an external dependency.
+There are a few alternatives:</p>
+<p><strong>Limited set of audio+transcripts</strong>
+The alternative to YouTube links is, that I collect audio+transcripts (free to use) and allow only pre-selected ones.</p>
+<p><strong>Podcast transcripts</strong>
+While researching, I learned about the <code>podcast:transcript</code> tag for RSS feeds, which points to the transcript.</p>
+<blockquote>
+<podcast:transcript url="https://host.com/1.srt" type="application/srt"></podcast:transcript>
+</blockquote>
+<p>This seems a great way to get the transcripts of the audio.
+I don’t have a proper idea what is the best solution. A very simple approach is to provide some audio+transcripts.</p>
+<p>Later on, I can still replace them by something more dynamic.</p>
+<span id="day6"><h3 id="day-6-easy-solution-for-transcripts">Day 6: Easy solution for transcripts</h3></span>
+<p>My initial idea was to create an app like this:
+<img src="/assets/blog/adventofsaas2021/day5.png" alt="Initial idea"/></p>
+<p>After trying to figure out the best way to integrate the YouTube-API (I wasted already ½-hour to figure out why the
+API-credentials were wrong.), I decided to give up for now (not because it’s hard, just because it’s too much effort for an MVP) and go further
+with a predefined set of dictations.</p>
+<p>For english dictations, I will stick to these <a href="http://www.rainsnow.org/cshf_public_domain_stories.htm">freely available short stories</a>,
+and use the videos from YouTube. Later on, I have to find other resources for
+different languages (maybe ask on <a href="https://www.reddit.com/r/languagelearning/">r/languagelearning</a> ?).</p>
+<p>For tomorrow these are the plans:</p>
+<ul>
+<li>replace the YouTube link with an audio for one of the short stories</li>
+<li>hard-code the text from the short stories</li>
+<li>design the proper landing page, as well as define some goals.</li>
+</ul>
+<span id="day7"><h3 id="day-7-first-week-done-goal-for-next-week">Day 7: First week done, goal for next week</h3></span>
+<p>Today marks one week I have been working every day for at least 1 hour. At the beginning, I made huge progress, got the
+PoC implemented very fast, and deployed it to flashdictation.com. Now I have something working, but I need some goals
+for the next two weeks.</p>
+<p>This project is called AdventOfSaaS - so where is the SaaS part? That is something I have been thinking about the last
+two days. How to monetize this project? What I have now is a web app to practice dictation. It is not perfect, does not
+work for anyone - but solved my problem. I could even extend it, such that I can paste the link to a video and enter the
+transcripts and create a “dictation” page for that video. That way, the user can share that link. Once you land on the
+page, you can see the video and an input area to type what you hear. Once done, let me correct your mistakes - as for
+now.</p>
+<p>So how to monetize? One way is to charge to create the “dictation” page and target teachers. As a teacher,
+you can create a dictation page and send it to your students. They can listen to the audio once - and type what they hear,
+and send it back to you. You can use the “auto-correction” tool to see what mistakes they made, and send it back to them</p>
+<ul>
+<li>so they can correct them.
+You have to pay certain amount (let’s say $3.77/month) to create an account.</li>
+</ul>
+<p>For the above use case, I need to change Flashdictation as follows:</p>
+<ul>
+<li>Allow creating a dictation page (video/audio + transcript)</li>
+<li>On the main page, show a “test dictation” - so you know how it feels to use the dictation</li>
+<li>Allow creating a teacher-account
+<ul>
+<li>One teacher account contains “dictations”</li>
+<li>The number of users per dictation is limited</li>
+</ul>
+</li>
+</ul>
+<p>Deadline: 7 days! By 14th I want the MVP (with the above features) to be done.</p>
+<span id="day8"><h3 id="day-8-landing-page">Day 8: Landing Page</h3></span>
+<p>Today I worked on redesigning the landing page.  This is how it looks like now:</p>
+<p><img src="/assets/blog/adventofsaas2021/day8-page-before.png" alt="Page before"/></p>
+<p>This is how it looks like now. It is not done yet, but almost:</p>
+<p><img src="/assets/blog/adventofsaas2021/day8-page-now.png" alt="Page now"/></p>
+<p>I need to add some infographics and explain what is going on. The page should be optimized for mobile as well. Today I
+only focused on the desktop version. Tomorrow, I will fix the audio-player (it should auto-play and show somehow it is
+muted), and test it on mobile.</p>
+<p>The written text should also be synchronized with the audio. I need to add a “correct me” button. Once that is done, I
+can write down the final features.</p>
+<p>I am pretty happy with today’s progress. 💪</p>
+<span id="day9"><h3 id="day-9-landing-page-for-mobile">Day 9: Landing Page for Mobile</h3></span>
+<p>Continued on the landing page. Replaced the blue buttons with actual text and a logo, so it’s more clear what each part stands for.
+I need to add more text to describe further in details, what every part is. I don’t like if you end up on a landing page,
+and you don’t understand what the project is about. Nowadays, the focus is on fancy design and less text. But I don’t see why we can’t have both.
+Anyways, this is the result after today’s work.</p>
+<p><img src="/assets/blog/adventofsaas2021/day9-mobile.png" alt="Mobile"/></p>
+<p>I also added Plausible.io to track how many people are using the page. Let’s see tomorrow how many people visited the page.</p>
+<p>Note to me: Add Plausible.io from the beginning next time!</p>
+<span id="day10"><h3 id="day-10-navigation">Day 10: Navigation</h3></span>
+<p>Added navigation to the page, visually this does not change much:</p>
+<p><img src="/assets/blog/adventofsaas2021/day10.png" alt="Navigation"/></p>
+<p>Behind the scene, I had to re-organize the code. The current online version is broken, since I host the page via Cloudflare (they only support static next.js builds).</p>
+<p>Next, (haha) I have to move away from Cloudflare. Maybe try Vercel or build on a VPS?</p>
+<span id="day11"><h3 id="day-11-login">Day 11: Login</h3></span>
+<p>I moved away from Cloudflare Static pages to <a href="https://vercel.com/">Vercel</a>. Until now, I only had static content, and no server-rendered part.
+That might change, so I move rather now than later.
+There are not many visible changes today, but I reorganized the code, and started adding the login components.
+It takes more than a few hours to finish that, so I decide not to deploy the half-broken parts. I will complete it tomorrow and push a version.
+A few days ago, I wrote a mail to <a href="https://innerfrench.com/">innerfrench</a> ( A French podcast, targeted at beginners. ), and got a replay:</p>
+<p><img src="/assets/blog/adventofsaas2021/day11-mail.png" alt="Mail replay"/></p>
+<p>This is great news! Next, I need to find some good English examples!</p>
+<span id="day12"><h3 id="day-12-login-works">Day 12: Login works</h3></span>
+<p>I have a working authentication system! Initially I wanted to add <a href="https://next-auth.js.org/">NextAuth.js</a> and Google authenticator.
+That approach needs a hosted database instance (to store dictations + text). In the end, I decided to try out <a href="https://supabase.com/">Supabase</a>. why?</p>
+<ul>
+<li>I don’t have to host a database</li>
+<li>Supports Authentication</li>
+<li>Native support for Next.js</li>
+<li>The free tier is good enough, the Pro tier is relatively cheap (20$/month)</li>
+<li>Possibility of migrating to a self-hosted version if needed</li>
+</ul>
+<p>I found <a href="https://github.com/vercel/nextjs-subscription-payments">this</a> nice project from Vercel, with Stripe and Supabase integration.
+Took it as a template and adapted it for my use case. This is the current result:</p>
+<p><img src="/assets/blog/adventofsaas2021/day12-login.png" alt="Login"/>
+<img src="/assets/blog/adventofsaas2021/day12-login-user.png" alt="Login"/></p>
+<p>The UI looks ugly - since I had to adapt some css, and did not spend much time to make it prettier. What counts is, that I can login and create an account.
+I will focus on having all features done and then spend one or two days on makeup.</p>
+<p>For now, you can create an account and login. Be aware, I will wipe the database before I publish it on ProductHunt (or anywhere).</p>
+<p>Tomorrow, I should work on the following tasks</p>
+<ul>
+<li>Add a WIP banner (so people know it is not complete yet)</li>
+<li>Implement the ability to create “dictations” by given a URL + text</li>
+<li>Generate a unique link for dictation</li>
+</ul>
+<span id="day13"><h3 id="day-13-add-dictations">Day 13: Add dictations</h3></span>
+<p>From yesterday’s plan:</p>
+<ul>
+<li>Implement the ability to create “dictations” by given a URL + text</li>
+<li>Generate a unique link for dictation</li>
+</ul>
+<p>Those are implemented. Now I can add new dictations, and see them. It took me some time to grasp the Supabase Row-level Security feature, but once
+I understood it, the implementation was straightforward.</p>
+<p>The form looks ugly (as usual), I did not spend much time making it better:</p>
+<p><img src="/assets/blog/adventofsaas2021/day13-dictation.png" alt="Add dictation"/></p>
+<p>The login and creating dictation workflow works as expected. I should add some checks (e.g. empty values and so on), but for now, I have something working:</p>
+<p><img src="/assets/blog/adventofsaas2021/day13-add-dictation.gif" alt="Add dictation"/></p>
+<p>For tomorrow, I will focus on the following two items:</p>
+<ul>
+<li>Add a WIP banner (so people know it’s not complete yet) (from yesterday)</li>
+<li>Show dictation page, where user can type what they hear and we show a diff!</li>
+<li>Fix login in production ( I can’t login for some reason)</li>
+</ul>
+<span id="day14"><h3 id="day-14-share-dictations">Day 14: Share dictations</h3></span>
+<p>Let’s begin with the simplest change: Added a WIP based on <a href="https://shkspr.mobi/blog/2021/09/pure-css-corner-banner/">this</a> blog post:</p>
+<p><img src="/assets/blog/adventofsaas2021/day14-wip.png" alt="WIP"/></p>
+<p>Implemented the actual dictation page. The user can type what he hears and see a score.
+For the score, right now I use the <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein</a> distance
+(for non-programmers:  An algorithm which gives you how close two words are). It is not the best score, but
+I get a single value for free. I have to brainstorm more about what is a good metric.</p>
+<p>The workflow looks like this:
+<img src="/assets/blog/adventofsaas2021/day14-dictation.gif" alt="Dictation scoring workflow"/></p>
+<p>You can still not login in to production. I have to setup a proper production environment in Supabase, because
+the URL which is sent in the mail (for the magic-link) is hard-coded. I tried to fix it in a few minutes, but
+it will take longer than that. I decide to postpone it until all features are complete.</p>
+<p>For tomorrow, I will spend some time to make all the ui-components consistent, and test on mobile.
+I got asked where is the link to flashdictation.com a few times, so added a prominent link on the top of this page (with the logo).</p>
+<span id="day15"><h3 id="day-15-makeup-part-1">Day 15: Makeup Part 1</h3></span>
+<p>Before I changed all pages to be consistent, I re-evaluated the todos, and reorganized them:</p>
+<p><img src="/assets/blog/adventofsaas2021/day15-roadmap.png" alt="Roadmap"/></p>
+<p>This is the result after re-doing the dictation pages:</p>
+<div class="grid md:grid-cols-2 flex-row w-full gap-4"><p><img src="/assets/blog/adventofsaas2021/day15-dictations.png" alt="Makeup dictations page"/></p><p><img src="/assets/blog/adventofsaas2021/day15-edit.png" alt="Makeup edit page page"/></p></div>
+<p>The landing page is not completed yet, as well as the login and the actual dictation page (which you share).
+I did not have much time to finish those today.</p>
+<p><img src="/assets/blog/adventofsaas2021/day15-home.png" alt="Makeup Home page"/></p>
+<p>The goal for tomorrow is to make the login and dictation page consistent with the above pages.</p>
+<p>I will update <a href="https://flashdictation.com">flashdictation.com</a> once all of those pages are complete.</p>
+<span id="day16"><h3 id="day-16-makeup-part-2">Day 16: Makeup Part 2</h3></span>
+<p>As planned, I finished the redesign of the login and dictation pages:</p>
+<p><img src="/assets/blog/adventofsaas2021/day16-edit.png" alt="edit page"/>
+<img src="/assets/blog/adventofsaas2021/day16-login.png" alt="login page"/>
+<img src="/assets/blog/adventofsaas2021/day16-score.png" alt="score"/></p>
+<p>I did not manage to fix the production environment,
+since there are still some database changes missing. Hopefully should be done by tomorrow.</p>
+<span id="day17"><h3 id="day-17-production">Day 17: Production</h3></span>
+<p>No UI changes today. I tried to fix the production environment, but there were too many issues. The main problem is, that
+I have to setup a different Supabase project and copy all data. Unfortunately, that is not easy. So I decided to re-do the database
+and recreate the data. Most of them being Stripe-products. Then I spent some time fixing stripe production.</p>
+<p>Obviously, this did not work as flawlessly. Finally, I gave up and thought I can at least fix Vercel to have the landing page fixed.
+After ignoring a bunch of TypeScript errors, I have a new version online:</p>
+<p><img src="/assets/blog/adventofsaas2021/day17-landing.png" alt="edit page"/></p>
+<span id="day18"><h3 id="day-18-production-ready">Day 18: Production ready?</h3></span>
+<p>Managed to fix the production environment (by copying all data from dev to production). But be aware, I will wipe the
+database before I put the project on ProductHunt.</p>
+<p>I am preparing to add Stripe integration. A warning is shown once you hit 5 dictations:</p>
+<p><img src="/assets/blog/adventofsaas2021/day18-premium.png" alt="Premium"/></p>
+<p>There are not many changes, and my time to work alongside is limited. Therefore, I will focus now on completing a
+“SaaS” project, then having all the features. Once the project is online and I have a few users using them, I can still add new features.</p>
+<p>These are the missing steps:</p>
+<ul>
+<li>Add Stripe integration</li>
+<li>Reset database</li>
+<li>Fix all og-tags</li>
+<li>Add terms and services + privacy page</li>
+<li>Add pricing information on the landing page and examples</li>
+<li>Make a small marketing plan (when to put it on which platform)</li>
+</ul>
+<p>The goal should be to invest next week in marketing (aka promoting the project on different platforms). Wish me luck.</p>
+<span id="day19"><h3 id="day-19-production-ready">Day 19: Production ready!</h3></span>
+<p>Today was the longest I worked on this project at once. I wanted to finish almost all tasks which needed to be done
+before going live. I don’t know where to start, there were too many changes. Among the major tasks done are these:</p>
+<p><strong>Added pricing to the landing page:</strong></p>
+<p><img src="/assets/blog/adventofsaas2021/day19-pricing.png" alt="Pricing"/></p>
+<p><strong>Added Stripe integration:</strong>
+This was something I have been postponing for a while. Just out of fear it would take longer than I expected. In the end it did!
+I spent too much time debugging a stripe-api call issue, but eventually managed to fix everything.
+There is still a tiny bug left on production - but I don’t know exactly how to fix that. Once I create a subscription, Stripe forwards me to a page, but that
+page contains the Vercel URL - instead of flashdictation.com (for now that is not a huge issue, I will focus on marketing and fix it later).</p>
+<p>Once you click on subscription, you will be forwarded to Stripe, where you can provide your payment information:</p>
+<p><img src="/assets/blog/adventofsaas2021/day19-subscription.png" alt="Subscription"/></p>
+<p><strong>Some tiny tasks</strong></p>
+<ul>
+<li>Checked all pages on mobile</li>
+<li>Added footer and privacy information</li>
+<li>Added contact information</li>
+<li>Fixed all bugs (e.g edit did not work before)</li>
+</ul>
+<p>Next week, I will focus on promoting the project. Finding some customers, and fixing any major bugs.</p>
+<span id="day20"><h3 id="day-20-focus-marketing">Day 20: Focus Marketing</h3></span>
+<p>Today I distributed the project link to a few friends, and got some feedback back. All of them are techies though and not
+my real target audience. I noted the feedback, but will wait to see what actual users say.</p>
+<p>The current project which is online, is usable, but I have to dogfeed it a bit.
+For the rest of the week, I will focus on putting the project on various platforms.</p>
+<p>This is my plan for the last few days:</p>
+<ul>
+<li>Getting feedback from other users</li>
+<li>Today:
+<ul>
+<li>Add attribution for the icons (forgot that)</li>
+<li>Published on reddit: <a href="https://www.reddit.com/r/teachingresources/comments/rkm4wt/flashdictationcom_make_dictations_online/">Flashdictation.com: Make Dictations Online</a></li>
+<li>Published on IH: <a href="https://www.indiehackers.com/post/show-ih-flashdictation-330d9c84b4">Show IH: Flashdictation</a></li>
+<li>Prepared some screenshots to publish online</li>
+</ul>
+</li>
+<li>21.12.2021
+<ul>
+<li>Add on IndieHackers.com as product</li>
+<li>Add chat-bot Integration? (I like them, an easy way to contact)</li>
+<li>Add on Supabase</li>
+</ul>
+</li>
+<li>22.12.2021
+<ul>
+<li>Prepare a short video (try Remotion?)?</li>
+</ul>
+</li>
+<li>23.12.2021
+<ul>
+<li>Publish on Product Hunt and ask for retweet</li>
+</ul>
+</li>
+<li>24.12.2021
+<ul>
+<li>Cleanup and analyze traffic until now</li>
+</ul>
+</li>
+<li>25.12.2021
+<ul>
+<li>Review</li>
+<li>How much time did I spent in total</li>
+<li>How much money did it cost? What is the break even?</li>
+</ul>
+</li>
+</ul>
+<span id="day22"><h3 id="day-22-break">Day 22: Break</h3></span>
+<p>Today I took the day off.</p>
+<span id="day21"><h3 id="day-21-hackernews-and-ih-entry">Day 21: HackerNews and IH entry</h3></span>
+<p>I didn’t have time to add the attribution for the icons. Fixed that today.
+Also published the project on <a href="https://github.com/supabase/supabase/discussions/4614">Supabase</a> and IndieHackers.com as product.</p>
+<p>I forgot that the plan from yesterday  (20.12.2021) does not contain postings the project on HackerNews. Here we go:
+<a href="https://news.ycombinator.com/item?id=29636976">Show HN: Dictations for Teachers Made Easier </a>.
+Same on IndieHackers. I put the project online: <a href="https://www.indiehackers.com/product/flashdictation-com">Flashdictation</a>, but waiting for approval.</p>
+<span id="day23"><h3 id="day-23-tiny-video">Day 23: Tiny video</h3></span>
+<p>I wanted to create a short video - but I am not very skilled in editing videos. I tried to use veed.io, but
+it was too cumbersome (just for me, took me too much time). I decide to try <a href="https://www.remotion.dev/">Remotion</a>.
+It was on my bucket list for a long time, but never found time. This was the motivation I needed to try it out.
+The library was surprisingly easy to use. It makes editing videos as fun as programming. I still struggle to wrap around
+the concepts (e.g. Sequence / Composition / Still ), but it’s quite fun to debug a “video”.</p>
+<p>Anyways, here is the video I tweeted:</p>
+<div class="flex justify-center"><div><blockquote class="twitter-tweet"><p lang="en" dir="ltr">👋👋<br/><br/>Checkout my latest project: <a href="https://t.co/8dPSscYr1v"><a href="https://t.co/8dPSscYr1v">https://t.co/8dPSscYr1v</a></a> ! 🚀🚀<br/><br/>A dicatation tool for teachers and language
+learner🤓! Just the beginning - more feature will come! <br/><br/>Developed in 23 days. Documented on <a href="https://t.co/OcGcC0jxjZ"><a href="https://t.co/OcGcC0jxjZ">https://t.co/OcGcC0jxjZ</a></a> 💪<br/><br/>btw, RT is very much appreciated 🙏 <a href="https://t.co/DTNlM9pjQZ">pic.twitter.com/DTNlM9pjQZ</a></p>— Kiru (@kiru_io) <a href="https://twitter.com/kiru_io/status/1474107323371114496?ref_src=twsrc%5Etfw">December 23, 2021</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div></div>
+<span id="day24"><h3 id="day-24-producthunt-launch">Day 24: ProductHunt Launch</h3></span>
+<p>Many people in my bubble (aka Twitter, and the news I read) see ProductHunt (PH) launch as the holy grail.
+<a href="https://www.producthunt.com/posts/flashdictation">Therefore I waited a while to put it on ProductHunt</a>:</p>
+<p><a href="https://www.producthunt.com/posts/flashdictation"><img src="/assets/blog/adventofsaas2021/day24-producthunt.png" alt="ProductHunt Launch"/></a></p>
+<p>To be honest, choosing the 24th of December to launch the project on PH was not my wisest move. On the other hand, my target
+audience is not on ProductHunt. I just hope it will help to rank the page a bit higher on Google (aka generate some
+backlinks).</p>
+<p>Apart from that, I re-read everything I wrote until now and corrected some mistakes.
+<a href="https://github.com/kiru/kiru.github.io/commit/ca825092d2108add8d6d38a0877a578cb7d239a0#diff-b93850b31b9c45f4c7e038296bbe985ed936dceb5bccb3b14cde667845942781">You can see the diff here</a>.</p>
+<p>For the next time, a few lessons I already learned regarding writing:</p>
+<ul>
+<li>Read what I wrote the day before and correct. I don’t see the mistakes immediately, the next day I can check If I understood what I wrote.</li>
+<li>Pass everything through Grammerly to catch all typos.</li>
+<li>Put more images. Start adding screenshots from the beginning. (Link to flashdictation.com changes each time 🤦‍‍️)</li>
+<li>Spent more time on writing than coding. Maybe write before you code and then re-view what you wrote?</li>
+</ul>
+<span id="day25"><h3 id="day-25-summary-and-outlook">Day 25: Summary and Outlook</h3></span>
+<p>Today marks the 25th and last day of this project. It has been an interesting journey so far. This journal entry will
+be longer than usual. I will cover the following topics</p>
+<ul>
+<li>What I achieved</li>
+<li>Hours spent</li>
+<li>Numbers</li>
+<li>Lessons learned</li>
+<li>Outlook</li>
+</ul>
+<p><strong>Hours spent</strong>
+From the beginning I tracked every minute I spent on this project. The idea is to know how much this project costs me and
+what the break-even point is. I will keep tracking the hours and once I have some income, I will post more about that.
+In total, I spend 61h and 38min on the project. The following graphics show the hours spend by week and by the hour (the axis are hidden by intention)</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 "><p><img src="/assets/blog/adventofsaas2021/day25-workweek.png" alt="Hour spend per week"/></p><p><img src="/assets/blog/adventofsaas2021/day25-workhour.png" alt="Which hours do I work?"/></p></div>
+<p>Most of my work was done after work, and in the third week I spend a weekend to finish almost all features which were
+left. It was not planned, but in the last week I did not have much time to work alongside my job - so I decide to do a
+sprint and spend less time in the last week.</p>
+<p><strong>Numbers</strong>
+The following charts shows the number of visitors from Plausible.io:</p>
+<p><img src="/assets/blog/adventofsaas2021/day25-plausible.png" alt="Plausible statistics"/></p>
+<p>I made the mistake <a href="#day9">to include on day9</a>. With 118 unique visitors, I don’t have many - but nevertheless more than
+1 (which is me). Considering that many block tracking, 118 not blocked visitors is not bad. I am quite happy with that.</p>
+<p>Another of my goals was to attract more Twitter followers:</p>
+<p><img src="/assets/blog/adventofsaas2021/day25-twitter.png" alt="Twitter statistics"/></p>
+<p>I consider this a success. I gained 6 new followers and 1315 people visited my profile.</p>
+<p><strong>What I achieved</strong></p>
+<p>At the beginning <a href="#levels">I defined</a> some levels on how to evaluate this project. I reached Level 0 and Level 1 (at least
+5 new Twitter followers and one paying customer). I don’t have any paying customers except myself (yes I subscribed and
+pay for my own SaaS, it’s called eat your own dog food). Apart from the defined goals, my main success is definitely
+having something online, even this blog entry is a success in my eyes. This project, despite having no actual
+users shows to me how much can be done by just being consistent, and keeps me motivated.</p>
+<p><strong>Lessons Learned</strong>
+Here are some lessons I learned. Which are mostly for me to improve for the next time.</p>
+<ul>
+<li>Add Plausible.io or any other user counter from the beginning</li>
+<li>Consistency beats procrastination</li>
+<li>It is possible to develop a SaaS project in ~62h hours for me</li>
+<li>Technical choices are irrelevant to validate your idea</li>
+<li>Writing is hard: I still struggle to convert my thoughts to keystrokes.</li>
+<li>Add proper descriptions from the beginning, it is hard to follow what my goals and intentions are. Spend more time on writing.</li>
+<li>Growing on Twitter is hard.</li>
+<li>Setup a Twitter automation: Until today I post to Twitter every day by hand. This should be automated next time.</li>
+<li>Spend more time on Marketing. Next time, I will dedicate half of the time on creating marketing material)</li>
+<li>Learn to create proper og-tags (with proper twitter-cards)</li>
+</ul>
+<p><strong>Outlook</strong>
+This is not going to be my last piece about Flash dictation. I will continue developing it, especially adding more
+features. I will not post any daily update, since I think the frequency is too high (especially on Twitter, I will
+experiment with weekly updates). The goal is still to attract an actual user. Despite having no user, I will keep using
+it to learn French. I have more plans to market it to language learners. This is just the beginning.</p>
+<p>Thank you everyone for supporting me! 🙏🙏🙏</p>
+    </main>
+  </article><div class="border-b border-b-[#8f5a8a] sm:border-none astro-APBCR6DP">
+    <div class=" astro-APBCR6DP">
+      <div class="mt-24 astro-APBCR6DP">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="astro-APBCR6DP">
+          <path fill="#fee2e4" fill-opacity="1" d="M0,128L96,256L192,224L288,256L384,256L480,160L576,256L672,256L768,128L864,64L960,64L1056,32L1152,160L1248,0L1344,160L1440,32L1440,320L1344,320L1248,320L1152,320L1056,320L960,320L864,320L768,320L672,320L576,320L480,320L384,320L288,320L192,320L96,320L0,320Z" class="astro-APBCR6DP"></path>
+        </svg>
+      </div>
+      <div class="bg-[#fee2e4] text-black astro-APBCR6DP">
+      <div class="max-w-2xl mx-auto py-8 px-2 astro-APBCR6DP">
+        <h2 class="text-lg pb-4 underline-offset-2 underline font-base astro-APBCR6DP">You might be interested</h2>
+        <div class="space-y-2 astro-APBCR6DP">
+        <article class="astro-APBCR6DP">
+          <a href="/blog/posts/migrated-to-astro" class="hover:underline-animate text-md sm:text-lg astro-APBCR6DP">
+            <span class="astro-APBCR6DP">Migrating from Hugo to Astro</span>
+          </a>
+        </article><article class="astro-APBCR6DP">
+          <a href="/blog/posts/2021/AdventOfSaas2021" class="hover:underline-animate text-md sm:text-lg astro-APBCR6DP">
+            <span class="astro-APBCR6DP">AdventOfSaaS 2021</span>
+          </a>
+        </article><article class="astro-APBCR6DP">
+          <a href="/blog/posts/2021/mathle-lesson-learned" class="hover:underline-animate text-md sm:text-lg astro-APBCR6DP">
+            <span class="astro-APBCR6DP">Mathle: Lessons Learned</span>
+          </a>
+        </article>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+</div>
+  </div>
+
+  <footer class="bg-[#fee2e4]">
+  <div class="py-4 sm:py-8">
+
+<!--    <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">-->
+<!--      <div class="px-5 py-2">-->
+<!--        <a href="#" class="text-base text-gray-500 hover:text-gray-900">About</a>-->
+<!--      </div>-->
+
+<!--      <div class="px-5 py-2">-->
+<!--        <a href="#" class="text-base text-gray-500 hover:text-gray-900">Blog</a>-->
+<!--      </div>-->
+
+<!--      <div class="px-5 py-2">-->
+<!--        <a href="#" class="text-base text-gray-500 hover:text-gray-900">Jobs</a>-->
+<!--      </div>-->
+
+<!--      <div class="px-5 py-2">-->
+<!--        <a href="#" class="text-base text-gray-500 hover:text-gray-900">Press</a>-->
+<!--      </div>-->
+
+<!--      <div class="px-5 py-2">-->
+<!--        <a href="#" class="text-base text-gray-500 hover:text-gray-900">Accessibility</a>-->
+<!--      </div>-->
+
+<!--      <div class="px-5 py-2">-->
+<!--        <a href="#" class="text-base text-gray-500 hover:text-gray-900">Partners</a>-->
+<!--      </div>-->
+<!--    </nav>-->
+
+    <div class="flex justify-center space-x-6">
+      <a href="https://twitter.com/kiru_io" class="text-gray-400 hover:text-gray-500">
+        <span class="sr-only">Twitter</span>
+        <svg class="h-6 w-6" fill="#8f5a8a" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+        </svg>
+      </a>
+
+      <a href="https://github.com/kiru" class="text-gray-400 hover:text-gray-500">
+        <span class="sr-only">GitHub</span>
+        <svg class="h-6 w-6" fill="#8f5a8a" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+        </svg>
+      </a>
+
+      <a href="mailto:contact@kiru.io?subject=Found%20you%20via%20Kiru.io" class="text-gray-400 hover:text-gray-500">
+        <span class="sr-only">Mail</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#8f5a8a" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+</div>
+</body></html>
