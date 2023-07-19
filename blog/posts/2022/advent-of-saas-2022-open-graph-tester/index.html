@@ -1,0 +1,776 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- Primary Meta Tags -->
+<title>Advent Of SaaS 2022 Open Graph Tester: Journal</title>
+<meta name="title" content="Advent Of SaaS 2022 Open Graph Tester: Journal">
+<meta name="description" content="Creating a SaaS (Software as a Service) project within 25 days. Read here a daily log on the progress.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kiru.io/blog/posts/2022/advent-of-saas-2022-open-graph-tester">
+<meta property="og:title" content="Advent Of SaaS 2022 Open Graph Tester: Journal">
+<meta property="og:description" content="Creating a SaaS (Software as a Service) project within 25 days. Read here a daily log on the progress.">
+<meta property="og:image" content="https://kiru.io/TwitterCard.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://kiru.io/blog/posts/2022/advent-of-saas-2022-open-graph-tester">
+<meta property="twitter:title" content="Advent Of SaaS 2022 Open Graph Tester: Journal">
+<meta property="twitter:description" content="Creating a SaaS (Software as a Service) project within 25 days. Read here a daily log on the progress.">
+<meta property="twitter:image" content="https://kiru.io/TwitterCard.png">
+
+<script defer data-domain="kiru.io" src="https://plausible.io/js/script.js"></script>
+
+
+
+<link rel="stylesheet" href="/assets/6bb2e165.8b3dd895.css" />
+<link rel="stylesheet" href="/assets/c983c6bf.a45b011b.css" />
+<link rel="stylesheet" href="/assets/fcbaea8b.0c48aace.css" /></head>
+
+<body class="w-full">
+<div class="">
+  <div style="background-color: #360e71">
+    <div class="flex items-center justify-between max-w-6xl mx-auto py-10 py-6 px-4 sm:px-2">
+      <a href="/" class="noSelect">
+        <div class="text-white hover:text-[#bc2a61] w-32 ">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="50 100 450 280" xml:space="preserve">
+            <g transform="matrix(1 0 0 1 271.63 241.19)" id="hOBV7oRFq22Ml0ucL-0Q5">
+              <path style="stroke: white; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: currentColor;  fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(0, 0)" d="M -208.06403 66.1095 C -209.30303 71.7735 -211.95803 80.2695 -206.64803 80.2695 C -203.28503 80.2695 -197.26703 77.2605 -192.84203 64.6935 C -190.01003 56.9055 -186.82403 41.8605 -183.81503 27.3465 C -183.10703 24.3375 -181.69103 8.938499999999998 -177.26603 8.938499999999998 C -171.95603 8.938499999999998 -165.76103 15.310499999999998 -156.91103 25.9305 C -140.80403 45.400499999999994 -139.03403 94.42949999999999 -101.51003 94.42949999999999 C -91.24403 94.42949999999999 -88.05803 90.0045 -88.05803 82.9245 C -88.05803 80.2695 -89.47403 79.38449999999999 -91.59803000000001 79.38449999999999 C -94.96103000000001 79.38449999999999 -100.27103000000001 81.50849999999998 -104.16503 81.50849999999998 C -127.17503 81.50849999999998 -126.29003 38.49749999999998 -145.93703 12.124499999999983 C -151.07003 5.221499999999984 -160.09703 1.1504999999999832 -166.11503 0.796499999999984 C -143.28203 -11.062500000000016 -105.40402999999999 -59.73750000000001 -105.40402999999999 -85.93350000000002 C -105.40402999999999 -91.59750000000003 -107.35103 -94.42950000000002 -113.36903 -94.42950000000002 C -117.44003 -94.42950000000002 -119.21002999999999 -86.81850000000001 -120.98003 -81.15450000000001 C -130.00703 -51.595500000000015 -161.86703 -18.49650000000001 -177.08903 -5.575500000000019 C -177.08903 -5.9295000000000195 -177.26603 -6.28350000000002 -177.26603 -6.814500000000019 C -174.78803 -22.213500000000018 -170.18603 -48.586500000000015 -165.40703 -63.63150000000002 C -163.46003 -70.00350000000002 -160.27402999999998 -78.14550000000001 -160.27402999999998 -84.69450000000002 C -160.27402999999998 -91.06650000000002 -165.76102999999998 -91.95150000000002 -171.07102999999998 -91.95150000000002 C -175.67302999999998 -91.95150000000002 -177.44302999999996 -88.94250000000002 -178.85903 -84.87150000000003 C -188.77103 -55.66650000000003 -194.43502999999998 -2.21250000000002 -202.93103 43.27649999999997 C -204.17003 50.35649999999997 -206.64803 59.56049999999997 -208.06403 66.10949999999997 z M -93.01403 -36.1965 C -86.99603 -36.1965 -83.98703 -43.0995 -83.98703 -48.2325 C -83.98703 -51.7725 -85.22603000000001 -56.3745 -89.65103 -56.3745 C -96.90803000000001 -56.3745 -99.74003 -50.0025 -99.74003 -44.515499999999996 C -99.74003 -40.7985 -97.08503 -36.19649999999999 -93.01403 -36.19649999999999 z M -99.91703 34.6035 C -89.12003 34.6035 -67.70303 5.3984999999999985 -67.70303 -3.451500000000003 C -67.70303 -5.044500000000003 -68.05703 -6.106500000000002 -69.82703 -6.106500000000002 C -76.37603 -6.106500000000002 -90.35902999999999 22.213499999999996 -95.31503 22.213499999999996 C -97.97003 22.213499999999996 -98.14702999999999 18.1425 -98.14702999999999 16.372499999999995 C -98.14702999999999 -5.221500000000006 -89.65102999999999 -13.186500000000006 -89.65102999999999 -20.974500000000006 C -89.65102999999999 -25.576500000000006 -92.30602999999999 -26.638500000000008 -96.55403 -26.638500000000008 C -105.75802999999999 -26.638500000000008 -111.77602999999999 -3.628500000000006 -111.77602999999999 11.416499999999992 C -111.77602999999999 18.850499999999993 -110.00603 34.6035 -99.91703 34.6035 z M -58.67603 54.0735 C -46.10903 54.0735 -13.895029999999998 7.6995000000000005 -13.01003 -4.336499999999994 C -12.83303 -6.283499999999994 -14.95703 -6.106499999999993 -16.37303 -6.106499999999993 C -19.55903 -1.150499999999993 -45.22403 37.61250000000001 -50.71103 37.61250000000001 C -51.95003 37.61250000000001 -51.77303 35.84250000000001 -51.77303 34.95750000000001 C -50.88803 25.04550000000001 -42.92303 14.956500000000009 -42.03803 4.513500000000011 C -40.97603 -6.460499999999989 -49.649029999999996 -6.637499999999989 -58.49903 -9.646499999999989 C -54.25103 -13.540499999999989 -50.357029999999995 -21.15149999999999 -49.826029999999996 -26.63849999999999 C -49.29503 -33.18749999999999 -53.189029999999995 -43.27649999999999 -60.80002999999999 -43.27649999999999 C -73.36703 -43.27649999999999 -77.96902999999999 -30.53249999999999 -78.85403 -20.26649999999999 C -80.27002999999999 -2.5664999999999907 -67.17202999999999 -1.32749999999999 -54.25102999999999 2.7435000000000116 C -54.42802999999999 5.752500000000012 -58.67602999999999 14.602500000000012 -60.092029999999994 18.142500000000013 C -62.924029999999995 25.753500000000013 -65.75603 33.71850000000001 -66.46403 41.68350000000001 C -66.99503 48.05550000000001 -66.28702999999999 54.07350000000001 -58.67603 54.07350000000001 z M -60.62303 -25.5765 C -60.97703 -22.0365 -62.74703 -13.894499999999999 -65.40203 -11.4165 C -68.05703 -12.8325 -68.41103 -17.4345 -68.23402999999999 -20.2665 C -67.88002999999999 -22.567500000000003 -66.81803 -32.3025 -63.27802999999999 -32.3025 C -60.800029999999985 -32.3025 -60.446029999999986 -27.346500000000002 -60.623029999999986 -25.576500000000003 z M -8.05403 30.8865 C 6.105970000000001 30.8865 16.194969999999998 14.602500000000003 20.265970000000003 2.212500000000002 C 18.849970000000003 10.000500000000002 15.840970000000002 22.9215 15.840970000000002 30.709500000000002 C 15.840970000000002 38.8515 19.026970000000002 46.9935 28.230970000000003 46.9935 C 35.133970000000005 46.9935 40.97497 41.860499999999995 45.222970000000004 36.9045 C 50.532970000000006 30.7095 67.34797 3.451499999999996 67.34797 -3.6285000000000025 C 67.34797 -5.044500000000003 67.17097 -6.106500000000002 65.40097 -6.106500000000002 C 58.32097 -6.106500000000002 39.91297 34.6035 33.00997 34.6035 C 31.416970000000003 34.6035 31.239970000000003 32.479499999999994 31.239970000000003 31.417499999999997 C 31.239970000000003 15.487499999999997 37.788970000000006 0.44249999999999545 37.788970000000006 -14.779500000000006 C 37.788970000000006 -19.735500000000005 34.42597000000001 -23.452500000000008 28.230970000000006 -23.452500000000008 C 20.265970000000006 -23.452500000000008 8.760970000000007 18.49649999999999 -4.514029999999991 18.49649999999999 C -6.992029999999991 18.49649999999999 -7.877029999999991 17.08049999999999 -7.877029999999991 12.47849999999999 C -7.877029999999991 2.03549999999999 -3.0980299999999907 -8.761500000000009 0.972970000000009 -21.85950000000001 C 1.680970000000009 -24.337500000000013 0.618970000000009 -28.58550000000001 -3.0980299999999907 -28.58550000000001 C -16.550029999999992 -28.58550000000001 -22.03702999999999 -2.920500000000011 -22.03702999999999 9.823499999999989 C -22.03702999999999 18.49649999999999 -20.44402999999999 30.886499999999987 -8.05402999999999 30.886499999999987 z M 72.48097 53.8965 C 78.32197 53.8965 85.04796999999999 48.0555 85.75597 42.74550000000001 C 86.28697000000001 38.49750000000001 82.21597 34.426500000000004 77.25997000000001 34.426500000000004 C 71.59597000000001 34.426500000000004 66.28597 39.73650000000001 65.75497000000001 45.93150000000001 C 65.40097000000002 50.71050000000001 68.23297000000001 53.8965 72.48097000000001 53.8965 z M 121.33297 -36.1965 C 127.35097 -36.1965 130.35997 -43.0995 130.35997 -48.2325 C 130.35997 -51.7725 129.12097 -56.3745 124.69597 -56.3745 C 117.43897 -56.3745 114.60697 -50.0025 114.60697 -44.515499999999996 C 114.60697 -40.7985 117.26197 -36.19649999999999 121.33297 -36.19649999999999 z M 114.42997 34.6035 C 125.22697 34.6035 146.64397 5.3984999999999985 146.64397 -3.451500000000003 C 146.64397 -5.044500000000003 146.28996999999998 -6.106500000000002 144.51997 -6.106500000000002 C 137.97097 -6.106500000000002 123.98797 22.213499999999996 119.03197 22.213499999999996 C 116.37697 22.213499999999996 116.19997000000001 18.1425 116.19997000000001 16.372499999999995 C 116.19997000000001 -5.221500000000006 124.69597 -13.186500000000006 124.69597 -20.974500000000006 C 124.69597 -25.576500000000006 122.04097 -26.638500000000008 117.79297 -26.638500000000008 C 108.58896999999999 -26.638500000000008 102.57097 -3.628500000000006 102.57097 11.416499999999992 C 102.57097 18.850499999999993 104.34097 34.6035 114.42997 34.6035 z M 154.25497 45.2235 C 167.52997 45.2235 179.03497 31.594500000000004 184.16797 14.956500000000002 C 194.96497 13.717500000000001 209.83297 2.9205000000000023 209.83297 -3.8054999999999986 C 209.83297 -5.3984999999999985 208.94797 -6.9914999999999985 207.70897 -7.345499999999999 C 202.22197 -2.9204999999999988 192.66397 2.389500000000001 186.64597 3.982500000000001 C 186.99997000000002 1.6815000000000007 186.99997000000002 -0.6194999999999995 186.99997000000002 -2.9204999999999988 C 186.99997000000002 -20.4435 177.61897000000002 -36.1965 166.99897 -36.1965 C 158.32597 -36.1965 148.59097000000003 -25.753500000000003 148.59097000000003 -16.549500000000002 C 148.59097000000003 -16.195500000000003 148.59097000000003 -15.664500000000002 148.59097000000003 -15.310500000000001 C 139.91797000000003 -8.230500000000001 134.96197000000004 3.4514999999999993 134.96197000000004 16.5495 C 134.96197000000004 33.1875 143.10397000000003 45.2235 154.25497000000004 45.2235 z M 176.20297 2.0355 C 168.59197 -2.2125000000000004 160.09597 -11.0625 160.09597 -16.372500000000002 C 160.09597 -19.558500000000002 163.45897 -23.2755 166.64497 -23.2755 C 171.77797 -23.2755 176.37997000000001 -13.1865 176.37997000000001 -2.0355000000000025 C 176.37997000000001 -0.6195000000000026 176.37997000000001 0.6194999999999973 176.20297000000002 2.035499999999997 z M 174.25597 13.5405 C 171.24697 24.868499999999997 165.58297 34.6035 158.85697 34.6035 C 154.07797 34.6035 149.65296999999998 26.815499999999997 149.65296999999998 18.319499999999998 C 149.65296999999998 11.593499999999999 152.48496999999998 3.0974999999999984 155.49397 -0.7965000000000018 C 160.44996999999998 5.3984999999999985 167.52997 10.885499999999999 174.25597 13.540499999999998 z" stroke-linecap="round"></path>
+            g>
+          </g></svg>
+        </div>
+      </a>
+
+
+      <div class="flex items-baseline gap-2 text-right uppercase font-medium text-white text-md sm:text-lg md:text-xl lg:text-2xl">
+        <div class="hover:underline-animate"><a href="/">Home</a></div>
+        <div class="border-l border-l-white pl-2 hover:underline-animate"><a href="/blog">Blog</a></div>
+<!--        <div class="border-l border-l-white pl-2 hover:underline-animate"><a href="/projects/">Projects</a></div>-->
+        <div class="border-l border-l-white pl-2 hover:underline-animate"><a href="/til">TIL</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background-color: white" class="">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 120 1440 170">
+      <path fill="#360e71" fill-opacity="1" d="M0,160L130.9,224L261.8,64L392.7,128L523.6,192L654.5,160L785.5,224L916.4,256L1047.3,32L1178.2,192L1309.1,288L1440,128L1440,0L1309.1,0L1178.2,0L1047.3,0L916.4,0L785.5,0L654.5,0L523.6,0L392.7,0L261.8,0L130.9,0L0,0Z"></path>
+    </svg>
+  </div>
+
+  <div class="pt-8">
+    <article class="max-w-3xl mx-auto px-2 min-h-screen astro-E6TVZJRP">
+
+    <header class="astro-E6TVZJRP">
+      <h1 class="title astro-E6TVZJRP">Advent Of SaaS 2022 Open Graph Tester: Journal</h1>
+      <time class="astro-E6TVZJRP">08.12.2022</time>
+
+      
+    </header>
+    <main class="prose lg:prose-lg astro-E6TVZJRP">
+      <div class="bg-green-100 rounded-md px-6 py-1 text-lg"><p><strong>TLDR</strong>: I managed to create OGTester.com by working every day at least for one hour in an Advent of Code fashion.</p><span class="text-sm"><p>Warning: This article is written in a journal style nad is very long.</p></span></div>
+<div class="flex justify-center"><img src="/assets/blog/adventofsaas2022/logo.svg" width="300px"/></div>
+<div class="my-5"><h3 class="font-bold text-xl">Table of content</h3><ul class="list-disc ml-3 text-base"><li><a href="#day0">Day 0: Kickstart</a><ul><a href="#introduction"> <li>Introduction</li> </a>
+<a href="#rules"> <li>What are the rules?</li> </a>
+<a href="#done"> <li>What has been done until now?</li> </a>
+<a href="#success"> <li>When is AdventOfSaaS a success?</li> </a>
+<a href="#lessons"> <li>Lessons learned from last year</li> </a>
+<a href="#opengraph"> <li>What am I going to work on?</li> </a></ul></li><li> <a href="#day1">Day 1: Planning</a> </li>
+<li> <a href="#day2">Day 2: Mockups</a> </li>
+<li> <a href="#day3">Day 3: Init</a> </li>
+<li> <a href="#day4">Day 4: UI Mockup</a> </li>
+<li> <a href="#day5">Day 5: Mockup as a page</a> </li>
+<li> <a href="#day6">Day 6: Tracing Errors</a> </li>
+<li> <a href="#day7">Day 7: Working Prototype</a> </li>
+<li> <a href="#day8">Day 8: Outlook next days</a> </li>
+<li> <a href="#day9">Day 9: Page Structure</a> </li>
+<li> <a href="#day10">Day 10: Landing Page</a> </li>
+<li> <a href="#day11">Day 11: Variable meta tags</a> </li>
+<li> <a href="#day12">Day 12: Variable meta tags II</a> </li>
+<li> <a href="#day13">Day 13: Variable meta tags III</a> </li>
+<li> <a href="#day14">Day 14: Missing Features</a> </li>
+<li> <a href="#day15">Day 15: MVP Creator </a> </li>
+<li> <a href="#day16">Day 16: Added Blog</a> </li>
+<li> <a href="#day17">Day 17: Added one Article</a> </li>
+<li> <a href="#day18">Day 18: Started with Tutorial</a> </li>
+<li> <a href="#day19">Day 19: Almost Ready</a> </li>
+<li> <a href="#day20">Day 20: Publishing</a> </li>
+<li> <a href="#day21">Day 21: Bugfixes and Sharing</a> </li>
+<li> <a href="#day22">Day 22: Be Nice</a> </li>
+<li> <a href="#day23">Day 23: Be less nice</a> </li>
+<li> <a href="#day24">Day 24: Wrapping up</a> </li>
+<li> <a href="#day25">Day 25: Final Article</a> </li></ul></div>
+<span id="day0"><h3 id="day-0-kickstart">Day 0: Kickstart</h3></span>
+<span id="introduction"><h4 id="introduction">Introduction</h4></span>
+<p><a href="https://adventofcode.com/">AdventOfCode</a> is a known challenge among developers.
+Each day, you solve a coding exercise. Instead of doing a puzzle every day,
+I challenged myself to publish a SaaS (Software as a Service) project within 25 days.
+The goal is to work every day for a few hours on a single project.</p>
+<p>Last year was the first time I attempted this challenge. The end result was
+<a href="http://FlashDictation.com">FlashDictation.com</a>, which is still online and actively used.
+I was pretty happy with the end result. I forced myself to
+publish a short update every day and ended up writing a ~4’700 word <a href="https://kiru.io/articles/adventofsaas2021/">long
+article</a> and actually shipping a product.</p>
+<p>This year I will try again. This time, I will apply some <a href="#lessons">lessons learned</a> from last year.</p>
+<span id="rules"><h4 id="what-are-the-rules">What are the rules?</h4></span>
+<p>These are the rules I set myself for the Advent of SaaS Challenge:</p>
+<ul>
+<li>I pledge to work from 1.12.2022 to 25.12.2022 for at least 1h per day, maximum 2h</li>
+<li>On the weekend, a budget of 4h is allowed</li>
+<li>I will keep a public journal with the progress</li>
+<li>The objective is to have a usable product</li>
+<li>No code shall be written before, imagine it like a 25 days Hackathon with time budget</li>
+</ul>
+<span id="done"><h4 id="what-has-been-done-so-far">What has been done so far?</h4></span>
+<p>This launch post was sketched before December (mainly on the 30th), as well as
+the project ideas were collected and evaluated. I haven’t written a single line of code until now for
+this specific project.</p>
+<span id="success"><h4 id="when-is-adventofsaas-a-success">When is AdventOfSaaS a success?</h4></span>
+<p>Last year, my plan included an <a href="https://kiru.io/blog/posts/2021/AdventOfSaas2021/#success">unnecessarily complicated list of layered goals</a>.
+This year, I want to keep it lean. The definition of success is simple:</p>
+<ul>
+<li>This project is a <strong>success</strong> when I have a <strong>single paying</strong> customer, someone I don’t know!</li>
+<li>Having enough customers to cover the cost is the definition of uber-success for this project</li>
+</ul>
+<span id="lessons"><h4 id="lessons-learned-from-last-year">Lessons learned from last year</h4></span>
+<p>Last year, I wrote a single huge article. This year, I will split the single article in multiple parts.
+I will keep this article up to date, and write a weekly summary.
+As last year, I will keep posting the progress on Twitter (<a href="https://twitter.com/kiru_io">@kiru_io</a>) as well.</p>
+<span id="opengraph"><h4 id="what-am-i-going-to-work-on">What am I going to work on?</h4></span>
+<p>Let’s talk about the actual idea for this year: Open Graph Tester. A simple
+webpage to test open graph metadata instantly without redeploying your webpage.</p>
+<p>Do you spot the difference between these two links I shared on Twitter?</p>
+<div class="grid grid-cols-2 m-0 p-0"><p><img src="/assets/blog/adventofsaas2022/day0-geotagseo-tweet.webp" alt="Shared GoeTagSeo Tweet"/></p><p><img src="/assets/blog/adventofsaas2022/day0-kiru-wrong-tags.webp" alt="Shared Kiru io Tweet, wrong Tags"/></p></div>
+<p>If you send a link via social media, the platform shows a title, description
+and image. This information was provided by the developer on the webpage.
+The first image contains the correct information, while the second one is missing that.</p>
+<p>It is easy to spot the error, but fixing it takes - for me at least - a few attempts.
+Especially with the correct image format.</p>
+<p>The goal of the project is to make it easier to test open graph meta tags on social media.
+I will write a longer description.</p>
+<h4 id="got-more-questions">Got more questions?</h4>
+<p>As always, if you have any questions, write me a mail (my four-letter name at
+kiru dot io) or hit me on Twitter <a href="https://twitter.com/kiru_io">@kiru_io</a></p>
+<span id="day1"><h3 id="day-1-planning">Day 1: Planning</h3></span>
+<p>Last year, I started immediately buying the domain and preparing a landing page.
+This time, I will spend some time planning ahead and writing about the project
+and sharing this project, before actually writing code.</p>
+<h4 id="todays-goal-is-simple">Today’s goal is simple:</h4>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#c9d1d9">■ Publish this page on kiru.io</span></span>
+<span class="line"><span style="color:#c9d1d9">■ Write explanation of why we need such a tool</span></span>
+<span class="line"><span style="color:#c9d1d9">■ What I imagine the website could look like (so I can make a mockup later)</span></span>
+<span class="line"><span style="color:#c9d1d9">■ Define MVP (Minimal Viable Product)</span></span>
+<span class="line"><span style="color:#c9d1d9">■ Share on IndieHackers</span></span>
+<span class="line"><span style="color:#c9d1d9">■ Share on Twitter</span></span>
+<span class="line"><span style="color:#c9d1d9">■ Share on Medium</span></span></code></pre>
+<h4 id="what-problem-does-og-open-graph-tester-solve">What problem does OG (Open Graph) Tester solve?</h4>
+<p><a href="https://ogp.me/">Open Graphs</a> are HTML meta tags with predefined names. Some common tags are the <code>og:title</code> and <code>og:description</code>.
+Another one is the <code>og:image</code> which defines the preview image.</p>
+<p>Take for example these two tags, which are defined on <a href="https://geotagseo.com/">GeoTagSeo.com</a>:</p>
+<p><img src="/assets/blog/adventofsaas2022/day1-code-meta-tags.webp" alt="OG Meta tags html code"/></p>
+<p>If you share the link <code>https://geotagseo.com/</code> on Twitter, behind the scene, the following steps happen (roughly):</p>
+<ol>
+<li>Twitter will read the page from the URL</li>
+<li>Twitter sees there are many <code>&lt;meta property ..&gt;</code> tags</li>
+<li>Twitter will look for the specific ones, which are defined <a href="https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup">here</a></li>
+<li>Twitter will read the values, and store them temporarily (for how long is unknown)</li>
+<li>Twitter will render the values as it likes. For now, it looks like this:</li>
+</ol>
+<img class="shadow rounded sm:max-w-lg mx-auto" src="/assets/blog/adventofsaas2022/day1-geotagseo-example.webp" alt="How Twitter shows them"/>
+<p>If Twitter doesn’t display preview as you expected, then it is hard to trace back the error.
+Any of the steps from 1 to 4 can go wrong!</p>
+<p>Twitter offers a validator, but it rarely helped me.
+The validator only tells you if step 2 is not working, but not further.
+Since Twitter is caching (e.g. remembering ) the results, you have to wait some time, before you can test again.</p>
+<p>There could be some many reasons why the preview is not working,
+here is an incomplete list of errors I already encountered:</p>
+<ul>
+<li>the meta tags were rendered via JavaScript (they have to be static)bbz</li>
+<li>the image format of the meta tags was wrong</li>
+<li>the title or description is too long</li>
+<li>the image URL is wrong (has to be absolute ) or the image type is wrong</li>
+<li>and many more!</li>
+</ul>
+<p>The struggle is not <a href="https://stackoverflow.com/questions/19778620/provide-an-image-for-whatsapp-link-sharing">just related to Twitter</a>,
+any modern Social Media or Chat platform reads the meta tags.
+Take for example how WhatsApp displays the link.
+I know there is a way to show a preview link, but I don’t know yet why it’s not showing.</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day1-sharing-whatsapp.webp" alt="How WhatsApp displays GeoTagSeo.com"/>
+<h4 id="how-does-og-tester-help">How does OG Tester help?</h4>
+<p>There exists a handful of pages, where provide the link, and it tells you how the Twitter or other platform will render the result.
+This is good enough, but what I am looking for is something else.</p>
+<p>I want a meta-tag editor, where I can provide a link, edit the meta tags and generate a short-lived URL.
+The URL can then be shared on Twitter or WhatsApp and I see immediately how they are rendered.</p>
+<p>What I imagine is a simple web page, where I provide some meta tags, for example title and image URL,
+then it generates a simple URL.</p>
+<p>I will work on some mockups tomorrow, just to think through the idea.</p>
+<h4 id="what-is-the-mvp-minimal-viable-product">What is the MVP (Minimal Viable Product)?</h4>
+<p>This definition might change in the next few days. For now, I want to keep it simple:</p>
+<ul>
+<li>As a user, I want to generate a unique URL for a given title and image URL</li>
+<li>As a user, I want to check if the URL has been accessed by anyone (for now a counter is enough)</li>
+<li>As a user, I want to create an account (easier for me like this then to fight spam)</li>
+<li>As a user, I want to delete my generate url</li>
+<li>As a user, I want to share the link on WhatsApp with one click</li>
+</ul>
+<h4 id="sharing">Sharing</h4>
+<p>I shared this project on</p>
+<ul>
+<li><a href="https://www.indiehackers.com/post/advent-of-saas-2022-a10d001f3b">IndieHacker</a></li>
+<li>Medium: <a href="https://medium.com/@kiruio/advent-of-saas-2022-open-graph-tester-day-0-ee65da38b23a">Day 0</a> and <a href="https://medium.com/@kiruio/advent-of-saas-2022-open-graph-tester-day-1-planning-4acdbe744bd0">Day 1</a></li>
+<li><a href="https://twitter.com/kiru_io/status/1598338923704381440">Twitter</a></li>
+</ul>
+<div class="flex justify-center"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Inspired by <a href="https://twitter.com/hashtag/adventofcode?src=hash&#38;ref_src=twsrc%5Etfw">#adventofcode</a> I started working
+on Advent Of SaaS last year.<br/><br/>This year I will attempt again, the rules are simple:<br/><br/>Create a SaaS project
+within 25 days by working 1-2h every day.<a href="https://twitter.com/hashtag/buildinpublic?src=hash&#38;ref_src=twsrc%5Etfw">#buildinpublic</a><br/>A thread
+with more infos 👇</p>— Kiru (@kiru_io) <a href="https://twitter.com/kiru_io/status/1598338923704381440?ref_src=twsrc%5Etfw">December 1, 2022</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+<h4 id="plans-for-tomorrow">Plans for tomorrow:</h4>
+<p>Make a mockup of the webpage with all the steps to cover all MVP features.</p>
+<span id="day2"><h3 id="day-2-mockups">Day 2: Mockups</h3></span>
+<p>Usually when starting a <a href="https://en.wikipedia.org/wiki/Greenfield_project">greenfield project</a> for myself,
+I keep spending too much time on experimenting with different layouts.
+I start creating the webpage in HTML immediately, but then end up loosing too much time.
+This time, I will start making a mockup of the website first, and then write the code.
+That way, when I start coding, I have an end-goal (for the design) in mind.</p>
+<h5 id="mockups">Mockups</h5>
+<p>I want to cover the core feature only: How to generate a unique URL for a set of OG-Tags.
+It should be simple and fit on one page. This is the first draft I came up with:</p>
+<img class="" src="/assets/blog/adventofsaas2022/day2-screenshot-mockup.webp" alt="Mockup Main feature"/>
+<p>The workflow is the following:</p>
+<ol>
+<li>On the top left, you provide some tags (title and description)</li>
+<li>The top right box shows the edited values as meta tags, so that you can easily copy and paste it in your code</li>
+<li>Bottom right is where the main feature is: Each time you “save” the title and description, I will generate a unique URL.</li>
+</ol>
+<p><strong>What is the purpose of the unique URL?</strong>
+Sharing the link allows you to test your current meta tags. You don’t need to copy to your webpage and redeploy your page and test it.
+For example, if you shared <code>http://url/5dJ12Xbk/v3</code> on WhatsApp, it could render the meta tags like this (a mockup as well!):</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day2-share-url.webp" alt="Share Url"/>
+<p>The table on the bottom right will show you a new url each time you provide a new set of tags.
+That way, we bypass the cache of the platform. I would also like to know if I already tested the link.
+For now, my idea is to count how many times the link has been accessed.
+Maybe, in the future, I could even find out who accessed it (based on the user agent?).
+I have to do some experiments to decide that.</p>
+<p>Apart from the main page, there will be some other pages as well:</p>
+<ul>
+<li>Login and registration pages ( I would love to offer it without login, but it is easier for me to provide login and be sure there is no misuse)</li>
+<li>Landing page, to explain what the product is about</li>
+<li>Blog section where I will do some experiments and write more about what this project is about!</li>
+<li>Maybe: Some Pro features? E.g. directly share on WhatsApp and other platform?</li>
+</ul>
+<p>For the user management, I will copy existing components from other projects.
+For example from <a href="https://slashdreamer.com/">SlashDreamaer.com</a></p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day2-screenshot-login.webp" alt="Login from SlashDreamer"/>
+<p>I already spent more than an hour sketching the above wireframe.
+The rest of the pages, I can easily design and add content spontaneously.</p>
+<h4 id="plan-for-tomorrow">Plan for tomorrow</h4>
+<p>Tomorrow, I will setup the project and decide on a technology stack and write about it.</p>
+<span id="day3"><h3 id="day-3-init">Day 3: Init</h3></span>
+<p><em>A better subtitle would be <code>git init</code></em></p>
+<p>Today’s goal is to start the actual project.</p>
+<h4 id="logo">Logo</h4>
+<p>Before I start, I wanted to create a simple logo without wasting much time.</p>
+<p>After fiddling around with Inkscape, I came up with the following logo:</p>
+<div class="flex justify-center"><img src="/assets/blog/adventofsaas2022/logo.svg" width="200px"/></div>
+<p>The logo is a first draft. I will ask for feedback from other people and adapt it.
+For the colors, I used <a href="https://colorhunt.co/palette/a6f2db7bcace678eb44f4e79">this</a>) palette from colorhunt.co..</p>
+<h4 id="technical-stack">Technical Stack</h4>
+<p>From a technical point of view, I don’t need many components:</p>
+<ul>
+<li>frontend to edit the og tags (and later for the member management )</li>
+<li>backend which stores the information, I need to store the meta tags and create an url</li>
+<li>the meta tags have to be sever-side rendered</li>
+<li>I need to track when the pages are accessed.</li>
+</ul>
+<p>Given the above requirements, and my experience I will go with Phoenix and Elixir.
+The other option is a Java Backend and some Next.js based client.</p>
+<p>I have enough knowledge of both stack, but recently I have been doing more Phoenix, so it’s easier to
+get started and less context switching from other projects.</p>
+<h4 id="version-0">Version 0</h4>
+<p>The goal today is simple: get an empty page online.
+After setting up phoenix initial project, adding tailwind and deploying it to <a href="https://fly.io/">fly.io</a>, I got the following version working:</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day3-version-0.webp" alt="First Version"/>
+<p>Go test the first version: <a href="https://ogtester.com/">ogtester.com</a></p>
+<span id="day4"><h3 id="day-4-ui-mockup">Day 4: UI Mockup</h3></span>
+<p>As I am participating at the <a href="https://lauzhack.com/">LauzHack 2022</a>,
+I don’t have much time (and did not sleep much).</p>
+<p>Today’s session will be very short. I am tired, but don’t want to disappoint my self. Here we go.</p>
+<p>As I have already a Phoenix application running, I could start with the UI mockup and see how far I came.</p>
+<p>This is what I could do with the limited time today (~30min):</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day4-start.webp" alt="Day 4"/>
+<p>I am just too tired after the Hackaton.</p>
+<span id="day5"><h3 id="day-5-mockup-as-a-page">Day 5: Mockup as a page</h3></span>
+<p>Before I begin. Still tired after the hackaton. I continued working on the mockup.
+Used some components from TailwindUI to make the page prettier. I tried to stick to the mockup as much as possible.</p>
+<p>This was the results:</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day5-mockup-in-real.webp" alt="Mockup in Real"/>
+<p>Granted, it looks not bad, but I was not happy, so I moved things around and added some colors.
+This was a bit more satisfying. For now this is good enough to work with.</p>
+<p>I might change things after actually using it and seeing how things work together.</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day5-mockup-now.webp" alt="Mockup"/>
+<p>For the screenshots, I am using <a href="https://screenshot.rocks/">screenshot.rocks</a>.
+I will try to use it for all the following screenshots, that way I am forced to publish something on OgTester.com, before I take a screenshot.
+(why? Because I am using their website, and it cannot access my local development environment)</p>
+<span id="day6"><h3 id="day-6-tracing-errors">Day 6: Tracing Errors</h3></span>
+<h4 id="plan">Plan</h4>
+<p>Today’s session was very disappointing. My overall goal was to have a first working version
+I intended to finish the following tasks:</p>
+<ul>
+<li>To store the title and description in the database</li>
+<li>To generate a unique url</li>
+<li>To add a share page, which simply displays those values</li>
+</ul>
+<p>In the end, I did <strong>none of the above</strong>. I was fighting with Phoenix LiveView.</p>
+<h4 id="liveview">LiveView</h4>
+<p>From yesterday’s work, I already have a webpage with a form. Next, I needed to store the submitted values.
+I could have done it the <a href="https://hexdocs.pm/phoenix_html/Phoenix.HTML.Form.html">classical way</a> using Phoenix, which meant, you submit the form to the server.
+On the server side, I have an endpoint, which would store the result and send the new page back.
+One downside of this approach is that we have to reload the page each time.</p>
+<p>A modern approach with Phoenix is to use something called LiveViews. The idea is the following:
+You go to a webpage, the server sends you the full page, and establishes a WebSocket.
+Any further interactions happen via the WebSocket. In my case, if I submitted the form, the values would be sent via the WebSocket.
+The server would process them and send a diff to the page. That way, you don’t refresh the full page, only the relevant sections.</p>
+<p>I am not a newbie to LiveView, but ended up tracing an unknown issue anyway.
+I followed the <a href="https://hexdocs.pm/phoenix_live_view/0.17.5/form-bindings.html">documentation</a> to add a form with LiveView,
+which means adding something like this:</p>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#c9d1d9">&lt;.form let={f} for={@changeset} phx-change=&quot;validate&quot; phx-submit=&quot;save&quot;&gt;</span></span>
+<span class="line"><span style="color:#c9d1d9">  &lt;%= label f, :title %&gt;</span></span>
+<span class="line"><span style="color:#c9d1d9">  &lt;%= text_input f, :title %&gt;</span></span>
+<span class="line"><span style="color:#c9d1d9">  &lt;%= submit &quot;Add&quot; %&gt;</span></span>
+<span class="line"><span style="color:#c9d1d9">&lt;/.form&gt;</span></span></code></pre>
+<p>First, I got the following error:</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day6-error-f-not-found.webp" alt="Error f not found"/>
+<p>After double-checking, comparing with another project and searching on the internet, I didn’t find anything.
+Until, I looked up on GitHub and discovered <a href="https://github.com/phoenixframework/phoenix_live_view/issues/2275">this issue</a>,
+and the solution was given by the creator of Elixir:</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day6-solution-f-not-found.webp" alt="Solution f not found"/>
+<p>Indeed, that was the problem. I was using LiveView v0.17.3. An update to the latest version fixed that problem, but introduced another one.</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day6-error-forms-not-found.webp" alt="Error forms not found"/>
+<p>I have no clue, why suddenly the <code>&lt;.form&gt;</code> is not recognized. I will continue tomorrow, as I run out of time.</p>
+<h4 id="what-i-managed-to-finish">What I managed to finish</h4>
+<p>Apart from all the problems mentioned, I managed to complete some minor things.
+First, I added favicons (well this took 5 min).</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day6-favicon.webp" alt="Error forms not found"/>
+<p>Then, I added a top bar with a link to this blog.</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day6-topbar.webp" alt="Error forms not found"/>
+<span id="day7"><h3 id="day-7-working-prototype">Day 7: Working Prototype</h3></span>
+<h4 id="bugfix">Bugfix</h4>
+<p>I managed to fix yesterday’s error. <a href="https://elixirforum.com/t/compilation-error-when-running-ecto-migrate-after-import-of-phx-gen-auth/42728/4?u=kiru">This</a>
+blog post helped me to understand how the  <code>&lt;.form&gt;</code> tag was related. I don’t want to go too much into details, as I want to focus on the result.</p>
+<p>The solution was very simple. I had to add the following import to my view, it seems the <code>&lt;.form&gt;</code> was moved from <code>Phoenix.LiveView.Helpers</code>:</p>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#c9d1d9">import Phoenix.Component.</span></span></code></pre>
+<h4 id="working-prototype">Working Prototype!</h4>
+<p>After the above fix, I could focus on what I wanted to achieve yesterday.
+I managed to store the title and description in the database, as well as create a unique url:</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day7-working-prototype.gif" alt="Working Prototype DEMO"/>
+<p>Visiting <code>http://localhost:4000/share/mSSqW</code> will give you a simple page.
+The page is not exciting, but the most important part is when you check the html, it has the proper meta tags.</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day7-share-page.webp" alt="Share Page"/>
+<p>In theory, I should be able t share the link on WhatsApp and see the meta tags.</p>
+<h4 id="first-deployment">First deployment</h4>
+<p>I was eager to test the actual page (as I could not do it locally). I deployed the current version.</p>
+<p>And it did not work:</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day7-uncomplete-bar.webp" alt="Not loaded"/>
+<p>Checking the server logs, I saw many errors related to origin.</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day7-serverlogs.webp" alt="Serverlogs"/>
+<p>Of course, I forgot to <a href="https://hexdocs.pm/phoenix/Phoenix.Endpoint.html">configure</a> the <code>check_origin</code> for Phoenix.
+Once that is fixed, I was ready to test. And it worked!!!</p>
+<h4 id="an-ogtester-is-born">An OGTester is born</h4>
+<p>The first example I tried was the following:</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day7-test-1.webp" alt="First Example"/>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day7-test-2.webp" alt="First Example"/>
+<p>Sharing the results, on Telegram and Slack:</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day7-share-telegram.webp" alt="Share Telegram"/>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day7-share-slack.webp" alt="Share Telegram"/>
+<p>I tried WhatsApp as well, but as it did not work. This is something I will investigate tomorrow:</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day7-share-whatsapp.webp" alt="Share Telegram"/>
+<p>It seems you can do some fun things with this:</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day7-share-fun.webp" alt="Share Telegram"/>
+<p>I am eager to explore the edge cases of og tags for each client.
+I could imagine a blog article which compares the different clients.</p>
+<h4 id="one-week-recap">One Week Recap</h4>
+<p>Today marks one week since I started this project. <a href="/blog/posts/2022/advent-of-saas-2022-og-tester-recap-week-one">I wrote a short article here</a></p>
+<span id="day8"><h3 id="day-8-outlook-next-days">Day 8: Outlook next days</h3></span>
+<p>First, I started off by editing the
+<a href="/blog/posts/2022/advent-of-saas-2022-og-tester-recap-week-one">one-week-recap</a> article from yesterday.</p>
+<p>Then, I spend most of the time to plan the next few days.
+Right now, I have a working prototype. I can give a title and description and create a URL.
+The missing part is to upload an image, because getting the correct dimension correct
+for the images is a nightmare.</p>
+<p>If you look at the Open Graph tags, then there are plenty to add (taken from <a href="https://ogp.me/">ogp.me</a>):</p>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#c9d1d9">&lt;meta property=&quot;og:audio&quot; content=&quot;https://example.com/bond/theme.mp3&quot; /&gt;</span></span>
+<span class="line"><span style="color:#c9d1d9">&lt;meta property=&quot;og:description&quot;</span></span>
+<span class="line"><span style="color:#c9d1d9">      content=&quot;Sean Connery found fame and fortune as the</span></span>
+<span class="line"><span style="color:#c9d1d9">           suave, sophisticated British agent, James Bond.&quot; /&gt;</span></span>
+<span class="line"><span style="color:#c9d1d9">&lt;meta property=&quot;og:determiner&quot; content=&quot;the&quot; /&gt;</span></span>
+<span class="line"><span style="color:#c9d1d9">&lt;meta property=&quot;og:locale&quot; content=&quot;en_GB&quot; /&gt;</span></span>
+<span class="line"><span style="color:#c9d1d9">&lt;meta property=&quot;og:locale:alternate&quot; content=&quot;fr_FR&quot; /&gt;</span></span>
+<span class="line"><span style="color:#c9d1d9">&lt;meta property=&quot;og:locale:alternate&quot; content=&quot;es_ES&quot; /&gt;</span></span>
+<span class="line"><span style="color:#c9d1d9">&lt;meta property=&quot;og:site_name&quot; content=&quot;IMDb&quot; /&gt;</span></span>
+<span class="line"><span style="color:#c9d1d9">&lt;meta property=&quot;og:video&quot; content=&quot;https://example.com/bond/trailer.swf&quot; /&gt;</span></span></code></pre>
+<p>Preferably I would like to test all the properties, but I don’t want to make a user interface for them. It would be
+too complex, and I really want to target developers. What if I only added a table, where you can provide any property name and content.
+For now, I could easily add a table with key-values pairs.
+This approach would make the tool very dynamic, and keep the development time low.
+If I find something annoying while testing, I can still add them or change.</p>
+<h4 id="what-about-user-management">What about user management?</h4>
+<p>My plan was to implement user management. Which means you can register and create an account.
+Later on, you can login and see all your “unique urls”.
+On a second thought, the effort is not worth the added value.</p>
+<p>Right now, the page is very usable.
+The only disadvantage is that, I lose my data and unique url when I refresh the page.
+My intention was to use this page for testing purposes, in that sense - having an ephemeral url is what I needed.</p>
+<p>Technically this means, I have to add a job, which drops the data from our database after a few minutes.</p>
+<h4 id="road-to-mvp">Road to MVP</h4>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#c9d1d9">□ Make the main page mobile friendly</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Move the current page to /creator</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Add landing page</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Add contact page (with link, what this is about)</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Add correct open graph meta tags to the main page</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Store images locally</span></span>
+<span class="line"><span style="color:#c9d1d9">□ change DB model to store varible meta tags</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Add simple job to delete old unique urls</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Add FAQ with simple questions</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Create video on how to use the current page (simple example)</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Fix created URLs for WhatsApp (wrong name?)</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Add blog section</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Add article on experimenting which file types are supported</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Add link to Kiru.io (and other projects)</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Add backwards link from other projects to this one</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Publish this project to r/SideProjects</span></span></code></pre>
+<span id="day9"><h3 id="day-9-page-structure">Day 9: Page Structure</h3></span>
+<p>I started working on the TODO list from yesterday. Today’s focus was adding the pages.
+I moved the existing pages to ‘/creator`:</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day8-creator.webp" alt="Creator page"/>
+<p>For now added an empty home page:</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day8-home.webp" alt="Share Telegram"/>
+<p>Apart from that, I added some basic meta tags.
+Since this page is mainly about meta tags, it’s embarrassing not to have any on the page</p>
+<span id="day10"><h3 id="day-10-landing-page">Day 10: Landing Page</h3></span>
+<p>As I have a budget of 4 hours, I managed to fill that time with working on the landing page and testing
+everything on the mobile:</p>
+<div class="grid grid-cols-2 gap-2"><div><div class="text-center w-full">Mobile Before</div><img class="shadow rounded" src="/assets/blog/adventofsaas2022/day10-mobile-before.webp" alt="Mobile before"/></div><div><div class="text-center w-full">Mobile After</div><img class="shadow rounded" src="/assets/blog/adventofsaas2022/day10-mobile-after.webp" alt="Mobile after"/></div></div>
+<p>The landing page too relatively too much time. The current page looks like this:</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day10-landing.webp" alt="Landing"/>
+<p>This time, I decide to create a time-lapse to explore how it looks like. <a href="https://twitter.com/kiru_io/status/1601633290347507715">You can watch it here</a>.</p>
+<span id="day11"><h3 id="day-11-variable-meta-tags">Day 11: Variable meta tags</h3></span>
+<p>Today was very short. Initially I wanted to continue on the landing page.
+Then I thought, let’s finish the creator page, as I have to take screenshots, and I don’t want to redo them again.</p>
+<p>So, I started working on changing the database structure. Right now, I have a simple table, and my idea was
+to add something like this:</p>
+<img class="" src="/assets/blog/adventofsaas2022/day11-erm.webp" alt="ERM"/>
+<p>Started by adding the tables, but then I didn’t have much time, so will continue tomorrow.</p>
+<span id="day12"><h3 id="day-12-variable-meta-tags-ii">Day 12: Variable meta tags II</h3></span>
+<p>Continued on adding a table for the variable meta tags. I tried different way to arrange the creator page.
+I am not even sure how to handle the title and description. It could be technically a table entry. Since I provide it all the time, I thought it
+is easier to keep the current version.</p>
+<p>This is what I have for now:</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day12-tags.webp" alt="Tags Table"/>
+<p>It is not perfect, but I can still re-arrange when everything works.
+In the above version, I am not very satisfied with the table being small.</p>
+<span id="day13"><h3 id="day-13-variable-meta-tags-iii">Day 13: Variable Meta Tags III</h3></span>
+<p>Finally, I got the variable meta tags working.
+It does not look very fancy, but I have a working prototype. This was the first test I did:</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day13-meta-tag.webp" alt="Variable Meta Tags"/>
+<p>I shared the url <code>https://ogtester.com/share/sR4mE</code> and this is what I saw on Twitter:</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day13-preview.webp" alt="Preview"/>
+<p>I am very glad, itt worked! I also found a bug, which I fixed as well:</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day13-bug.webp" alt="Preview"/>
+<p>After testing with the image url, I am not certain the image upload feature is needed.
+I will reflect on this tomorrow and decide how to proceed.</p>
+<span id="day14"><h3 id="day-14-missing-features">Day 14: Missing Features</h3></span>
+<h4 id="image-uploader">Image Uploader</h4>
+<p>Yesterday I managed to finish the variable meta tags feature.
+In hindsight, I should have started with that from the beginning.
+The title and description are nice to have, but it could have been done with the variable meta tag feature as well.
+Well, lesson learned for the next time: Ask myself if I can make the MVP even simpler.</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day14-image-uploader.webp" alt="Image Uplaoder"/>
+<p>On the mockup, I added an image uploader. After testing with different images, I decide to drop the uploader for now.
+The reason for adding the uploader in the first place was, that I thought the images have to be served from the domain.
+Hence, I need to store them locally and proxy them. I had some issues in the past with the images not being displayed properly.
+It could have been another issue, and I just attributed it to the image url. In any case, I will for now stick with a URL.
+That is not very user-friendly, but it covers my needs.</p>
+<h4 id="dogfeeding">Dogfeeding</h4>
+<p>Fixing open graph meta tags for OGTester.com:
+This was a perfect opportunity to dogfeed. I started filling in the meta information I wanted, and generated a URL.</p>
+<p>Sharing the link on Twitter looked like this:</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day14-preview.webp" alt="Image Uplaoder"/>
+<p>So there was something wrong, the image was cropped. There was a meta tag missing:</p>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#c9d1d9">&lt;meta property=&quot;twitter:card&quot; content=&quot;summary_large_image&quot;&gt;</span></span></code></pre>
+<p>After adding that, the preview didn’t change at all. After debugging with different set of tags, it turned out
+the <code>twitter:card</code> was ignored because  <code>og:type</code> was present.</p>
+<p>This could be an automatic check in the future.</p>
+<h3 id="wasting-time">Wasting Time</h3>
+<p>Apart from the above changes, I spent some time to refactor the landing page.
+Why? There is no reasons, I just enjoy doing that. I used Midjourney to generate some images and started adding it on the page.
+The result is impressive (imho):</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day14-better-landing.webp" alt="Image Uplaoder"/>
+<h3 id="outlook">Outlook</h3>
+<p>Today marks the second week. Last week I wrote down some tasks to have an MVP finished.
+I updated that list, and also extended it with more items.</p>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#c9d1d9">□ Make url-table prettier</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Add contact page (with link, what this is about)</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Add correct open graph meta tags to the main page</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Add FAQ with simple questions</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Make share page prettier</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Create video on how to use the current page (simple example)</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Add blog section</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Add article on experimenting which file types are supported</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Add backwards link from other projects to this one</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Publish this project to r/SideProjects</span></span>
+<span class="line"><span style="color:#c9d1d9">■ Add link to Kiru.io (and other projects)</span></span>
+<span class="line"><span style="color:#c9d1d9">■ Fix created URLs for WhatsApp (wrong name?)</span></span>
+<span class="line"><span style="color:#c9d1d9">■ Make the main page mobile friendly</span></span>
+<span class="line"><span style="color:#c9d1d9">■ Move the current page to /creator</span></span>
+<span class="line"><span style="color:#c9d1d9">■ Add landing page</span></span>
+<span class="line"><span style="color:#c9d1d9">■ change DB model to store varible meta tags</span></span>
+<span class="line"><span style="color:#c9d1d9">■ Add simple job to delete old unique urls (not MVP)</span></span></code></pre>
+<span id="day15"><h3 id="day-15-mvp-creator">Day 15: MVP Creator</h3></span>
+<p>I focused today on finishing the creator page. I was too distracted to make the landing page prettier until now.
+Today, I decided to fix all the bugs on the creator page. I moved things around, broke things, and this is what I have now:</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day-15-creator.webp" alt="Creator page"/>
+<p>Some changes I made:</p>
+<ul>
+<li>Decided to put more field, the most important ones</li>
+<li>Dropped the image uploader. As explained above, this is easier for now</li>
+<li>Made the table at the bottom prettier</li>
+<li>Renamed URL to link, because normal people don’t have a clue what URL is.</li>
+<li>It looks a bit condensed, but that is what I want. I want a power-tool, where everything is on one page, and I rely on my muscle memory.</li>
+<li>Added the created time as well, turned out it is helpful for me</li>
+</ul>
+<p>I also made the shared link prettier:</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day15-share-page.webp" alt="Share page"/>
+<p>I added a simple link to share on Twitter:</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day15-share.webp" alt="Share link"/>
+<p>Now, I can start focusing on writing content.</p>
+<span id="day16"><h3 id="day-16-added-blog">Day 16: Added Blog</h3></span>
+<p>The creator page is ready to be used and I want to use it extensively in the next few days.
+My goal is to add a few tutorial pages and resources about what WhatsApp and Twitter accept.</p>
+<p>Therefore, today I focused on adding a blog section.
+Most of the code was copied from <a href="https://articletoimage.ai/">ArticleToImage.ai</a> and the images were via AI as well.</p>
+<p>I added for now three dummy articles (there are empty) and I will be focusing on writing those articles the next few days.</p>
+<p>The blog looks like this for now:</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day16-blog.webp" alt="Blog"/>
+<span id="day17"><h3 id="day-17-added-one-article">Day 17: Added one Article</h3></span>
+<p>I started writing a simple article about meta tags. It is mostly targeted at people who don’t know what open graph meta tags are.
+You can read it here: <a href="https://ogtester.com/blog/what-are-open-graph-tags">What are Open Graph Meta Tags?</a>.</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day17-article.webp" alt="Blog Article"/>
+<p>To be honest, it’s not perfect, but a good first draft. I will revisit it in the next few days and edit it.
+The reason to write this article first was, when I shared the project, many people asked what open graph meta tags are.</p>
+<p>So now, I can send this link and get validation on the content.</p>
+<p>I added in the middle a section on how to use OGTester.</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day17-ogtester.webp" alt="Blog Article Call to Action"/>
+<p>It is something I don’t usually like, but in this case - I hope it helps the reader.</p>
+<span id="day18"><h3 id="day-18-started-with-tutorial">Day 18: Started with Tutorial</h3></span>
+<p>I didn’t have much time, so I started writing the tutorial, so far I managed to write something .. but I am not happy.</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day18-tutorial.webp" alt="Blog Article Call to Action"/>
+<p>Apart from that I brainstormed about the missing tasks:</p>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#c9d1d9">□ Make url-table prettier</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Add contact page (with link, what this is about)</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Add correct open graph meta tags to the main page</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Add FAQ with simple questions</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Make share page prettier</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Create video on how to use the current page (simple example)</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Add backwards link from other projects to this one</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Publish this project to r/SideProjects</span></span>
+<span class="line"><span style="color:#c9d1d9">□ BUG: I can add empty meta tags</span></span>
+<span class="line"><span style="color:#c9d1d9">□ editing meta tas would remove list of meta tasg.</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Fix og tags on this page (blog and rest)</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Redo the Twitter Card (it looks not good in hindsight)</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Create a video with Screen recording</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Add feedback (ppl don&#39;t know where to ask questions)</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Check for any typos on the whole webpage!</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Add more flames at the bottom of the page ?</span></span></code></pre>
+<span id="day19"><h3 id="day-19-almost-ready">Day 19: Almost Ready</h3></span>
+<p>As my hourly budget was higher than what I worked the last few days (it was weekend after all), I decide to catch up on that.</p>
+<p>Today’s goal was to finish as many tiny tasks as possible.
+At the end of the day, I wanted a version which I can finally share on different platforms.</p>
+<p>I changed the landing page, added more content and colors. I am pretty happy with the result.</p>
+<div class="grid grid-cols-2 gap-2 not-prose"><div class="text-center"><p>Before</p><img class="shadow rounded" src="/assets/blog/adventofsaas2022/day19-before-home.webp" alt="Current Home Page"/></div><div class="text-center"><p>After</p><img class="shadow rounded" src="/assets/blog/adventofsaas2022/day19-after-home.webp" alt="After Home Page"/></div></div>
+<p>There were also some tiny mistakes on the Blog page, which I fixed.</p>
+<div class="grid grid-cols-2 gap-2 not-prose"><div class="text-center"><p>Before</p><img class="shadow rounded" src="/assets/blog/adventofsaas2022/day19-before-creator.webp" alt="Current Home Page"/></div><div class="text-center"><p>After</p><img class="shadow rounded" src="/assets/blog/adventofsaas2022/day19-after-creator.webp" alt="After Home Page"/></div></div>
+<p>Regarding the Creator page, I fixed all the annoying bugs. Some bugsfixes were more a quick-fix. .
+For example, the table was showing a horizontal scroll bar, which I didn’t manage to fix on time.
+So decided to crop the text :) The creator is ready to be used.</p>
+<p>After a few hours of work, this is the progress. Hopefully I can finish most of them tomorrow.</p>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#c9d1d9">■ Remove top yellow bar!</span></span>
+<span class="line"><span style="color:#c9d1d9">■ Fix navigation: show current page</span></span>
+<span class="line"><span style="color:#c9d1d9">■ Make url-table prettier</span></span>
+<span class="line"><span style="color:#c9d1d9">■ Make share page prettier</span></span>
+<span class="line"><span style="color:#c9d1d9">■ BUG: Meta Tags table shows horizontal line (quickfix, by cutting the text)</span></span>
+<span class="line"><span style="color:#c9d1d9">■ BUG: I can add empty meta tags</span></span>
+<span class="line"><span style="color:#c9d1d9">■ Add FAQ with simple questions</span></span>
+<span class="line"><span style="color:#c9d1d9">■ Add contact page (with link, what this is about)</span></span>
+<span class="line"><span style="color:#c9d1d9">■ Add feedback (ppl don&#39;t know where to ask questions)</span></span>
+<span class="line"><span style="color:#c9d1d9">■ editing meta tags would remove list of meta tags.</span></span>
+<span class="line"><span style="color:#c9d1d9">■ Check for any typos on the whole webpage!</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Fix og tags on this page (blog and rest)</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Create video on how to use the current page (simple example)</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Publish this project to r/SideProjects</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Add correct open graph meta tags to the main page</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Nice: Write an article analyzing which image types are supported by WhatsApp</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Nice: Add backwards link from other projects to this one</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Nice: Redo the Twitter cards and favicion (the colors changed)</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Nice: Add more flames at the bottom of the page ?</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Nice: if I pass an URL, pre-fill pages```</span></span></code></pre>
+<span id="day20"><h3 id="day-20-publishing">Day 20: Publishing</h3></span>
+<p>I managed to finish most of the tasks, except the ones I have marked as “nice-to have:</p>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#c9d1d9">■ Landing page looks ugly on mobile</span></span>
+<span class="line"><span style="color:#c9d1d9">■ Fix og tags on this page (blog and rest)</span></span>
+<span class="line"><span style="color:#c9d1d9">■ Add correct open graph meta tags to the main page</span></span>
+<span class="line"><span style="color:#c9d1d9">■ Nice: Redo the Twitter cards and favicion (the colors changed)</span></span>
+<span class="line"><span style="color:#c9d1d9">■ Create video on how to use the current page (simple example)</span></span>
+<span class="line"><span style="color:#c9d1d9">■ Publish this project to r/SideProjects</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Nice: Write an article analyzing which image types are supported by WhatsApp</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Nice: Add backwards link from other projects to this one</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Nice: Add more flames at the bottom of the page?</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Nice: if I pass an URL, pre-fill pages```</span></span></code></pre>
+<p>Spent too much making a nice video. This is the result:</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">For context: I was creating a video to show how <a href="https://t.co/1HyUOJrIUL"><a href="https://t.co/1HyUOJrIUL">https://t.co/1HyUOJrIUL</a></a> works. Was sharing the link as part of it. <br/>This is the
+final video<a href="https://twitter.com/hashtag/buildinpublic?src=hash&#38;ref_src=twsrc%5Etfw">#buildinpublic</a> <a href="https://t.co/CFeqEtmSDO">pic.twitter.com/CFeqEtmSDO</a></p>— Kiru (@kiru_io) <a href="https://twitter.com/kiru_io/status/1605277880690348032?ref_src=twsrc%5Etfw">December 20, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>You can also find it on <a href="https://youtu.be/5o7l0hNW-7M">YouTube</a>. I also shared the project on Reddit.
+If it’s not shadow-banned, you can find it <a href="https://www.reddit.com/r/webdev/comments/zqwpy7/i_made_a_webpage_to_test_open_graph_meta_tag/">here</a>.</p>
+<span id="day21"><h3 id="day-21-bugfixes-and-sharing">Day 21: Bugfixes and Sharing</h3></span>
+<p>Yesterday, I also shared the link on <a href="https://www.reddit.com/r/SideProject/comments/zqx4ca/comment/j10hrpp">r/SideProject</a>
+and got some good feedback:</p>
+<img class="shadow rounded" src="/assets/blog/adventofsaas2022/day21-feedback.webp" alt="Feedback reddit"/>
+<p>I fixed the above bug today. Apart from that, I showed the project to few friends and they also discovered many bugs.
+For example, the URL length was limited to 255 chars, that one is fixed as well. Another friend mentioned, that the page is vulnerable to XSS (also fixed!).</p>
+<p>Two new feature requests were is the ability to upload images (I will spend an hour or two to see if I can implement it timeboxed.).</p>
+<p>Today, I shared the project on <a href="https://www.producthunt.com/posts/ogtester-com">ProductHunt</a> and <a href="https://www.indiehackers.com/product/open-graph-meta-tag-tester">IndieHackers</a>.</p>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#c9d1d9">■ State that Link is only valid for 24h!</span></span>
+<span class="line"><span style="color:#c9d1d9">■ Bug: XSS possible. Fix it</span></span>
+<span class="line"><span style="color:#c9d1d9">■ Bug: Reddit comment, title not shown properly!</span></span>
+<span class="line"><span style="color:#c9d1d9">■ Bug: fix error with value too long (at least show error)</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Question: What about image upload?</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Nice: make og:type dropdown</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Nice: show error if any error occurs</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Nice: if I pass an URL, pre-fill pages```</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Nice: Write an article analyzing which image types are supported by WhatsApp</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Nice: Add backwards link from other projects to this one</span></span>
+<span class="line"><span style="color:#c9d1d9">□ Nice: Add more flames at the bottom of the page?</span></span></code></pre>
+<span id="day22"><h3 id="day-22-be-nice">Day 22: Be nice</h3></span>
+<p>I shared the project on <a href="https://news.ycombinator.com/item?id=34095765">HackerNews</a> and
+added link on <a href="https://reversle.net/">Reversle.net</a>:</p>
+<div class="flex justify-center"><img class="shadow rounded w-1/2 " src="/assets/blog/adventofsaas2022/day22-add-link.webp" alt="Feedback reddit"/></div>
+<p>One of the nice feature I added was the ability to upload images. I tried to implement that today
+(with limited budget) but not finished it.</p>
+<p>I also renamed “Creator” to “Link Creator”, I think that’s a bit clearer.</p>
+<span id="day23"><h3 id="day-23-be-less-nice">Day 23: Be less nice</h3></span>
+<p>I gave up with the image uploader. Have limited time to implement, and a bit stressed to finish it.
+Anyway, I couldn’t finish it within time. There is nothing more to updated today.
+The next two days, I will focus on wrapping up this project.</p>
+<span id="day24"><h3 id="day-24-wrapping-up">Day 24: Wrapping up</h3></span>
+<p>At this moment, I consider <a href="https://ogtester.com/">OGTester.com</a> more than finished.
+My goal was to have an MPV (Minimal Viable Product). I surpassed that.</p>
+<p>There are still some tasks, which are rather nice to have,
+but I can work on them after the AdventOfSaaS period.</p>
+<p>I want to write an article to answer the following questions:</p>
+<ul>
+<li>How much did I spend on this project?</li>
+<li>How did it go until so far?</li>
+<li>What are the lessons learned?</li>
+<li>What is on the roadmap for OGTester ?</li>
+</ul>
+<p>I also reread this article and fixed some typos (should do another session to reformulate and rewrite)</p>
+<span id="day25"><h3 id="day-25-final-article">Day 25: Final Article</h3></span>
+<p>Today I finished the article I started writing yesterday. You can read it here:</p>
+<p><a href="/blog/posts/2022/advent-of-saas-2022-conclusion">Advent Of SaaS 2022 Open Graph Tester: Conclusion</a></p>
+    </main>
+  </article><div class=" astro-E6TVZJRP">
+    <div class=" astro-E6TVZJRP">
+      <div class="mt-24 w-full astro-E6TVZJRP">
+        <svg id="visual" viewBox="0 0 1024 40" class="w-full astro-E6TVZJRP" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+          <rect x="0" y="0" width="1024" height="40" fill="#fff" class="astro-E6TVZJRP"></rect>
+          <path d="M0 28L24.3 28.2C48.7 28.3 97.3 28.7 146.2 29C195 29.3 244 29.7 292.8 29.8C341.7 30 390.3 30 439 29.7C487.7 29.3 536.3 28.7 585 28.3C633.7 28 682.3 28 731.2 28.2C780 28.3 829 28.7 877.8 29C926.7 29.3 975.3 29.7 999.7 29.8L1024 30L1024 41L999.7 41C975.3 41 926.7 41 877.8 41C829 41 780 41 731.2 41C682.3 41 633.7 41 585 41C536.3 41 487.7 41 439 41C390.3 41 341.7 41 292.8 41C244 41 195 41 146.2 41C97.3 41 48.7 41 24.3 41L0 41Z" fill="#f0e9fe" stroke-linecap="round" stroke-linejoin="miter" class="astro-E6TVZJRP"></path>
+        </svg>
+      </div>
+      <div class="bg-[#f0e9fe] text-black astro-E6TVZJRP">
+        <div class="max-w-3xl mx-auto py-8 px-2 flex space-between astro-E6TVZJRP">
+          <div class="w-full astro-E6TVZJRP">
+            <h2 class="text-lg font-semibold pb-4 font-base astro-E6TVZJRP">Random Articles</h2>
+            <div class="space-y-2 astro-E6TVZJRP">
+              <article class="astro-E6TVZJRP">
+                    <a href="/blog/posts/2021/mathle-lesson-learned" class="hover:underline-animate text-md sm:text-lg astro-E6TVZJRP">
+                      <span class="astro-E6TVZJRP">Mathle: Lessons Learned</span>
+                    </a>
+                  </article><article class="astro-E6TVZJRP">
+                    <a href="/blog/posts/2022/easily-detect-cloudflare-cache-hit" class="hover:underline-animate text-md sm:text-lg astro-E6TVZJRP">
+                      <span class="astro-E6TVZJRP">How To Easily Detect CloudFlare Cache Hit</span>
+                    </a>
+                  </article><article class="astro-E6TVZJRP">
+                    <a href="/blog/posts/2021/coding-comments" class="hover:underline-animate text-md sm:text-lg astro-E6TVZJRP">
+                      <span class="astro-E6TVZJRP">Unconventional Programming Tips: Comments</span>
+                    </a>
+                  </article>
+            </div>
+          </div>
+
+          <div class="text-right  astro-E6TVZJRP">
+            <h2 class="text-lg pb-4 font-semibold font-base astro-E6TVZJRP">Projects</h2>
+            <div class="space-y-2 astro-E6TVZJRP">
+              <article class="astro-E6TVZJRP"><a href="https://promptmonthly.com/" class="hover:underline-animate text-md sm:text-lg astro-E6TVZJRP">PromptMonthly.com</a></article>
+              <article class="astro-E6TVZJRP"><a href="https://fluentread.ai/" class="hover:underline-animate text-md sm:text-lg astro-E6TVZJRP">FluentRead.ai</a></article>
+              <article class="astro-E6TVZJRP"><a href="https://slashdreamer.com/" class="hover:underline-animate text-md sm:text-lg astro-E6TVZJRP">SlashDreamer.com</a></article>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+
+</div>
+  </div>
+
+  <footer class="border-t ">
+  <div class="py-4 sm:py-8">
+    <div class="flex justify-center gap-6">
+      <a href="https://twitter.com/kiru_io" class="text-gray-400 hover:text-gray-500">
+        <span class="sr-only">Twitter</span>
+        <svg class="h-6 w-6" fill="#8f5a8a" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+        </svg>
+      </a>
+
+      <a href="https://github.com/kiru" class="text-gray-400 hover:text-gray-500">
+        <span class="sr-only">GitHub</span>
+        <svg class="h-6 w-6" fill="#8f5a8a" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+        </svg>
+      </a>
+
+      <a href="https://www.linkedin.com/in/kirusanth-poopalasingam-0685bb1a1/" class="text-gray-400 hover:text-gray-500">
+        <span class="sr-only">Mail</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 50 50" stroke-width="1.5" stroke="#8f5a8a" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+        </svg>
+      </a>
+
+      <a href="mailto:contact@kiru.io?subject=Found%20you%20via%20Kiru.io" class="text-gray-400 hover:text-gray-500">
+        <span class="sr-only">Mail</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#8f5a8a" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path>
+        </svg>
+      </a>
+
+      <a href="https://kiruio.substack.com/" class="cursor-pointer text-gray-400">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1000 1000" class="h-6 w-6">
+          <rect fill="#8f5a8a" x="236.45" y="213.00" width="527.58" height="71.00" rx="0.33"></rect>
+          <rect fill="#8f5a8a" x="236.48" y="348.49" width="527.54" height="70.76" rx="0.26"></rect>
+          <path fill="#8f5a8a" d="   M 500.61 666.53   A 0.51 0.49 -46.2 0 0 500.15 666.55   L 236.98 813.63   A 0.34 0.34 75.9 0 1 236.48 813.33   Q 236.52 651.80 236.49 490.91   C 236.49 489.34 236.21 486.49 236.49 484.25   A 0.57 0.57 3.4 0 1 237.06 483.75   L 763.76 483.75   A 0.49 0.49 0.0 0 1 764.25 484.24   L 764.25 813.47   A 0.33 0.32 -75.6 0 1 763.77 813.76   Q 632.91 740.65 502.07 667.53   C 501.58 667.26 501.21 666.80 500.61 666.53   Z"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+</div>
+</body></html>

@@ -1,22 +1,6 @@
-/til/2021-05-25-tagged_templates/ /til/entries/2021-05-25-tagged_templates/
-/til/2020-06-28-multiselect/ /til/entries/2020-06-28-multiselect/
-/til/2019-12-06-java-comment-code/ /til/entries/2019-12-06-java-comment-code/
-/til/2019-12-07-new-javascript-features/ /til/entries/2019-12-07-new-javascript-features/
-/til/2019-12-04-pid/ /til/entries/2019-12-04-pid/
-/til/2019-11-05-simulate-network-control/ /til/entries/2019-11-05-simulate-network-control/
-/til/2019-10-22-fswatch/ /til/entries/2019-10-22-fswatch/
-/til/2019-05-17-pipe-linux/ /til/entries/2019-05-17-pipe-linux/
-/til/2018-10-22-bash/ /til/entries/2018-10-22-bash/
-/til/2017-03-30-bash-shortcuts/ /til/entries/2017-03-30-bash-shortcuts/
-/til/2017-03-29-uri/ /til/entries<72017-03-29-uri/
-/til/2017-03-28-sqllite/ /til/entries/2017-03-28-sqllite/
-/til/2017-03-27-case/ /til/entries/2017-03-27-case/
-/til/2017-03-14-du/ /til/entries/2017-03-14-du/
-/til/2017-03-13-java-and-oracle/ /til/entires/2017-03-13-java-and-oracle/
-/til/2017-03-07-binding/ /til/entries/2017-03-07-binding/
-/til/2017-03-05-sms-length/ /til/entries/2017-03-05-sms-length/
-/articles/adventofsaas2021/ /blog/posts/2021/AdventOfSaas2021/
-/articles/ /blog/
-/articles/changethistext-launch/ /blog/posts/2022/changethistext-launch/
-/articles/mathle-lesson-learned/ /blog/posts/2021/mathle-lesson-learned/
-/articles/coding-comments/ /blog/posts/2021/coding-comments/
+/til/:til/ /til/entries/:til/ 302
+/articles/adventofsaas2021/ /blog/posts/2021/AdventOfSaas2021/ 302
+/articles/ /blog/ 302
+/articles/changethistext-launch/ /blog/posts/2022/changethistext-launch/ 302
+/articles/mathle-lesson-learned/ /blog/posts/2021/mathle-lesson-learned/ 302
+/articles/coding-comments/ /blog/posts/2021/coding-comments/ 302
