@@ -8,6 +8,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
+<link rel="sitemap" href="/sitemap-index.xml">
 
 <!-- Primary Meta Tags -->
 <title>Kiru.io</title>
@@ -31,18 +32,20 @@
 <script defer data-domain="kiru.io" src="https://plausible.io/js/script.js"></script>
 
 
+<meta name="theme-color" content="#5a9dbe" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#5a9dbe" media="(prefers-color-scheme: dark)">
 
-<link rel="stylesheet" href="/assets/6bb2e165.4eeb8a19.css" />
-<link rel="stylesheet" href="/assets/c983c6bf.a45b011b.css" />
-<link rel="stylesheet" href="/assets/768b5d4d.96df3516.css" /></head>
+<link rel="stylesheet" href="/assets/1dd69c1d.132f831a.css" />
+<link rel="stylesheet" href="/assets/6f7a8800.7ed4a2ae.css" />
+<link rel="stylesheet" href="/assets/cb6afe35.96df3516.css" /></head>
 
 <body class="w-full">
 <div class="">
   <div style="background-color: #5a9dbe">
-    <div class="flex items-center justify-between max-w-6xl mx-auto px-8 pt-8">
+    <div class="flex items-center justify-between max-w-6xl mx-auto px-6 sm:px-8 pt-8">
       <a href="/" class="noSelect">
         <div class="text-black hover:text-[#F8F1E0] w-48">
-          <img src="/kiru_logo.svg" class="">
+          <img src="/kiru_logo.svg" class="h-16 sm:h-32">
           <!--<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"-->
           <!--   viewBox="50 100 450 280" xml:space="preserve">-->
           <!--  <g transform="matrix(1 0 0 1 271.63 241.19)" id="hOBV7oRFq22Ml0ucL-0Q5">-->
@@ -74,7 +77,7 @@
   <!--        fill="#fff" stroke-linecap="square" stroke-linejoin="bevel"></path>-->
   <!--  </svg>-->
   <!--</div>-->
-  <div style="background-color: red; " class="overflow-hidden">
+  <div style="background-color: white; " class="overflow-hidden">
     <svg id="visual" viewBox="0 0 1440 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="scale: 110%">
       <style type="text/css">
           //.st1{filter: drop-shadow(12px 4px 4px #397da1);  }
@@ -87,243 +90,221 @@
   </div>
 
   <div class="pt-8">
-    <div class="h-full min-h-screen px-4 sm:px-0 py-4">
-    <div class="max-w-2xl mx-auto">
-      <div class="prose">
-        <h1>Today I Learned (TIL)</h1>
-        <p class="text-lg">
-          I try to write down what I have learned every day. Each entry are usually very short and mostly technical
-          notes
-          which I find useful or interesting. These are some of the TIL entries which are worth sharing:
+    <div class="bg-white min-h-screen px-4 sm:px-0 py-4">
+    <main class="mx-auto max-w-6xl w-full px-2 sm:px-8  pb-32">
+      <div class="prose  pb-8 ">
+        <h1 class="uppercase font-mono tracking-wide text-secondary">Today I Learned (TIL)</h1>
+        <p class="prose-xl">
+          I try to write about what I've learned every day. Each article is generally very short and mainly concerns
+          techniques
+          I've found useful or interesting. Here are some of the TIL entries worth sharing:
         </p>
       </div>
 
-      <section aria-label="Blog post list ">
-        <div class="flex flex-col gap-1 my-8">
-          <article class="py-2">
-            <header class="flex flex-col">
-              <span class="prose">
-              <time class="font-medium text-sm text-[#8f5a8a]">TIL 05.06.2023</time>
-              </span>
-              <a href="/til/entries/2023-06-05-shortcut-to-forward-standard-output-and-error-to-another-command">
-                <h3 class="text-lg hover:underline-animate-black">
-                  Shortcut to forward standard output and error to another command
-                </h3>
+      <section aria-label="Blog post list">
+        <div class="grid sm:grid-cols-3 gap-y-8 gap-x-8">
+          <a href="/til/entries/2024-11-06-how-to-debug-ios-crash-reports">
+                <article class="bg-primary-50 rounded-lg p-4 hover:bg-primary-100 cursor-pointer h-full">
+                  <header class="">
+                    <time class="font-light text-sm">TIL 06.11.2024</time>
+                    <div>
+                      <h1 class="text-xl sm:text-2xl font-bold pt-4 pb-2 hover:underline-animate-black">How to debug iOS Crash Reports?</h1>
+                    </div>
+                  </header>
+                </article>
+              </a><a href="/til/entries/2024-01-16-javaScript-difference-querySelector-and-getElementById">
+                <article class="bg-primary-50 rounded-lg p-4 hover:bg-primary-100 cursor-pointer h-full">
+                  <header class="">
+                    <time class="font-light text-sm">TIL 16.01.2024</time>
+                    <div>
+                      <h1 class="text-xl sm:text-2xl font-bold pt-4 pb-2 hover:underline-animate-black">Difference between getElementByID and querySelector</h1>
+                    </div>
+                  </header>
+                </article>
+              </a><a href="/til/entries/2023-06-05-shortcut-to-forward-standard-output-and-error-to-another-command">
+                <article class="bg-primary-50 rounded-lg p-4 hover:bg-primary-100 cursor-pointer h-full">
+                  <header class="">
+                    <time class="font-light text-sm">TIL 05.06.2023</time>
+                    <div>
+                      <h1 class="text-xl sm:text-2xl font-bold pt-4 pb-2 hover:underline-animate-black">Shortcut to forward standard output and error to another command</h1>
+                    </div>
+                  </header>
+                </article>
+              </a><a href="/til/entries/2023-05-20-eigengrau">
+                <article class="bg-primary-50 rounded-lg p-4 hover:bg-primary-100 cursor-pointer h-full">
+                  <header class="">
+                    <time class="font-light text-sm">TIL 20.05.2023</time>
+                    <div>
+                      <h1 class="text-xl sm:text-2xl font-bold pt-4 pb-2 hover:underline-animate-black">The darkest color you can perceive without contrast is called Eigengrau</h1>
+                    </div>
+                  </header>
+                </article>
+              </a><a href="/til/entries/2023-04-13-how-to-shallow-clone-git">
+                <article class="bg-primary-50 rounded-lg p-4 hover:bg-primary-100 cursor-pointer h-full">
+                  <header class="">
+                    <time class="font-light text-sm">TIL 13.04.2023</time>
+                    <div>
+                      <h1 class="text-xl sm:text-2xl font-bold pt-4 pb-2 hover:underline-animate-black">How to Shallow Clone With Git</h1>
+                    </div>
+                  </header>
+                </article>
+              </a><a href="/til/entries/2021-05-25-tagged_templates">
+                <article class="bg-primary-50 rounded-lg p-4 hover:bg-primary-100 cursor-pointer h-full">
+                  <header class="">
+                    <time class="font-light text-sm">TIL 25.05.2021</time>
+                    <div>
+                      <h1 class="text-xl sm:text-2xl font-bold pt-4 pb-2 hover:underline-animate-black">Tagged Templates in JavaScript</h1>
+                    </div>
+                  </header>
+                </article>
+              </a><a href="/til/entries/2020-06-28-multiselect">
+                <article class="bg-primary-50 rounded-lg p-4 hover:bg-primary-100 cursor-pointer h-full">
+                  <header class="">
+                    <time class="font-light text-sm">TIL 28.06.2020</time>
+                    <div>
+                      <h1 class="text-xl sm:text-2xl font-bold pt-4 pb-2 hover:underline-animate-black">Empty multiselect is not set</h1>
+                    </div>
+                  </header>
+                </article>
+              </a><a href="/til/entries/2019-12-07-new-javascript-features">
+                <article class="bg-primary-50 rounded-lg p-4 hover:bg-primary-100 cursor-pointer h-full">
+                  <header class="">
+                    <time class="font-light text-sm">TIL 07.12.2019</time>
+                    <div>
+                      <h1 class="text-xl sm:text-2xl font-bold pt-4 pb-2 hover:underline-animate-black">JavaScript Function string</h1>
+                    </div>
+                  </header>
+                </article>
+              </a><a href="/til/entries/2019-12-06-java-comment-code">
+                <article class="bg-primary-50 rounded-lg p-4 hover:bg-primary-100 cursor-pointer h-full">
+                  <header class="">
+                    <time class="font-light text-sm">TIL 06.12.2019</time>
+                    <div>
+                      <h1 class="text-xl sm:text-2xl font-bold pt-4 pb-2 hover:underline-animate-black">Java code comments</h1>
+                    </div>
+                  </header>
+                </article>
+              </a><a href="/til/entries/2019-12-04-pid">
+                <article class="bg-primary-50 rounded-lg p-4 hover:bg-primary-100 cursor-pointer h-full">
+                  <header class="">
+                    <time class="font-light text-sm">TIL 04.12.2019</time>
+                    <div>
+                      <h1 class="text-xl sm:text-2xl font-bold pt-4 pb-2 hover:underline-animate-black">Waiting for process</h1>
+                    </div>
+                  </header>
+                </article>
+              </a><a href="/til/entries/2019-11-05-simulate network control">
+                <article class="bg-primary-50 rounded-lg p-4 hover:bg-primary-100 cursor-pointer h-full">
+                  <header class="">
+                    <time class="font-light text-sm">TIL 05.11.2019</time>
+                    <div>
+                      <h1 class="text-xl sm:text-2xl font-bold pt-4 pb-2 hover:underline-animate-black">Simulate network control</h1>
+                    </div>
+                  </header>
+                </article>
+              </a><a href="/til/entries/2019-10-22-fswatch">
+                <article class="bg-primary-50 rounded-lg p-4 hover:bg-primary-100 cursor-pointer h-full">
+                  <header class="">
+                    <time class="font-light text-sm">TIL 22.10.2019</time>
+                    <div>
+                      <h1 class="text-xl sm:text-2xl font-bold pt-4 pb-2 hover:underline-animate-black">Execute python file on change fswatch</h1>
+                    </div>
+                  </header>
+                </article>
+              </a><a href="/til/entries/2019-05-17-pipe-linux">
+                <article class="bg-primary-50 rounded-lg p-4 hover:bg-primary-100 cursor-pointer h-full">
+                  <header class="">
+                    <time class="font-light text-sm">TIL 17.05.2019</time>
+                    <div>
+                      <h1 class="text-xl sm:text-2xl font-bold pt-4 pb-2 hover:underline-animate-black">Shortcut for linux pipe</h1>
+                    </div>
+                  </header>
+                </article>
+              </a><a href="/til/entries/2018-10-22-bash">
+                <article class="bg-primary-50 rounded-lg p-4 hover:bg-primary-100 cursor-pointer h-full">
+                  <header class="">
+                    <time class="font-light text-sm">TIL 22.10.2018</time>
+                    <div>
+                      <h1 class="text-xl sm:text-2xl font-bold pt-4 pb-2 hover:underline-animate-black">.bash_profile vs .bashrc</h1>
+                    </div>
+                  </header>
+                </article>
+              </a><a href="/til/entries/2017-03-30-bash-shortcuts">
+                <article class="bg-primary-50 rounded-lg p-4 hover:bg-primary-100 cursor-pointer h-full">
+                  <header class="">
+                    <time class="font-light text-sm">TIL 30.03.2017</time>
+                    <div>
+                      <h1 class="text-xl sm:text-2xl font-bold pt-4 pb-2 hover:underline-animate-black">BASH Shortcuts I was not not aware of</h1>
+                    </div>
+                  </header>
+                </article>
+              </a><a href="/til/entries/2017-03-29-uri">
+                <article class="bg-primary-50 rounded-lg p-4 hover:bg-primary-100 cursor-pointer h-full">
+                  <header class="">
+                    <time class="font-light text-sm">TIL 29.03.2017</time>
+                    <div>
+                      <h1 class="text-xl sm:text-2xl font-bold pt-4 pb-2 hover:underline-animate-black">Is URI case sensitive?</h1>
+                    </div>
+                  </header>
+                </article>
+              </a><a href="/til/entries/2017-03-28-sqllite">
+                <article class="bg-primary-50 rounded-lg p-4 hover:bg-primary-100 cursor-pointer h-full">
+                  <header class="">
+                    <time class="font-light text-sm">TIL 28.03.2017</time>
+                    <div>
+                      <h1 class="text-xl sm:text-2xl font-bold pt-4 pb-2 hover:underline-animate-black">SQLite Type Affinity</h1>
+                    </div>
+                  </header>
+                </article>
+              </a><a href="/til/entries/2017-03-27-case">
+                <article class="bg-primary-50 rounded-lg p-4 hover:bg-primary-100 cursor-pointer h-full">
+                  <header class="">
+                    <time class="font-light text-sm">TIL 27.03.2017</time>
+                    <div>
+                      <h1 class="text-xl sm:text-2xl font-bold pt-4 pb-2 hover:underline-animate-black">Various</h1>
+                    </div>
+                  </header>
+                </article>
+              </a><a href="/til/entries/2017-03-14-du">
+                <article class="bg-primary-50 rounded-lg p-4 hover:bg-primary-100 cursor-pointer h-full">
+                  <header class="">
+                    <time class="font-light text-sm">TIL 14.03.2017</time>
+                    <div>
+                      <h1 class="text-xl sm:text-2xl font-bold pt-4 pb-2 hover:underline-animate-black">What is the difference between `du` and `df` command?</h1>
+                    </div>
+                  </header>
+                </article>
+              </a><a href="/til/entries/2017-03-13-java-and-oracle">
+                <article class="bg-primary-50 rounded-lg p-4 hover:bg-primary-100 cursor-pointer h-full">
+                  <header class="">
+                    <time class="font-light text-sm">TIL 13.03.2017</time>
+                    <div>
+                      <h1 class="text-xl sm:text-2xl font-bold pt-4 pb-2 hover:underline-animate-black">Java Enum and extract in SQL</h1>
+                    </div>
+                  </header>
+                </article>
+              </a><a href="/til/entries/2017-03-07-binding">
+                <article class="bg-primary-50 rounded-lg p-4 hover:bg-primary-100 cursor-pointer h-full">
+                  <header class="">
+                    <time class="font-light text-sm">TIL 07.03.2017</time>
+                    <div>
+                      <h1 class="text-xl sm:text-2xl font-bold pt-4 pb-2 hover:underline-animate-black">What is the difference between 127.0.0.1 and 0.0.0.0?</h1>
+                    </div>
+                  </header>
+                </article>
+              </a><a href="/til/entries/2017-03-05-sms-length">
+                <article class="bg-primary-50 rounded-lg p-4 hover:bg-primary-100 cursor-pointer h-full">
+                  <header class="">
+                    <time class="font-light text-sm">TIL 05.03.2017</time>
+                    <div>
+                      <h1 class="text-xl sm:text-2xl font-bold pt-4 pb-2 hover:underline-animate-black">What is the max length of an SMS?</h1>
+                    </div>
+                  </header>
+                </article>
               </a>
-            </header>
-          </article><article class="py-2">
-            <header class="flex flex-col">
-              <span class="prose">
-              <time class="font-medium text-sm text-[#8f5a8a]">TIL 20.05.2023</time>
-              </span>
-              <a href="/til/entries/2023-05-20-eigengrau">
-                <h3 class="text-lg hover:underline-animate-black">
-                  The darkest color you can perceive without contrast is called Eigengrau
-                </h3>
-              </a>
-            </header>
-          </article><article class="py-2">
-            <header class="flex flex-col">
-              <span class="prose">
-              <time class="font-medium text-sm text-[#8f5a8a]">TIL 13.04.2023</time>
-              </span>
-              <a href="/til/entries/2023-04-13-how-to-shallow-clone-git">
-                <h3 class="text-lg hover:underline-animate-black">
-                  How to Shallow Clone With Git
-                </h3>
-              </a>
-            </header>
-          </article><article class="py-2">
-            <header class="flex flex-col">
-              <span class="prose">
-              <time class="font-medium text-sm text-[#8f5a8a]">TIL 25.05.2021</time>
-              </span>
-              <a href="/til/entries/2021-05-25-tagged_templates">
-                <h3 class="text-lg hover:underline-animate-black">
-                  Tagged Templates in JavaScript
-                </h3>
-              </a>
-            </header>
-          </article><article class="py-2">
-            <header class="flex flex-col">
-              <span class="prose">
-              <time class="font-medium text-sm text-[#8f5a8a]">TIL 28.06.2020</time>
-              </span>
-              <a href="/til/entries/2020-06-28-multiselect">
-                <h3 class="text-lg hover:underline-animate-black">
-                  Empty multiselect is not set
-                </h3>
-              </a>
-            </header>
-          </article><article class="py-2">
-            <header class="flex flex-col">
-              <span class="prose">
-              <time class="font-medium text-sm text-[#8f5a8a]">TIL 07.12.2019</time>
-              </span>
-              <a href="/til/entries/2019-12-07-new-javascript-features">
-                <h3 class="text-lg hover:underline-animate-black">
-                  JavaScript Function string
-                </h3>
-              </a>
-            </header>
-          </article><article class="py-2">
-            <header class="flex flex-col">
-              <span class="prose">
-              <time class="font-medium text-sm text-[#8f5a8a]">TIL 06.12.2019</time>
-              </span>
-              <a href="/til/entries/2019-12-06-java-comment-code">
-                <h3 class="text-lg hover:underline-animate-black">
-                  Java code comments
-                </h3>
-              </a>
-            </header>
-          </article><article class="py-2">
-            <header class="flex flex-col">
-              <span class="prose">
-              <time class="font-medium text-sm text-[#8f5a8a]">TIL 04.12.2019</time>
-              </span>
-              <a href="/til/entries/2019-12-04-pid">
-                <h3 class="text-lg hover:underline-animate-black">
-                  Waiting for process
-                </h3>
-              </a>
-            </header>
-          </article><article class="py-2">
-            <header class="flex flex-col">
-              <span class="prose">
-              <time class="font-medium text-sm text-[#8f5a8a]">TIL 05.11.2019</time>
-              </span>
-              <a href="/til/entries/2019-11-05-simulate network control">
-                <h3 class="text-lg hover:underline-animate-black">
-                  Simulate network control
-                </h3>
-              </a>
-            </header>
-          </article><article class="py-2">
-            <header class="flex flex-col">
-              <span class="prose">
-              <time class="font-medium text-sm text-[#8f5a8a]">TIL 22.10.2019</time>
-              </span>
-              <a href="/til/entries/2019-10-22-fswatch">
-                <h3 class="text-lg hover:underline-animate-black">
-                  Execute python file on change fswatch
-                </h3>
-              </a>
-            </header>
-          </article><article class="py-2">
-            <header class="flex flex-col">
-              <span class="prose">
-              <time class="font-medium text-sm text-[#8f5a8a]">TIL 17.05.2019</time>
-              </span>
-              <a href="/til/entries/2019-05-17-pipe-linux">
-                <h3 class="text-lg hover:underline-animate-black">
-                  Shortcut for linux pipe
-                </h3>
-              </a>
-            </header>
-          </article><article class="py-2">
-            <header class="flex flex-col">
-              <span class="prose">
-              <time class="font-medium text-sm text-[#8f5a8a]">TIL 22.10.2018</time>
-              </span>
-              <a href="/til/entries/2018-10-22-bash">
-                <h3 class="text-lg hover:underline-animate-black">
-                  .bash_profile vs .bashrc
-                </h3>
-              </a>
-            </header>
-          </article><article class="py-2">
-            <header class="flex flex-col">
-              <span class="prose">
-              <time class="font-medium text-sm text-[#8f5a8a]">TIL 30.03.2017</time>
-              </span>
-              <a href="/til/entries/2017-03-30-bash-shortcuts">
-                <h3 class="text-lg hover:underline-animate-black">
-                  BASH Shortcuts I was not not aware of
-                </h3>
-              </a>
-            </header>
-          </article><article class="py-2">
-            <header class="flex flex-col">
-              <span class="prose">
-              <time class="font-medium text-sm text-[#8f5a8a]">TIL 29.03.2017</time>
-              </span>
-              <a href="/til/entries/2017-03-29-uri">
-                <h3 class="text-lg hover:underline-animate-black">
-                  Is URI case sensitive?
-                </h3>
-              </a>
-            </header>
-          </article><article class="py-2">
-            <header class="flex flex-col">
-              <span class="prose">
-              <time class="font-medium text-sm text-[#8f5a8a]">TIL 28.03.2017</time>
-              </span>
-              <a href="/til/entries/2017-03-28-sqllite">
-                <h3 class="text-lg hover:underline-animate-black">
-                  SQLite Type Affinity
-                </h3>
-              </a>
-            </header>
-          </article><article class="py-2">
-            <header class="flex flex-col">
-              <span class="prose">
-              <time class="font-medium text-sm text-[#8f5a8a]">TIL 27.03.2017</time>
-              </span>
-              <a href="/til/entries/2017-03-27-case">
-                <h3 class="text-lg hover:underline-animate-black">
-                  Various
-                </h3>
-              </a>
-            </header>
-          </article><article class="py-2">
-            <header class="flex flex-col">
-              <span class="prose">
-              <time class="font-medium text-sm text-[#8f5a8a]">TIL 14.03.2017</time>
-              </span>
-              <a href="/til/entries/2017-03-14-du">
-                <h3 class="text-lg hover:underline-animate-black">
-                  What is the difference between `du` and `df` command?
-                </h3>
-              </a>
-            </header>
-          </article><article class="py-2">
-            <header class="flex flex-col">
-              <span class="prose">
-              <time class="font-medium text-sm text-[#8f5a8a]">TIL 13.03.2017</time>
-              </span>
-              <a href="/til/entries/2017-03-13-java-and-oracle">
-                <h3 class="text-lg hover:underline-animate-black">
-                  Java Enum and extract in SQL
-                </h3>
-              </a>
-            </header>
-          </article><article class="py-2">
-            <header class="flex flex-col">
-              <span class="prose">
-              <time class="font-medium text-sm text-[#8f5a8a]">TIL 07.03.2017</time>
-              </span>
-              <a href="/til/entries/2017-03-07-binding">
-                <h3 class="text-lg hover:underline-animate-black">
-                  What is the difference between 127.0.0.1 and 0.0.0.0?
-                </h3>
-              </a>
-            </header>
-          </article><article class="py-2">
-            <header class="flex flex-col">
-              <span class="prose">
-              <time class="font-medium text-sm text-[#8f5a8a]">TIL 05.03.2017</time>
-              </span>
-              <a href="/til/entries/2017-03-05-sms-length">
-                <h3 class="text-lg hover:underline-animate-black">
-                  What is the max length of an SMS?
-                </h3>
-              </a>
-            </header>
-          </article>
         </div>
       </section>
-    </div>
+    </main>
   </div>
   </div>
 
